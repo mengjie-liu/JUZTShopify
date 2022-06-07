@@ -17,49 +17,49 @@
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%} -->
 
-<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<!-- <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript> -->
 
 <style>
-:root{
-    --unit:19.52vw;
-}
+  :root {
+    --unit: 19.52vw;
+  }
 
-@media only screen and (min-width: 1800px) {
-    body{
-        font-size: 18pt;
+  @media only screen and (min-width: 1800px) {
+    body {
+      font-size: 18pt;
     }
   }
-@media only screen and (min-width:1280px) and (max-width: 1800px) {
-    body{
-        font-size: 12pt;
+  @media only screen and (min-width: 1280px) and (max-width: 1800px) {
+    body {
+      font-size: 12pt;
     }
   }
-@media only screen and (min-width:600px) and (max-width: 1280px) {
-    body{
-        font-size: 12pt;
+  @media only screen and (min-width: 600px) and (max-width: 1280px) {
+    body {
+      font-size: 12pt;
     }
   }
-@media only screen and (max-width:600px) {
-    body{
-        font-size: 12pt;
-        /* width:100%;
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 12pt;
+      /* width:100%;
         overflow-x: hidden; */
     }
   }
 
-*{
+  * {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
     text-rendering: optimizespeed;
     -webkit-font-smoothing: antialiased;
-}
+  }
 
-body{
+  body {
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
     -ms-overflow-style: none;
@@ -67,99 +67,99 @@ body{
     overflow-x: hidden;
     /* overflow-x: scroll; */
     /* width: auto; */
-    background-color:white;
-}
+    background-color: white;
+  }
 
-a{
+  a {
     position: relative;
     color: inherit;
     text-decoration: none;
-}
-.hoverEffect:hover::after{
+  }
+  .hoverEffect:hover::after {
     position: absolute;
     padding-left: 0.8em;
     padding-right: 0.8em;
     width: 100%;
     height: 30%;
     border-radius: 100%;
-    content:'';
+    content: "";
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border: 1pt solid black;
     text-align: center;
-}
+  }
 
-.title{
+  .title {
     /* font-family: roc-grotesk,sans-serif;
     font-weight: 500; */
     font-family: din-2014, sans-serif;
-font-weight: 600;
+    font-weight: 600;
     font-style: normal;
-font-size: 1.3em;
-text-transform:uppercase;
-line-height: 1.35;
-letter-spacing: 0.25px;
-z-index: 1002;
-}
+    font-size: 1.3em;
+    text-transform: uppercase;
+    line-height: 1.35;
+    letter-spacing: 0.25px;
+    z-index: 1002;
+  }
 
-.text{
+  .text {
     /* font-family: roc-grotesk,sans-serif;
     font-weight: 300; */
     font-family: din-2014, sans-serif;
-font-weight: 400;
+    font-weight: 400;
     font-style: normal;
-font-size: 1em;
-line-height: 1.35;
-letter-spacing: 0.5px;
-}
+    font-size: 1em;
+    line-height: 1.35;
+    letter-spacing: 0.5px;
+  }
 
-.gridWrap{
+  .gridWrap {
     position: fixed;
     width: 100%;
     left: 2.52em;
     /* padding-left: 1vw; */
     display: grid;
-        grid-template-columns: repeat(6, 19.52vw);
-        grid-template-rows: repeat(6, 19.52vw); 
-        column-gap: 0;
-        row-gap: 0;
-        z-index: 3000;
-    pointer-events:none;
+    grid-template-columns: repeat(6, 19.52vw);
+    grid-template-rows: repeat(6, 19.52vw);
+    column-gap: 0;
+    row-gap: 0;
+    z-index: 3000;
+    pointer-events: none;
     transition: opacity 0.8s;
-top:0;
-}
+    top: 0;
+  }
 
-.cross::before,
-.cross::after {
+  .cross::before,
+  .cross::after {
     position: absolute;
     /* transform: translate(-50%,-50%); */
-    content: '';
+    content: "";
     width: 1em;
     height: 1px; /* cross thickness */
     background-color: black;
     margin-top: 0.5em;
     margin-left: -1em;
-}
+  }
 
-.bigVd{
+  .bigVd {
     position: absolute;
     left: 0;
     top: 0;
     padding-left: 2.02em;
-    padding-top:0.5em;
+    padding-top: 0.5em;
     width: calc(var(--unit) * 5);
     /* height: calc(var(--unit) * 3); */
-    height:calc(100vh - 0.5em);
+    height: calc(100vh - 0.5em);
     object-fit: cover;
     overflow: hidden;
-}
+  }
 
-div::after {
+  div::after {
     transform: rotate(-90deg);
-}
+  }
 
-.info{
+  .info {
     max-height: 1.25em;
     padding-top: 0.5em;
     /* position: absolute; */
@@ -167,41 +167,41 @@ div::after {
     transform: translateY(-50%); */
     color: white;
     overflow: hidden;
-}
+  }
 
-.gridItem{
+  .gridItem {
     padding-top: 2.75em;
     padding-left: 1em;
     padding-right: 0.5em;
-}
+  }
 
-.logo{
+  .logo {
     position: fixed;
     left: 2.52em;
-    top:0;
+    top: 0;
     max-width: 12vw;
     z-index: 1010;
-}
-.logo img{
-    padding-top:0.25em;
-    padding-bottom:0.25em;
+  }
+  .logo img {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     width: 100%;
     z-index: 1000;
-}
+  }
 
-.nav{
+  .nav {
     position: fixed;
-    left:2.52em;
-    top:0;
+    left: 2.52em;
+    top: 0;
     margin-left: calc(var(--unit) * 4);
     z-index: 1000;
-}
+  }
 
-.grass{
-    transform: translate(-50%,-50%);
+  .grass {
+    transform: translate(-50%, -50%);
     pointer-events: none;
-}
-.sayHi{
+  }
+  .sayHi {
     position: absolute;
     /* left: 2.52em; */
     left: -0.5em;
@@ -211,12 +211,12 @@ div::after {
     width: var(--unit);
     height: var(--unit);
     /* transition: opacity 2s; */
-}
-.sayHiText{
+  }
+  .sayHiText {
     margin-top: -1.45em;
     max-width: 17.05vw;
-}
-#name{
+  }
+  #name {
     -webkit-appearance: none;
     margin-left: 0.2em;
     border: none;
@@ -224,15 +224,15 @@ div::after {
     outline: none;
     text-align: left;
     color: lime;
-    display:inline-block;
-    white-space:pre-wrap;
+    display: inline-block;
+    white-space: pre-wrap;
     max-width: 100%;
-}
-#name[contenteditable]:empty::before {
+  }
+  #name[contenteditable]:empty::before {
     content: "anon";
     color: lime;
-}
-.clock{
+  }
+  .clock {
     position: absolute;
     /* left: 2.52em; */
     margin-left: -0.5em;
@@ -242,16 +242,18 @@ div::after {
     left: calc(var(--unit) * 2);
     width: var(--unit);
     height: var(--unit);
-}
-.clockText, .buttonText, .colorText{
+  }
+  .clockText,
+  .buttonText,
+  .colorText {
     margin-top: -1.45em;
-}
-#clock{
+  }
+  #clock {
     position: absolute;
     top: 1.3em;
     right: 1em;
-}
-/* .button{
+  }
+  /* .button{
     position: absolute;
     margin-left: -0.5em;
     margin-top: 0.5em;
@@ -261,7 +263,7 @@ div::after {
     width: 19.52vw;
     height: 19.52vw;
 } */
-/* .color{
+  /* .color{
     position: absolute;
     margin-left: -0.5em;
     margin-top: 0.5em;
@@ -271,7 +273,7 @@ div::after {
     width: 19.52vw;
     height: 19.52vw;
 } */
-/* .colorBox{
+  /* .colorBox{
     position:relative;
     width: 1em;
     height: 1em;
@@ -295,144 +297,143 @@ div::after {
 #black{
     background-color: black;
 } */
-.hidden{
+  .hidden {
     opacity: 0;
-}
-.contentWrap{
+  }
+  .contentWrap {
     left: 2.52em;
     position: relative;
     height: 100vh;
     width: fit-content;
     margin-right: 0.5em;
     z-index: 100;
-}
-.horizontal{
+  }
+  .horizontal {
     width: calc(var(--unit) * 2);
     height: var(--unit);
     overflow: hidden;
     margin-top: 0.5em;
     margin-left: -0.5em;
-
-}
-.vertical{
+  }
+  .vertical {
     width: var(--unit);
     height: calc(var(--unit) * 2);
     overflow: hidden;
     margin-top: 0.5em;
     margin-left: -0.5em;
-
-
-}
-.single{
+  }
+  .single {
     width: var(--unit);
     height: var(--unit);
-        overflow: hidden;
-        margin-top: 0.5em;
-        margin-left: -0.5em;
-    
-}
-.imgWrap, .videoWrap{
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-left: -0.5em;
+  }
+  .imgWrap,
+  .videoWrap {
     position: absolute;
-}
-.imgContainer{
-    position:relative;
+  }
+  .imgContainer {
+    position: relative;
     width: 100%;
     height: 100%;
-}
-.videoContainer{
-    position:relative;
+  }
+  .videoContainer {
+    position: relative;
     width: 100%;
     height: 100%;
-}
-.imgContainer img{
+  }
+  .imgContainer img {
     position: absolute;
     width: 39.04vw;
     height: 100%;
     object-fit: cover;
     z-index: -2;
-}
-.videoContainer video{
+  }
+  .videoContainer video {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -2;
-}
-.videoContainer img{
+  }
+  .videoContainer img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -2;
-}
-#img1{
+  }
+  #img1 {
     left: calc(var(--unit) * 3);
     top: calc(var(--unit) * 5);
-}
-#img2{
+  }
+  #img2 {
     left: calc(var(--unit) * 2);
     top: calc(var(--unit) * 10);
     /* height: calc(100vh - 39.04vw - 0.5em); */
-}
-#img3{
+  }
+  #img3 {
     left: calc(var(--unit) * 1);
     top: calc(var(--unit) * 7);
-}
-#vd1{
+  }
+  #vd1 {
     left: var(--unit);
     top: calc(var(--unit) * 8);
     /* height: calc(100vh - 39.04vw + 19.52vw - 0.5em); */
-}
-#vd2{
+  }
+  #vd2 {
     left: calc(var(--unit) * 2);
     top: calc(var(--unit) * 4);
-}
-#vd3{
+  }
+  #vd3 {
     left: 0;
     top: calc(var(--unit) * 5);
-}
-*, *::before, *::after{
-    -webkit-box-sizing:padding-box;
-    box-sizing:padding-box;
   }
-  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+  }
+
   .tickerwrapper {
     /* the outer div */
     position: fixed;
     bottom: 0;
-    left:0;
+    left: 0;
     /* border: 1px solid #444; */
-    background:black;
-    color:white;
+    background: black;
+    color: white;
     width: 100%;
     height: 1.7em;
     overflow: hidden;
     cursor: default;
     z-index: 2000;
   }
-  
+
   ul.list {
     position: relative;
     display: inline-block;
     list-style: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     padding-top: 0.325em;
   }
-  
+
   ul.list.cloned {
     position: absolute;
     top: 0;
     left: 0;
     padding-top: 0.325em;
   }
-  
+
   ul.list li {
     float: left;
     padding-left: 1.5em;
   }
 
-.policyEtc{
+  .policyEtc {
     position: relative;
     /* left: 2.52em; */
     margin-left: -0.5em;
@@ -440,47 +441,46 @@ div::after {
     box-sizing: border-box;
     top: calc(var(--unit) * 11);
     left: 0;
-    height: calc(100vh - 39.04vw);    /* width: var(--unit);
+    height: calc(
+      100vh - 39.04vw
+    ); /* width: var(--unit);
     height: var(--unit); */
-}
-.cs{
+  }
+  .cs {
     position: absolute;
     left: 1.5em;
-    bottom:2.75em;
+    bottom: 2.75em;
     cursor: pointer;
     /* padding-left:1em; */
-}
-.sr{
+  }
+  .sr {
     position: absolute;
     left: calc(var(--unit) + 1.5em);
-    bottom:2.75em;
+    bottom: 2.75em;
     cursor: pointer;
     /* padding-left:1em; */
-}
-.pp{
+  }
+  .pp {
     position: absolute;
-    left: calc(var(--unit) * 2 + 1.5em); 
-    bottom:2.75em;
+    left: calc(var(--unit) * 2 + 1.5em);
+    bottom: 2.75em;
     cursor: pointer;
     /* padding-left:1em; */
- 
-}
-.tc{
+  }
+  .tc {
     position: absolute;
-    left: calc(var(--unit) * 3 + 1.5em); 
-    bottom:2.75em;
+    left: calc(var(--unit) * 3 + 1.5em);
+    bottom: 2.75em;
     cursor: pointer;
     /* padding-left:1em; */
- 
-}
-.sm{
+  }
+  .sm {
     position: absolute;
-    left: calc(var(--unit) * 4 + 1.5em); 
-    bottom:2.75em;
+    left: calc(var(--unit) * 4 + 1.5em);
+    bottom: 2.75em;
     cursor: pointer;
     /* padding-left:1em; */
- 
-}
+  }
 
   header-drawer {
     justify-self: start;
@@ -533,7 +533,7 @@ div::after {
   }
 </style>
 
-{%- style -%}
+<!-- {%- style -%}
   .section-header {
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
@@ -543,13 +543,13 @@ div::after {
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
-{%- endstyle -%}
+{%- endstyle -%} -->
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
   </symbol>
@@ -557,7 +557,7 @@ div::after {
   <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
-</svg>
+</svg> -->
 <!-- <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -1076,195 +1076,79 @@ div::after {
 </a>
 </div> -->
 <div class="gridItem nav">
-<div class="title" id="shop">
-  <a href="shop.html" class="hoverEffect">shop</a>
+  <div class="title" id="shop">
+    <a href="shop.html" class="hoverEffect">shop</a>
+  </div>
+  <div class="title" id="about">
+    <a href="about.html" class="hoverEffect">about</a>
+  </div>
+  <div class="title" id="login">
+    <a href="login.html" class="hoverEffect">account</a>
+  </div>
+  <div class="title" id="cart">
+    <a href="cart.html" class="hoverEffect">cart(0)</a>
+  </div>
 </div>
-<div class="title" id="about">
-  <a href="about.html" class="hoverEffect">about</a>
-</div>
-<div class="title" id="login">
-  <a href="login.html" class="hoverEffect">account</a>
-</div>
-<div class="title" id="cart">
-  <a href="cart.html" class="hoverEffect">cart(0)</a>
-</div>
-</div>
 
-{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+<!-- {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%} -->
 
-{% javascript %}
-
-$(document).ready(function () {
-  window.scrollTo(0, 0);
-
-  let idleTimer = null;
-  let idleState = false;
-
-  function showGrid(time) {
-    clearTimeout(idleTimer);
-    if (idleState == true) {
-      $(".gridWrap").removeClass("hidden");
-    }
-    idleState = false;
-    idleTimer = setTimeout(function () {
-      $(".gridWrap").addClass("hidden");
-      idleState = true;
-    }, time);
-  }
-
-  showGrid(800);
-
-  $(window).mousemove(function () {
-    showGrid(800);
-  });
-  $(window).scroll(function () {
-    showGrid(800);
-  });
-
-  var $tickerWrapper = $(".tickerwrapper");
-  var $list = $tickerWrapper.find("ul.list");
-  var $clonedList = $list.clone();
-  var listWidth = 10;
-
-  $list.find("li").each(function (i) {
-    listWidth += $(this, i).outerWidth(true);
-  });
-
-  var endPos = $tickerWrapper.width() - listWidth;
-
-  $list.add($clonedList).css({
-    width: listWidth + "px",
-  });
-
-  $clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-  //TimelineMax
-  var infinite = new TimelineMax({ repeat: -1, paused: true });
-  var time = 80;
-
-  infinite
-    .fromTo(
-      $list,
-      time,
-      { rotation: 0.01, x: 0 },
-      { force3D: true, x: -listWidth, ease: Linear.easeNone },
-      0
-    )
-    .fromTo(
-      $clonedList,
-      time,
-      { rotation: 0.01, x: listWidth },
-      { force3D: true, x: 0, ease: Linear.easeNone },
-      0
-    )
-    .set($list, { force3D: true, rotation: 0.01, x: listWidth })
-    .to(
-      $clonedList,
-      time,
-      { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone },
-      time
-    )
-    .to(
-      $list,
-      time,
-      { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone },
-      time
-    )
-    .progress(1)
-    .progress(0)
-    .play();
-});
-
-  class StickyHeader extends HTMLElement {
-    constructor() {
-      super();
-    }
-
-    connectedCallback() {
-      this.header = document.getElementById('shopify-section-header');
-      this.headerBounds = {};
-      this.currentScrollTop = 0;
-      this.preventReveal = false;
-      this.predictiveSearch = this.querySelector('predictive-search');
-
-      this.onScrollHandler = this.onScroll.bind(this);
-      this.hideHeaderOnScrollUp = () => this.preventReveal = true;
-
-      this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
-      window.addEventListener('scroll', this.onScrollHandler, false);
-
-      this.createObserver();
-    }
-
-    disconnectedCallback() {
-      this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
-      window.removeEventListener('scroll', this.onScrollHandler);
-    }
-
-    createObserver() {
-      let observer = new IntersectionObserver((entries, observer) => {
-        this.headerBounds = entries[0].intersectionRect;
-        observer.disconnect();
-      });
-
-      observer.observe(this.header);
-    }
-
-    onScroll() {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
-
-      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-        if (this.preventHide) return;
-        requestAnimationFrame(this.hide.bind(this));
-      } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-        if (!this.preventReveal) {
-          requestAnimationFrame(this.reveal.bind(this));
-        } else {
-          window.clearTimeout(this.isScrolling);
-
-          this.isScrolling = setTimeout(() => {
-            this.preventReveal = false;
-          }, 66);
-
-          requestAnimationFrame(this.hide.bind(this));
-        }
-      } else if (scrollTop <= this.headerBounds.top) {
-        requestAnimationFrame(this.reset.bind(this));
-      }
-
-      this.currentScrollTop = scrollTop;
-    }
-
-    hide() {
-      this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
-      this.closeMenuDisclosure();
-      this.closeSearchModal();
-    }
-
-    reveal() {
-      this.header.classList.add('shopify-section-header-sticky', 'animate');
-      this.header.classList.remove('shopify-section-header-hidden');
-    }
-
-    reset() {
-      this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
-    }
-
-    closeMenuDisclosure() {
-      this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
-      this.disclosures.forEach(disclosure => disclosure.close());
-    }
-
-    closeSearchModal() {
-      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
-    }
-  }
-
-  customElements.define('sticky-header', StickyHeader);
-{% endjavascript %}
+{% javascript %} $(document).ready(function () { window.scrollTo(0, 0); let
+idleTimer = null; let idleState = false; function showGrid(time) {
+clearTimeout(idleTimer); if (idleState == true) {
+$(".gridWrap").removeClass("hidden"); } idleState = false; idleTimer =
+setTimeout(function () { $(".gridWrap").addClass("hidden"); idleState = true; },
+time); } showGrid(800); $(window).mousemove(function () { showGrid(800); });
+$(window).scroll(function () { showGrid(800); }); var $tickerWrapper =
+$(".tickerwrapper"); var $list = $tickerWrapper.find("ul.list"); var $clonedList
+= $list.clone(); var listWidth = 10; $list.find("li").each(function (i) {
+listWidth += $(this, i).outerWidth(true); }); var endPos =
+$tickerWrapper.width() - listWidth; $list.add($clonedList).css({ width:
+listWidth + "px", }); $clonedList.addClass("cloned").appendTo($tickerWrapper);
+//TimelineMax var infinite = new TimelineMax({ repeat: -1, paused: true }); var
+time = 80; infinite .fromTo( $list, time, { rotation: 0.01, x: 0 }, { force3D:
+true, x: -listWidth, ease: Linear.easeNone }, 0 ) .fromTo( $clonedList, time, {
+rotation: 0.01, x: listWidth }, { force3D: true, x: 0, ease: Linear.easeNone },
+0 ) .set($list, { force3D: true, rotation: 0.01, x: listWidth }) .to(
+$clonedList, time, { force3D: true, rotation: 0.01, x: -listWidth, ease:
+Linear.easeNone }, time ) .to( $list, time, { force3D: true, rotation: 0.01, x:
+0, ease: Linear.easeNone }, time ) .progress(1) .progress(0) .play(); }); class
+StickyHeader extends HTMLElement { constructor() { super(); }
+connectedCallback() { this.header =
+document.getElementById('shopify-section-header'); this.headerBounds = {};
+this.currentScrollTop = 0; this.preventReveal = false; this.predictiveSearch =
+this.querySelector('predictive-search'); this.onScrollHandler =
+this.onScroll.bind(this); this.hideHeaderOnScrollUp = () => this.preventReveal =
+true; this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+window.addEventListener('scroll', this.onScrollHandler, false);
+this.createObserver(); } disconnectedCallback() {
+this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+window.removeEventListener('scroll', this.onScrollHandler); } createObserver() {
+let observer = new IntersectionObserver((entries, observer) => {
+this.headerBounds = entries[0].intersectionRect; observer.disconnect(); });
+observer.observe(this.header); } onScroll() { const scrollTop =
+window.pageYOffset || document.documentElement.scrollTop; if
+(this.predictiveSearch && this.predictiveSearch.isOpen) return; if (scrollTop >
+this.currentScrollTop && scrollTop > this.headerBounds.bottom) { if
+(this.preventHide) return; requestAnimationFrame(this.hide.bind(this)); } else
+if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+if (!this.preventReveal) { requestAnimationFrame(this.reveal.bind(this)); } else
+{ window.clearTimeout(this.isScrolling); this.isScrolling = setTimeout(() => {
+this.preventReveal = false; }, 66); requestAnimationFrame(this.hide.bind(this));
+} } else if (scrollTop <= this.headerBounds.top) {
+requestAnimationFrame(this.reset.bind(this)); } this.currentScrollTop =
+scrollTop; } hide() { this.header.classList.add('shopify-section-header-hidden',
+'shopify-section-header-sticky'); this.closeMenuDisclosure();
+this.closeSearchModal(); } reveal() {
+this.header.classList.add('shopify-section-header-sticky', 'animate');
+this.header.classList.remove('shopify-section-header-hidden'); } reset() {
+this.header.classList.remove('shopify-section-header-hidden',
+'shopify-section-header-sticky', 'animate'); } closeMenuDisclosure() {
+this.disclosures = this.disclosures ||
+this.header.querySelectorAll('header-menu'); this.disclosures.forEach(disclosure
+=> disclosure.close()); } closeSearchModal() { this.searchModal =
+this.searchModal || this.header.querySelector('details-modal');
+this.searchModal.close(false); } } customElements.define('sticky-header',
+StickyHeader); {% endjavascript %}
 
 <script type="application/ld+json">
   {
@@ -1289,142 +1173,56 @@ $(document).ready(function () {
   }
 </script>
 
-{%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {{ potential_action_target | json }},
-        "query-input": "required name=search_term_string"
-      },
-      "url": {{ request.origin | append: page.url | json }}
-    }
-  </script>
-{%- endif -%}
-
-{% schema %}
-{
-  "name": "t:sections.header.name",
-  "class": "section-header",
-  "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+{%- if request.page_type == 'index' -%} {% assign potential_action_target =
+request.origin | append: routes.search_url | append: "?q={search_term_string}"
+%}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": {{ shop.name | json }},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {{ potential_action_target | json }},
+      "query-input": "required name=search_term_string"
     },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "t:sections.header.settings.logo.label"
-    },
-    {
-      "type": "range",
-      "id": "logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.logo_width.unit",
-      "label": "t:sections.header.settings.logo_width.label"
-    },
-    {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "middle-left",
-          "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
-          "value": "top-left",
-          "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
-          "value": "top-center",
-          "label": "t:sections.header.settings.logo_position.options__3.label"
-        }
-      ],
-      "default": "middle-left",
-      "label": "t:sections.header.settings.logo_position.label",
-      "info": "t:sections.header.settings.logo_position.info"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    },
-    {
-      "type": "select",
-      "id": "menu_type_desktop",
-      "options": [
-        {
-          "value": "dropdown",
-          "label": "t:sections.header.settings.menu_type_desktop.options__1.label"
-        },
-        {
-          "value": "mega",
-          "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
-        }
-      ],
-      "default": "dropdown",
-      "label": "t:sections.header.settings.menu_type_desktop.label",
-      "info": "t:sections.header.settings.menu_type_desktop.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_line_separator",
-      "default": true,
-      "label": "t:sections.header.settings.show_line_separator.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_sticky_header",
-      "default": true,
-      "label": "t:sections.header.settings.enable_sticky_header.label",
-      "info": "t:sections.header.settings.enable_sticky_header.info"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.spacing"
-    },
-    {
-      "type": "range",
-      "id": "margin_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.header.settings.margin_bottom.label",
-      "default": 0
-    }
-  ]
-}
-{% endschema %}
+    "url": {{ request.origin | append: page.url | json }}
+  }
+</script>
+{%- endif -%} {% schema %} { "name": "t:sections.header.name", "class":
+"section-header", "settings": [ { "type": "select", "id": "color_scheme",
+"options": [ { "value": "accent-1", "label":
+"t:sections.all.colors.accent_1.label" }, { "value": "accent-2", "label":
+"t:sections.all.colors.accent_2.label" }, { "value": "background-1", "label":
+"t:sections.all.colors.background_1.label" }, { "value": "background-2",
+"label": "t:sections.all.colors.background_2.label" }, { "value": "inverse",
+"label": "t:sections.all.colors.inverse.label" } ], "default": "background-1",
+"label": "t:sections.all.colors.label" }, { "type": "image_picker", "id":
+"logo", "label": "t:sections.header.settings.logo.label" }, { "type": "range",
+"id": "logo_width", "min": 50, "max": 250, "step": 10, "default": 100, "unit":
+"t:sections.header.settings.logo_width.unit", "label":
+"t:sections.header.settings.logo_width.label" }, { "type": "select", "id":
+"logo_position", "options": [ { "value": "middle-left", "label":
+"t:sections.header.settings.logo_position.options__1.label" }, { "value":
+"top-left", "label": "t:sections.header.settings.logo_position.options__2.label"
+}, { "value": "top-center", "label":
+"t:sections.header.settings.logo_position.options__3.label" } ], "default":
+"middle-left", "label": "t:sections.header.settings.logo_position.label",
+"info": "t:sections.header.settings.logo_position.info" }, { "type":
+"link_list", "id": "menu", "default": "main-menu", "label":
+"t:sections.header.settings.menu.label" }, { "type": "select", "id":
+"menu_type_desktop", "options": [ { "value": "dropdown", "label":
+"t:sections.header.settings.menu_type_desktop.options__1.label" }, { "value":
+"mega", "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
+} ], "default": "dropdown", "label":
+"t:sections.header.settings.menu_type_desktop.label", "info":
+"t:sections.header.settings.menu_type_desktop.info" }, { "type": "checkbox",
+"id": "show_line_separator", "default": true, "label":
+"t:sections.header.settings.show_line_separator.label" }, { "type": "checkbox",
+"id": "enable_sticky_header", "default": true, "label":
+"t:sections.header.settings.enable_sticky_header.label", "info":
+"t:sections.header.settings.enable_sticky_header.info" }, { "type": "header",
+"content": "t:sections.all.spacing" }, { "type": "range", "id": "margin_bottom",
+"min": 0, "max": 100, "step": 4, "unit": "px", "label":
+"t:sections.header.settings.margin_bottom.label", "default": 0 } ] } {%
+endschema %}
