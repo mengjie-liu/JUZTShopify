@@ -1,8 +1,13 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js
+"></script>
+
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://use.typekit.net/ijv0kzx.css" />
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -19,6 +24,464 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+:root{
+    --unit:19.52vw;
+}
+
+@media only screen and (min-width: 1800px) {
+    body{
+        font-size: 18pt;
+    }
+  }
+@media only screen and (min-width:1280px) and (max-width: 1800px) {
+    body{
+        font-size: 12pt;
+    }
+  }
+@media only screen and (min-width:600px) and (max-width: 1280px) {
+    body{
+        font-size: 12pt;
+    }
+  }
+@media only screen and (max-width:600px) {
+    body{
+        font-size: 12pt;
+        /* width:100%;
+        overflow-x: hidden; */
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-rendering: optimizespeed;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
+    /* width: auto; */
+    background-color:white;
+}
+
+a{
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+.hoverEffect:hover::after{
+    position: absolute;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    width: 100%;
+    height: 30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+}
+
+.title{
+    /* font-family: roc-grotesk,sans-serif;
+    font-weight: 500; */
+    font-family: din-2014, sans-serif;
+font-weight: 600;
+    font-style: normal;
+font-size: 1.3em;
+text-transform:uppercase;
+line-height: 1.35;
+letter-spacing: 0.25px;
+z-index: 1002;
+}
+
+.text{
+    /* font-family: roc-grotesk,sans-serif;
+    font-weight: 300; */
+    font-family: din-2014, sans-serif;
+font-weight: 400;
+    font-style: normal;
+font-size: 1em;
+line-height: 1.35;
+letter-spacing: 0.5px;
+}
+
+.gridWrap{
+    position: fixed;
+    width: 100%;
+    left: 2.52em;
+    /* padding-left: 1vw; */
+    display: grid;
+        grid-template-columns: repeat(6, 19.52vw);
+        grid-template-rows: repeat(6, 19.52vw); 
+        column-gap: 0;
+        row-gap: 0;
+        z-index: 3000;
+    pointer-events:none;
+    transition: opacity 0.8s;
+top:0;
+}
+
+.cross::before,
+.cross::after {
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    content: '';
+    width: 1em;
+    height: 1px; /* cross thickness */
+    background-color: black;
+    margin-top: 0.5em;
+    margin-left: -1em;
+}
+
+.bigVd{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 2.02em;
+    padding-top:0.5em;
+    width: calc(var(--unit) * 5);
+    /* height: calc(var(--unit) * 3); */
+    height:calc(100vh - 0.5em);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+div::after {
+    transform: rotate(-90deg);
+}
+
+.info{
+    max-height: 1.25em;
+    padding-top: 0.5em;
+    /* position: absolute; */
+    /* top: 50%;
+    transform: translateY(-50%); */
+    color: white;
+    overflow: hidden;
+}
+
+.gridItem{
+    padding-top: 2.75em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
+.logo{
+    position: fixed;
+    left: 2.52em;
+    top:0;
+    max-width: 12vw;
+    z-index: 1010;
+}
+.logo img{
+    padding-top:0.25em;
+    padding-bottom:0.25em;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav{
+    position: fixed;
+    left:2.52em;
+    top:0;
+    margin-left: calc(var(--unit) * 4);
+    z-index: 1000;
+}
+
+.grass{
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.sayHi{
+    position: absolute;
+    /* left: 2.52em; */
+    left: -0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    top: calc(var(--unit) * 4);
+    width: var(--unit);
+    height: var(--unit);
+    /* transition: opacity 2s; */
+}
+.sayHiText{
+    margin-top: -1.45em;
+    max-width: 17.05vw;
+}
+#name{
+    -webkit-appearance: none;
+    margin-left: 0.2em;
+    border: none;
+    text-decoration: 1pt underline solid black;
+    outline: none;
+    text-align: left;
+    color: lime;
+    display:inline-block;
+    white-space:pre-wrap;
+    max-width: 100%;
+}
+#name[contenteditable]:empty::before {
+    content: "anon";
+    color: lime;
+}
+.clock{
+    position: absolute;
+    /* left: 2.52em; */
+    margin-left: -0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    top: calc(var(--unit) * 3);
+    left: calc(var(--unit) * 2);
+    width: var(--unit);
+    height: var(--unit);
+}
+.clockText, .buttonText, .colorText{
+    margin-top: -1.45em;
+}
+#clock{
+    position: absolute;
+    top: 1.3em;
+    right: 1em;
+}
+/* .button{
+    position: absolute;
+    margin-left: -0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    top: 19.52vw;
+    left: 78.08vw;
+    width: 19.52vw;
+    height: 19.52vw;
+} */
+/* .color{
+    position: absolute;
+    margin-left: -0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    top: 58.56vw;
+    left: 39.04vw;
+    width: 19.52vw;
+    height: 19.52vw;
+} */
+/* .colorBox{
+    position:relative;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-top: 0.3em;
+    margin-right: 0.4em;
+    cursor: pointer;
+}
+#green{
+    background-color: lime;
+}
+#red{
+    background-color: red;
+}
+#pink{
+    background-color: magenta;
+}
+#blue{
+    background-color: blue;
+}
+#black{
+    background-color: black;
+} */
+.hidden{
+    opacity: 0;
+}
+.contentWrap{
+    left: 2.52em;
+    position: relative;
+    height: 100vh;
+    width: fit-content;
+    margin-right: 0.5em;
+    z-index: 100;
+}
+.horizontal{
+    width: calc(var(--unit) * 2);
+    height: var(--unit);
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-left: -0.5em;
+
+}
+.vertical{
+    width: var(--unit);
+    height: calc(var(--unit) * 2);
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-left: -0.5em;
+
+
+}
+.single{
+    width: var(--unit);
+    height: var(--unit);
+        overflow: hidden;
+        margin-top: 0.5em;
+        margin-left: -0.5em;
+    
+}
+.imgWrap, .videoWrap{
+    position: absolute;
+}
+.imgContainer{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.videoContainer{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.imgContainer img{
+    position: absolute;
+    width: 39.04vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.videoContainer video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.videoContainer img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+#img1{
+    left: calc(var(--unit) * 3);
+    top: calc(var(--unit) * 5);
+}
+#img2{
+    left: calc(var(--unit) * 2);
+    top: calc(var(--unit) * 10);
+    /* height: calc(100vh - 39.04vw - 0.5em); */
+}
+#img3{
+    left: calc(var(--unit) * 1);
+    top: calc(var(--unit) * 7);
+}
+#vd1{
+    left: var(--unit);
+    top: calc(var(--unit) * 8);
+    /* height: calc(100vh - 39.04vw + 19.52vw - 0.5em); */
+}
+#vd2{
+    left: calc(var(--unit) * 2);
+    top: calc(var(--unit) * 4);
+}
+#vd3{
+    left: 0;
+    top: calc(var(--unit) * 5);
+}
+*, *::before, *::after{
+    -webkit-box-sizing:padding-box;
+    box-sizing:padding-box;
+  }
+  
+  .tickerwrapper {
+    /* the outer div */
+    position: fixed;
+    bottom: 0;
+    left:0;
+    /* border: 1px solid #444; */
+    background:black;
+    color:white;
+    width: 100%;
+    height: 1.7em;
+    overflow: hidden;
+    cursor: default;
+    z-index: 2000;
+  }
+  
+  ul.list {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+    padding-top: 0.325em;
+  }
+  
+  ul.list.cloned {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0.325em;
+  }
+  
+  ul.list li {
+    float: left;
+    padding-left: 1.5em;
+  }
+
+.policyEtc{
+    position: relative;
+    /* left: 2.52em; */
+    margin-left: -0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    top: calc(var(--unit) * 11);
+    left: 0;
+    height: calc(100vh - 39.04vw);    /* width: var(--unit);
+    height: var(--unit); */
+}
+.cs{
+    position: absolute;
+    left: 1.5em;
+    bottom:2.75em;
+    cursor: pointer;
+    /* padding-left:1em; */
+}
+.sr{
+    position: absolute;
+    left: calc(var(--unit) + 1.5em);
+    bottom:2.75em;
+    cursor: pointer;
+    /* padding-left:1em; */
+}
+.pp{
+    position: absolute;
+    left: calc(var(--unit) * 2 + 1.5em); 
+    bottom:2.75em;
+    cursor: pointer;
+    /* padding-left:1em; */
+ 
+}
+.tc{
+    position: absolute;
+    left: calc(var(--unit) * 3 + 1.5em); 
+    bottom:2.75em;
+    cursor: pointer;
+    /* padding-left:1em; */
+ 
+}
+.sm{
+    position: absolute;
+    left: calc(var(--unit) * 4 + 1.5em); 
+    bottom:2.75em;
+    cursor: pointer;
+    /* padding-left:1em; */
+ 
+}
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -95,7 +558,7 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<!-- <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -572,11 +1035,146 @@
       </a>
     </div>
   </header>
-</{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
+</{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}> -->
+
+<div class="gridWrap">
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+</div>
+<!-- <div class="gridItem logo">
+<a href="index.html">
+  <img id="en" src="asset/en.png" alt="" />
+  <img id="zh" src="asset/zh.png" alt="" />
+</a>
+</div> -->
+<div class="gridItem nav">
+<div class="title" id="shop">
+  <a href="shop.html" class="hoverEffect">shop</a>
+</div>
+<div class="title" id="about">
+  <a href="about.html" class="hoverEffect">about</a>
+</div>
+<div class="title" id="login">
+  <a href="login.html" class="hoverEffect">account</a>
+</div>
+<div class="title" id="cart">
+  <a href="cart.html" class="hoverEffect">cart(0)</a>
+</div>
+</div>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 
 {% javascript %}
+
+$(document).ready(function () {
+  window.scrollTo(0, 0);
+
+  let idleTimer = null;
+  let idleState = false;
+
+  function showGrid(time) {
+    clearTimeout(idleTimer);
+    if (idleState == true) {
+      $(".gridWrap").removeClass("hidden");
+    }
+    idleState = false;
+    idleTimer = setTimeout(function () {
+      $(".gridWrap").addClass("hidden");
+      idleState = true;
+    }, time);
+  }
+
+  showGrid(800);
+
+  $(window).mousemove(function () {
+    showGrid(800);
+  });
+  $(window).scroll(function () {
+    showGrid(800);
+  });
+
+  var $tickerWrapper = $(".tickerwrapper");
+  var $list = $tickerWrapper.find("ul.list");
+  var $clonedList = $list.clone();
+  var listWidth = 10;
+
+  $list.find("li").each(function (i) {
+    listWidth += $(this, i).outerWidth(true);
+  });
+
+  var endPos = $tickerWrapper.width() - listWidth;
+
+  $list.add($clonedList).css({
+    width: listWidth + "px",
+  });
+
+  $clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+  //TimelineMax
+  var infinite = new TimelineMax({ repeat: -1, paused: true });
+  var time = 80;
+
+  infinite
+    .fromTo(
+      $list,
+      time,
+      { rotation: 0.01, x: 0 },
+      { force3D: true, x: -listWidth, ease: Linear.easeNone },
+      0
+    )
+    .fromTo(
+      $clonedList,
+      time,
+      { rotation: 0.01, x: listWidth },
+      { force3D: true, x: 0, ease: Linear.easeNone },
+      0
+    )
+    .set($list, { force3D: true, rotation: 0.01, x: listWidth })
+    .to(
+      $clonedList,
+      time,
+      { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone },
+      time
+    )
+    .to(
+      $list,
+      time,
+      { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone },
+      time
+    )
+    .progress(1)
+    .progress(0)
+    .play();
+});
+
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
