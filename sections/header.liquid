@@ -19,6 +19,64 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-rendering: optimizespeed;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
+    /* width: auto; */
+    background-color:white;
+}
+
+.hoverEffect:hover::after{
+    position: absolute;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    width: 100%;
+    height: 30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+}
+
+.title{
+    /* font-family: roc-grotesk,sans-serif;
+    font-weight: 500; */
+    font-family: din-2014, sans-serif;
+font-weight: 600;
+    font-style: normal;
+font-size: 1.3em;
+text-transform:uppercase;
+line-height: 1.35;
+letter-spacing: 0.25px;
+z-index: 1002;
+}
+
+.text{
+    /* font-family: roc-grotesk,sans-serif;
+    font-weight: 300; */
+    font-family: din-2014, sans-serif;
+font-weight: 400;
+    font-style: normal;
+font-size: 1em;
+line-height: 1.35;
+letter-spacing: 0.5px;
+}
+
 .gridItem {
     padding-top: 2.75em;
     padding-left: 1em;
@@ -363,7 +421,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+            <span class="header__heading title">{{ shop.name }}</span>
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
@@ -373,7 +431,7 @@
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="gridItem header__inline-menu">
-          <ul class="list-menu list-menu--inline" role="list">
+          <ul class="list-menu list-menu--inline title" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -423,7 +481,7 @@
         </nav>
       {%- else -%}
         <nav class="gridItem header__inline-menu">
-          <ul class="list-menu list-menu--inline" role="list">
+          <ul class="list-menu list-menu--inline title" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
