@@ -82,6 +82,35 @@ line-height: 1.35;
 letter-spacing: 0.5px;
 }
 
+.gridWrap{
+    position: fixed;
+    width: 100%;
+    left: 4.85rem;
+    /* padding-left: 1vw; */
+    display: grid;
+        grid-template-columns: repeat(6, var(--unit));
+        grid-template-rows: repeat(6, var(--unit)); 
+        column-gap: 0;
+        row-gap: 0;
+        z-index: 1030;
+    pointer-events:none;
+    transition: opacity 0.8s;
+top:0;
+}
+
+.cross::before,
+.cross::after {
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    content: '';
+    width: 2rem;
+    height: 1px; /* cross thickness */
+    background-color: black;
+    margin-top: 1rem;
+    margin-left: -2rem;
+}
+
+
 .gridItem {
     padding-top: 2.75em;
     padding-left: 1em;
@@ -640,6 +669,41 @@ letter-spacing: 0.5px;
         {%- endif -%}
       </a>
     </div>
+
+
+    <div class="gridWrap">
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+      <div class="cross"></div>
+
+
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
