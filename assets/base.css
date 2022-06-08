@@ -2262,7 +2262,7 @@ input[type='checkbox'] {
   max-width: 12vw;
   z-index: 1010;
   margin:0;
-  padding-top:1rem;
+  padding-top:1.5rem;
 }
 
 .header > .header__heading-link {
