@@ -2254,7 +2254,7 @@ input[type='checkbox'] {
 
 .header__heading {
   position: fixed;
-  left: 2.52em;
+  left: 4.85rem;
   top: 0;
   max-width: 12vw;
   z-index: 1010;
