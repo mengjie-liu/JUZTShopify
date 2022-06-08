@@ -2594,7 +2594,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  /* padding: 1.2rem; */
+  padding: 0.5rem;
   text-decoration: none;
   color: black;
 }
