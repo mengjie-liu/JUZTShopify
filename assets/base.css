@@ -2555,7 +2555,7 @@ details[open] > .header__submenu {
 .header__inline-menu {
   position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 3 + 4.85rem);
+  left:calc(var(--unit) * 4 + 4.85rem);
   /* grid-area: navigation; */
   display: none;
 }
