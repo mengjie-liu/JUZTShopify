@@ -2253,8 +2253,11 @@ input[type='checkbox'] {
 }
 
 .header__heading {
-  margin: 0;
-  line-height: 0;
+  position: fixed;
+  left: 2.52em;
+  top: 0;
+  max-width: 12vw;
+  z-index: 1010;
 }
 
 .header > .header__heading-link {
