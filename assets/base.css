@@ -2262,6 +2262,7 @@ input[type='checkbox'] {
   max-width: 12vw;
   z-index: 1010;
   margin:0;
+  padding-top:0.25em;
 }
 
 .header > .header__heading-link {
@@ -2293,6 +2294,7 @@ input[type='checkbox'] {
 .header__heading-logo {
   height: auto;
   width: 100%;
+  /* padding-top:0.25em; */
 }
 
 @media screen and (max-width: 989px) {
