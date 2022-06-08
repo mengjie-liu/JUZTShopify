@@ -2556,6 +2556,7 @@ details[open] > .header__submenu {
   position:fixed;
   /* margin-left: -1.2rem; */
   left:calc(var(--unit) * 4 + 4.85rem);
+  top:0;
   /* grid-area: navigation; */
   display: none;
 }
@@ -2568,6 +2569,10 @@ details[open] > .header__submenu {
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
+    position:fixed;
+  /* margin-left: -1.2rem; */
+  left:calc(var(--unit) * 4 + 4.85rem);
+  top:0;
   }
 
   .header--top-center .header__inline-menu {
