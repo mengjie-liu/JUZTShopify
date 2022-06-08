@@ -1,24 +1,22 @@
 /* Color custom properties */
 
-
-
 :root,
 .color-background-1 {
-  --color-foreground: black;
+  --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
 
 .color-background-2 {
-  --color-foreground: black;
+  --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-2);
   --gradient-background: var(--gradient-base-background-2);
 }
 
 .color-inverse {
   --color-foreground: var(--color-base-background-1);
-  --color-background: black;
-  --gradient-background: rgb(black);
+  --color-background: var(--color-base-text);
+  --gradient-background: rgb(var(--color-base-text));
 }
 
 .color-accent-1 {
@@ -128,7 +126,7 @@
 :root,
 .color-background-1,
 .color-background-2 {
-  --color-card-hover: black;
+  --color-card-hover: var(--color-base-text);
 }
 
 .color-inverse {
@@ -142,7 +140,7 @@
 
 :root,
 .color-icon-text {
-  --color-icon: rgb(black);
+  --color-icon: rgb(var(--color-base-text));
 }
 
 .color-icon-accent-1 {
@@ -574,7 +572,7 @@ table:not([class]) th {
 a:empty,
 ul:empty,
 dl:empty,
-/* div:empty, */
+div:empty,
 section:empty,
 article:empty,
 p:empty,
@@ -859,10 +857,10 @@ summary::-webkit-details-marker {
 }
 
 /* component-title */
-/* .title,
+.title,
 .title-wrapper-with-link {
   margin: 3rem 0 2rem;
-} */
+}
 
 .title-wrapper-with-link .title {
   margin: 0;
@@ -903,10 +901,10 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 990px) {
-  /* .title,
+  .title,
   .title-wrapper-with-link {
     margin: 5rem 0 3rem;
-  } */
+  }
 
   .title--primary {
     margin: 2rem 0;
@@ -1279,7 +1277,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .cart__dynamic-checkout-buttons iframe {
-  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(black, var(--shadow-opacity));
+  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-base-text), var(--shadow-opacity));
 }
 
 .button,
@@ -1515,7 +1513,7 @@ details[open] > .share-button__fallback {
   bottom: 0;
   left: 0;
   border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(black, var(--inputs-shadow-opacity));
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -1652,7 +1650,7 @@ details[open] > .share-button__fallback {
   bottom: 0;
   left: 0;
   border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(black, var(--inputs-shadow-opacity));
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -1959,7 +1957,7 @@ input[type='checkbox'] {
   bottom: 0;
   left: 0;
   border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(black, var(--inputs-shadow-opacity));
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 

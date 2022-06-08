@@ -6,11 +6,6 @@
 <link rel="stylesheet" href="{{ 'component-list-social.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="https://use.typekit.net/ijv0kzx.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js
-"></script>
-
 
 <noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
@@ -20,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  <!-- .footer {
+  .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
 
@@ -38,84 +33,12 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  } -->
+  }
 {%- endstyle -%}
 
-<style>
-  .tickerwrapper {
-    /* the outer div */
-    position: fixed;
-    bottom: 0;
-    left:0;
-    /* border: 1px solid #444; */
-    background:black;
-    color:white;
-    width: 100%;
-    height: 1.7em;
-    overflow: hidden;
-    cursor: default;
-    z-index: 2000;
-  }
-  
-  ul.list {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-    padding-top: 0.325em;
-  }
-  
-  ul.list.cloned {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 0.325em;
-  }
-  
-  ul.list li {
-    float: left;
-    padding-left: 1.5em;
-  }
-</style>
-
-<footer class="footer">
-  <div class="tickerwrapper">
-    <ul class="list">
-      <li class="listitem">
-        <span class="text"
-          >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.</span
-        >
-      </li>
-      <li class="listitem">
-        <span class="text"
-          >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.</span
-        >
-      </li>
-      <li class="listitem">
-        <span class="text"
-          >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.</span
-        >
-      </li>
-      <li class="listitem">
-        <span class="text"
-          >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.</span
-        >
-      </li>
-    </ul>
-  </div>
-
-
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="hidden footer__content-top page-width">
+    <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
@@ -173,7 +96,7 @@
         </div>
       {%- endif -%}
 
-      <div class="hidden footer-block--newsletter">
+      <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
@@ -301,7 +224,7 @@
     </div>
   {%- endif -%}
 
-  <div class="hidden footer__content-bottom">
+  <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -416,64 +339,6 @@
 </footer>
 
 {% javascript %}
-$(document).ready(function () {
-
-  var $tickerWrapper = $(".tickerwrapper");
-  var $list = $tickerWrapper.find("ul.list");
-  var $clonedList = $list.clone();
-  var listWidth = 10;
-
-  $list.find("li").each(function (i) {
-    listWidth += $(this, i).outerWidth(true);
-  });
-
-  var endPos = $tickerWrapper.width() - listWidth;
-
-  $list.add($clonedList).css({
-    width: listWidth + "px",
-  });
-
-  $clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-  //TimelineMax
-  var infinite = new TimelineMax({ repeat: -1, paused: true });
-  var time = 80;
-
-  infinite
-    .fromTo(
-      $list,
-      time,
-      { rotation: 0.01, x: 0 },
-      { force3D: true, x: -listWidth, ease: Linear.easeNone },
-      0
-    )
-    .fromTo(
-      $clonedList,
-      time,
-      { rotation: 0.01, x: listWidth },
-      { force3D: true, x: 0, ease: Linear.easeNone },
-      0
-    )
-    .set($list, { force3D: true, rotation: 0.01, x: listWidth })
-    .to(
-      $clonedList,
-      time,
-      { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone },
-      time
-    )
-    .to(
-      $list,
-      time,
-      { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone },
-      time
-    )
-    .progress(1)
-    .progress(0)
-    .play();
-});
-
-
-
   class LocalizationForm extends HTMLElement {
     constructor() {
       super();
