@@ -26,6 +26,8 @@
   border: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity)); */
   position: relative;
   box-sizing: border-box;
+  height:var(--unit);
+  overflow: hidden;
 }
 
 .card--card:after,
