@@ -971,13 +971,13 @@ summary::-webkit-details-marker {
 
 /* component-grid */
 .grid {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
   column-gap: var(--grid-mobile-horizontal-spacing);
-  row-gap: var(--grid-mobile-vertical-spacing);
+  row-gap: var(--grid-mobile-vertical-spacing); */
 }
 
 @media screen and (min-width: 750px) {
@@ -1103,9 +1103,11 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 990px) {
   .grid--1-col-desktop {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+    position:relative;
+    width: calc(var(--unit) * 2);
+    left:calc(var(--unit) * 2 + 4.5rem);
+    height: calc(var(--unit) + 100vh - var(--unit) * 2);
+    }
 
   .grid--1-col-desktop .grid__item {
     width: 100%;
