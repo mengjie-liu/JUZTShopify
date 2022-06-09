@@ -16,8 +16,10 @@
   /* height: 100%; */
   height:var(--unit);
   overflow: hidden;
+  width: calc(var(--unit) - 0.8rem);
   margin-left:-0.8rem;
   margin-top:0.8rem;
+  overflow: hidden;
 }
 
 .card--card {

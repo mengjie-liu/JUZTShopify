@@ -2276,7 +2276,7 @@ input[type='checkbox'] {
   /* max-width: 12vw; */
   z-index: 1010;
   margin:0;
-  margin-top:1rem;
+  margin-top:0.8rem;
 }
 
 .header > .header__heading-link {
@@ -2287,7 +2287,7 @@ input[type='checkbox'] {
   /* max-width: 12vw; */
   z-index: 1010;
   margin:0;
-  margin-top:1rem;
+  margin-top:0.8rem;
 }
 
 .header__heading,
@@ -2307,7 +2307,7 @@ input[type='checkbox'] {
   /* max-width: 12vw; */
   z-index: 1010;
   margin:0;
-  margin-top:1rem;
+  margin-top:0.8rem;
 }
 
 .header__heading-link:hover .h2 {
