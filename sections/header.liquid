@@ -721,11 +721,11 @@ top:0;
   function showGrid(time) {
     clearTimeout(idleTimer);
     if (idleState == true) {
-      $(".gridWrap").removeClass("hidden");
+      $(".gridWrap").css("opacity",1);
     }
     idleState = false;
     idleTimer = setTimeout(function () {
-      $(".gridWrap").addClass("hidden");
+      $(".gridWrap").css("opacity",0);
       idleState = true;
     }, time);
   }
