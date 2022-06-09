@@ -165,13 +165,13 @@ ul, li, a{
 
 .contains-card,
 .card {
-  --border-radius: var(--card-corner-radius);
+  /* --border-radius: var(--card-corner-radius);
   --border-width: var(--card-border-width);
   --border-opacity: var(--card-border-opacity);
   --shadow-horizontal-offset: var(--card-shadow-horizontal-offset);
   --shadow-vertical-offset: var(--card-shadow-vertical-offset);
   --shadow-blur-radius: var(--card-shadow-blur-radius);
-  --shadow-opacity: var(--card-shadow-opacity);
+  --shadow-opacity: var(--card-shadow-opacity); */
 }
 
 .contains-content-container,
