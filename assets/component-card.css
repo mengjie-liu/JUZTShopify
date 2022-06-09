@@ -11,9 +11,11 @@
 }
 
 .card:not(.ratio) {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* height: 100%; */
+  height:var(--unit);
+  overflow: hidden;
 }
 
 .card--card {
@@ -26,8 +28,6 @@
   border: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity)); */
   position: relative;
   box-sizing: border-box;
-  height:var(--unit);
-  overflow: hidden;
 }
 
 .card--card:after,
