@@ -1103,15 +1103,13 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 990px) {
   .grid--1-col-desktop {
-    /* position:relative; */
-    width: calc(var(--unit) * 2);
-    /* left:calc(var(--unit) * 2 + 4.5rem); */
-    height: calc(var(--unit) + 100vh - var(--unit) * 2);
-    }
+    /* flex: 0 0 100%;
+    max-width: 100%; */
+  }
 
   .grid--1-col-desktop .grid__item {
-    width: 100%;
-    max-width: 100%;
+    width: calc(var(--unit) * 2);
+    height: calc(var(--unit) + 100vh - var(--unit) * 2);  
   }
 }
 
