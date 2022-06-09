@@ -82,6 +82,7 @@
   /* margin: var(--card-image-padding);
   width: calc(100% - 2 * var(--card-image-padding)); */
   width:100%;
+  height:var(--unit);
 }
 
 .card--standard .card__media {
