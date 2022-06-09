@@ -999,7 +999,7 @@ summary::-webkit-details-marker {
 .grid__item {
   position:relative;
   /* width: calc(var(--unit) * 2); */
-  left:calc(var(--unit) * 2 + 4.5rem);
+  left:calc(var(--unit) * 2 + 4rem);
   padding-top: var(--unit);
   /* height: calc(var(--unit)); */
   /* max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2); */
@@ -2586,7 +2586,7 @@ details[open] > .header__submenu {
 .header__inline-menu {
   position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 4 + 4.5rem);
+  left:calc(var(--unit) * 4 + 4rem);
   top:0;
   /* grid-area: navigation; */
   display: none;
@@ -2602,7 +2602,7 @@ details[open] > .header__submenu {
     display: block;
     position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 4 + 4.5rem);
+  left:calc(var(--unit) * 4 + 4rem);
   top:0;
   }
 
