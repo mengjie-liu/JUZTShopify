@@ -1,3 +1,7 @@
+ul, li, a{
+  text-decoration: none;
+}
+
 /* Color custom properties */
 :root{
   --unit:19.52vw;
