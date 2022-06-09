@@ -445,7 +445,7 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% section 'announcement-bar' %} {% section 'header' %}
+    {% section 'header' %}
     <main
       id="MainContent"
       class="content-for-layout focus-none"
@@ -455,7 +455,8 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+    {% section 'announcement-bar' %}
+    <!-- {% section 'footer' %} -->
 
     <ul hidden>
       <li id="a11y-refresh-page-message">
