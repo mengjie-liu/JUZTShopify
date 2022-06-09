@@ -2271,29 +2271,43 @@ input[type='checkbox'] {
 }
 
 .header > .header__heading-link {
-  line-height: 0;
+  /* line-height: 0; */
+  position: fixed;
+  left: 4.75rem;
+  top: 0;
+  /* max-width: 12vw; */
+  z-index: 1010;
+  margin:0;
+  margin-top:1rem;
 }
 
 .header__heading,
 .header__heading-link {
-  grid-area: heading;
-  justify-self: center;
+  /* grid-area: heading;
+  justify-self: center; */
 }
 
 .header__heading-link {
-  display: inline-block;
+  /* display: inline-block; */
   /* padding: 0.75rem; */
-  text-decoration: none;
-  word-break: break-word;
+  /* text-decoration: none;
+  word-break: break-word; */
+  position: fixed;
+  left: 4.75rem;
+  top: 0;
+  /* max-width: 12vw; */
+  z-index: 1010;
+  margin:0;
+  margin-top:1rem;
 }
 
 .header__heading-link:hover .h2 {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .header__heading-link .h2 {
-  line-height: 1;
-  color: rgba(var(--color-foreground), 0.75);
+  /* line-height: 1;
+  color: rgba(var(--color-foreground), 0.75); */
 }
 
 .header__heading-logo {
