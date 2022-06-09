@@ -16,8 +16,8 @@
   /* height: 100%; */
   height:var(--unit);
   overflow: hidden;
-  margin-left:-0.7rem;
-  margin-top:-0.7rem;
+  margin-left:-0.9rem;
+  margin-top:0.9rem;
 }
 
 .card--card {
