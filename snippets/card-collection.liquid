@@ -60,7 +60,7 @@
         </div>
       {%- endif -%}
       <div class="gridItem card__content">        
-        <div class="card__information">
+        <div class="card__information text">
           <h3 class="card__heading title">
             <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
               {%- if card_collection.title != blank -%}
@@ -81,7 +81,7 @@
     </div>
     {% if settings.card_style == 'card' or card_collection.featured_image %} 
       <div class="gridItem card__content">
-        <div class="card__information">
+        <div class="card__information text">
           <h3 class="card__heading title">
             <a href="{{ card_collection.url }}" class="full-unstyled-link">
               {%- if card_collection.title != blank -%}
