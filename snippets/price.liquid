@@ -13,6 +13,32 @@ money_price = price | money if settings.currency_code_enabled assign money_price
 product.price_varies assign money_price =
 'products.product.price.from_price_html' | t: price: money_price endif -%}
 
+<style>
+  .title {
+    /* font-family: roc-grotesk,sans-serif;
+  font-weight: 500; */
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    line-height: 1.35;
+    letter-spacing: 0.25px;
+    z-index: 1002;
+  }
+
+  .text {
+    /* font-family: roc-grotesk,sans-serif;
+  font-weight: 300; */
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.35;
+    letter-spacing: 0.5px;
+  }
+</style>
+
 <div
   class="text price{%- if price_class %} {{
     price_class
