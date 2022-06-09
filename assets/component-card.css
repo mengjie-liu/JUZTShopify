@@ -15,11 +15,10 @@
   flex-direction: column; */
   /* height: 100%; */
   height:var(--unit);
-  overflow: hidden;
+  /* overflow: hidden; */
   width: calc(var(--unit) * 2);
   margin-left:-0.8rem;
   margin-top:0.8rem;
-  overflow: hidden;
 }
 
 .card--card {
@@ -269,13 +268,13 @@
 
 .card--extend-height.card--standard.card--text,
 .card--extend-height.card--media {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .card--extend-height.card--standard.card--text .card__inner,
 .card--extend-height.card--media .card__inner {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .card .icon-wrap {
