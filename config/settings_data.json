@@ -103,7 +103,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "This is an announcement",
+              "text": "This is an announcement.",
               "color_scheme": "background-1",
               "link": ""
             }
