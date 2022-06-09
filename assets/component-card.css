@@ -17,6 +17,8 @@
   height:var(--unit);
   /* overflow: hidden; */
   width: calc(var(--unit) * 2);
+  margin-left:-0.8rem;
+  margin-top:0.8rem;
 }
 
 .card--card {
@@ -268,8 +270,6 @@
 
 .card--extend-height.card--standard.card--text,
 .card--extend-height.card--media {
-  margin-left:-0.8rem;
-  margin-top:0.8rem;
   /* display: flex;
   flex-direction: column; */
 }
