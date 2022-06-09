@@ -2257,7 +2257,7 @@ input[type='checkbox'] {
 
 .header__heading {
   position: fixed;
-  left: 4.85rem;
+  left: 4.5rem;
   top: 0;
   max-width: 12vw;
   z-index: 1010;
@@ -2558,7 +2558,7 @@ details[open] > .header__submenu {
 .header__inline-menu {
   position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 4 + 4.85rem);
+  left:calc(var(--unit) * 4 + 4.5rem);
   top:0;
   /* grid-area: navigation; */
   display: none;
@@ -2574,7 +2574,7 @@ details[open] > .header__submenu {
     display: block;
     position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 4 + 4.85rem);
+  left:calc(var(--unit) * 4 + 4.5rem);
   top:0;
   }
 
