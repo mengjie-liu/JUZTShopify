@@ -23,36 +23,6 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-<script>
-  $(document).ready(function () {
-  window.scrollTo(0, 0);
-
-  let idleTimer = null;
-  let idleState = false;
-
-  function showGrid(time) {
-    clearTimeout(idleTimer);
-    if (idleState == true) {
-      $(".gridWrap").removeClass("hidden");
-    }
-    idleState = false;
-    idleTimer = setTimeout(function () {
-      $(".gridWrap").addClass("hidden");
-      idleState = true;
-    }, time);
-  }
-
-  showGrid(800);
-
-  $(window).mousemove(function () {
-    showGrid(800);
-  });
-  $(window).scroll(function () {
-    showGrid(800);
-  });
-});
-</script>
-
 <style>
 *{
     margin: 0;
@@ -740,6 +710,36 @@ top:0;
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+
+<script>
+  $(document).ready(function () {
+  window.scrollTo(0, 0);
+
+  let idleTimer = null;
+  let idleState = false;
+
+  function showGrid(time) {
+    clearTimeout(idleTimer);
+    if (idleState == true) {
+      $(".gridWrap").removeClass("hidden");
+    }
+    idleState = false;
+    idleTimer = setTimeout(function () {
+      $(".gridWrap").addClass("hidden");
+      idleState = true;
+    }, time);
+  }
+
+  showGrid(800);
+
+  $(window).mousemove(function () {
+    showGrid(800);
+  });
+  $(window).scroll(function () {
+    showGrid(800);
+  });
+});
+</script>
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
