@@ -2257,12 +2257,12 @@ input[type='checkbox'] {
 
 .header__heading {
   position: fixed;
-  left: 4.5rem;
+  left: 4.75rem;
   top: 0;
   max-width: 12vw;
   z-index: 1010;
   margin:0;
-  margin-top:1.5rem;
+  margin-top:1.25rem;
 }
 
 .header > .header__heading-link {
@@ -2574,7 +2574,7 @@ details[open] > .header__submenu {
     display: block;
     position:fixed;
   /* margin-left: -1.2rem; */
-  left:calc(var(--unit) * 4 + 4.75rem);
+  left:calc(var(--unit) * 4 + 4.5rem);
   top:0;
   }
 
