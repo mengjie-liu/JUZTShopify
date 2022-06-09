@@ -1114,7 +1114,7 @@ summary::-webkit-details-marker {
 
   .grid--1-col-desktop .grid__item {
     width: calc(var(--unit) * 2);
-    height: calc(var(--unit));  
+    height: calc(var(--unit) + 100vh - var(--unit) * 2);  
   }
 }
 
