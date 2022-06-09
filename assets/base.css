@@ -2919,3 +2919,9 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+
+.gridItem {
+  padding-top: 4.3rem;
+  padding-left: 1.35rem;
+  padding-right: 0.8rem;
+}
