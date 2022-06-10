@@ -412,7 +412,7 @@ top:0;
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="header__heading title">{{ shop.name }}</span>
+            <span class="header__heading bigTitle">{{ shop.name }}</span>
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
@@ -422,7 +422,7 @@ top:0;
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="gridItem header__inline-menu">
-          <ul class="list-menu list-menu--inline title" role="list">
+          <ul class="list-menu list-menu--inline bigTitle" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -472,7 +472,7 @@ top:0;
         </nav>
       {%- else -%}
         <nav class="gridItem header__inline-menu">
-          <ul class="list-menu list-menu--inline title" role="list">
+          <ul class="list-menu list-menu--inline bigTitle" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}

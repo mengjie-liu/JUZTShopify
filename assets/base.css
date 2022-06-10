@@ -916,7 +916,7 @@ summary::-webkit-details-marker {
   text-align: center;
 }
 
-.title{
+.bigTitle{
   /* font-family: roc-grotesk,sans-serif;
   font-weight: 500; */
   font-family: din-2014, sans-serif;
@@ -929,7 +929,7 @@ letter-spacing: 0.25px;
 z-index: 1002;
 }
 
-.text{
+.smallText{
   /* font-family: roc-grotesk,sans-serif;
   font-weight: 300; */
   font-family: din-2014, sans-serif;
