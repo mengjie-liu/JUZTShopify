@@ -600,6 +600,8 @@ a.product__text {
     position: relative;
     top: var(--unit);
     left:var(--unit);
+    padding-left:4rem;
+    padding-top:0.8rem;
     width: calc(var(--unit) * 3);
   }
 
