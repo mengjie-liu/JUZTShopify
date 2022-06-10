@@ -13,7 +13,7 @@ assign ratio = 1 endif -%}
   <div
     class="card
     card--{{ settings.card_style }}
-    {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
+    card--text
     {% if settings.card_style == 'card' %} color-{{
       settings.card_color_scheme
     }} gradient{% endif %}
@@ -87,6 +87,7 @@ assign ratio = 1 endif -%}
         card_collection.description != blank -%}
         <p class="card__caption">
           {{- card_collection.description | strip_html | truncatewords: 12 -
+
           }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
         </p>
         {%- endif -%}
