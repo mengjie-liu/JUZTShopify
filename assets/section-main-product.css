@@ -162,6 +162,7 @@
   position: absolute;
   top: 0;
   left: calc(var(--unit)*4);
+  padding-left: 15rem;
 }
 
 variant-radios,
