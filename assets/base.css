@@ -1371,7 +1371,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
-  content: '';
+  content: none;
   position: absolute;
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
@@ -1541,7 +1541,7 @@ details[open] > .share-button__fallback {
 
 .share-button__fallback:after {
   pointer-events: none;
-  content: '';
+  content: none;
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1711,7 +1711,7 @@ details[open] > .share-button__fallback {
 .customer select:after,
 .localization-form__select:after {
   pointer-events: none;
-  content: '';
+  content: none;
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1985,7 +1985,7 @@ input[type='checkbox'] {
 
 .quantity:after {
   pointer-events: none;
-  content: '';
+  content: none;
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -2508,7 +2508,7 @@ details[open] .modal-overlay {
 
 details[open] .modal-overlay::after {
   position: absolute;
-  content: '';
+  content: none;
   background-color: rgb(var(--color-foreground), 0.5);
   top: 100%;
   left: 0;
@@ -2837,7 +2837,7 @@ details-disclosure > details {
 }
 
 .content-container:after {
-  content: '';
+  content: none;
   position: absolute;
   top: calc(var(--text-boxes-border-width) * -1);
   right: calc(var(--text-boxes-border-width) * -1);
@@ -2877,7 +2877,7 @@ details-disclosure > details {
 }
 
 .global-media-settings:after {
-  content: '';
+  content: none;
   position: absolute;
   top: calc(var(--media-border-width) * -1);
   right: calc(var(--media-border-width) * -1);

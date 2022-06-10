@@ -118,7 +118,7 @@
 .collage-card:after {
   border-radius: var(--card-corner-radius);
   box-shadow: var(--card-shadow-horizontal-offset) var(--card-shadow-vertical-offset) var(--card-shadow-blur-radius) rgba(var(--color-shadow), var(--card-shadow-opacity));
-  content: '';
+  content: none;
   position: absolute;
   width: calc(var(--card-border-width) * 2 + 100%);
   height: calc(var(--card-border-width) * 2 + 100%);
@@ -149,7 +149,7 @@
 }
 
 .collage-card .deferred-media__poster:after {
-  content: "";
+  content: none;
   position: absolute;
   z-index: 1;
   bottom: calc(var(--card-border-width) * -1);
