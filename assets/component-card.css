@@ -39,6 +39,12 @@
   margin-top:0.8rem;
 }
 
+.sub__card .card__inner{
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+
 .card--card:after,
 .card--standard .card__inner:after {
   content: '';
