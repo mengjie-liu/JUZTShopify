@@ -1343,12 +1343,18 @@ button.shopify-payment-button__button--unbranded {
 .button,
 .shopify-challenge__button,
 .customer button {
-  display: inline-flex;
+  cursor: pointer;
+  background: none;
+	color: black;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: none;
+  /* display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0;
   padding: 0 3rem;
-  cursor: pointer;
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
@@ -1356,7 +1362,7 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: rgba(var(--color-button), var(--alpha-button-background)); */
 }
 
 .button:before,
@@ -1464,8 +1470,8 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button--full-width {
-  display: flex;
-  width: 100%;
+  /* display: flex; */
+  width: fit-content;
 }
 
 .button.loading {
