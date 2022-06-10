@@ -68,7 +68,7 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
         columns = 3 endif -%} {%- for block in section.blocks -%}
         <li
           id="Slide-{{ section.id }}-{{ forloop.index }}"
-          class="collection-list__item sub__grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
+          class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
           {{
           block.shopify_attributes
           }}
