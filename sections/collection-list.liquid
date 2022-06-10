@@ -30,7 +30,7 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
 
 <div class="color-{{ section.settings.color_scheme }}">
   <div
-    class="gridItem collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{
+    class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{
       section.id
     }}-padding"
   >
@@ -54,7 +54,7 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
 
     <slider-component class="slider-mobile-gutter">
       <ul
-        class="collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{
+        class="gridItem collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{
           section.settings.columns_desktop
         }}-col-desktop grid--{{
           section.settings.columns_mobile
