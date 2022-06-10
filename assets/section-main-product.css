@@ -265,7 +265,10 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__submit {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  position: absolute;
+    left: calc(var(--unit)*4);
+    top: 0;
 }
 
 .no-js .product-form__submit.button--secondary {
