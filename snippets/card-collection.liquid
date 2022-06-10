@@ -24,7 +24,7 @@
 -%}
 
 <div class="card-wrapper animate-arrow">
-  <!-- <div class="card
+  <div class="card
     card--{{ settings.card_style }}
     {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
     {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -58,7 +58,7 @@
             >
           </div>
         </div>
-      {%- endif -%} -->
+      {%- endif -%}
       <div class="card__content">        
         <div class="card__information text">
           <h3 class="card__heading title">
@@ -78,7 +78,7 @@
           {%- endif -%}
         </div>   
       </div>
-    <!-- </div> -->
+    </div>
     {% if settings.card_style == 'card' or card_collection.featured_image %} 
       <div class="card__content">
         <div class="card__information text">
