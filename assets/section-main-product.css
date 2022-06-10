@@ -59,8 +59,8 @@
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2); */
     width: var(--unit);
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 4rem;
+    top: var(--unit);
   }
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
