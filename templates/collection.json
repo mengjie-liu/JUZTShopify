@@ -33,26 +33,19 @@
         "16548331276bf98a7c-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "juzt-drink"
           }
         },
         "16548331276bf98a7c-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "16548331276bf98a7c-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "other-series"
           }
         }
       },
       "block_order": [
         "16548331276bf98a7c-0",
-        "16548331276bf98a7c-1",
-        "16548331276bf98a7c-2"
+        "16548331276bf98a7c-1"
       ],
       "settings": {
         "title": "",
