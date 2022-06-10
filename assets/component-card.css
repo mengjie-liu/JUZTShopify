@@ -21,6 +21,7 @@
 }
 
 .sub__card{
+  height: auto !important;
   width: var(--unit) !important;
 }
 
