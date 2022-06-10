@@ -26,7 +26,7 @@
 <div class="card-wrapper animate-arrow">
   <div class="card
     card--{{ settings.card_style }}
-    {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
+    card--text
     {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
     {% if extend_height %} card--extend-height{% endif %}
     {% if card_collection.featured_image == nil and settings.card_style == 'card' %} ratio{% endif %}"
