@@ -67,7 +67,7 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
         {%- liquid assign columns = section.blocks.size if columns > 3 assign
         columns = 3 endif -%} {%- for block in section.blocks -%}
         <li
-          class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
+          class="collection-list__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}"
           {{
           block.shopify_attributes
           }}
