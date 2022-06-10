@@ -601,8 +601,10 @@ a.product__text {
     top: var(--unit);
     left:var(--unit);
     padding-left:4rem;
-    padding-top:0.8rem;
+    padding-top:0.4rem;
     width: calc(var(--unit) * 3);
+    height: calc(var(--unit) + 100vh - var(--unit) * 2);  
+    overflow: hidden;
   }
 
   .product__media-list .product__media-item:first-child,
