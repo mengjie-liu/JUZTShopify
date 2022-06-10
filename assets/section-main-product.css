@@ -1019,7 +1019,8 @@ a.product__text {
   }
 
   .product__modal-opener {
-    width: 100%;
+    width: calc(var(--unit) * 3);
+    height: calc(var(--unit) * 2);
   }
 
   .thumbnail-slider {
