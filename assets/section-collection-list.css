@@ -40,6 +40,8 @@
   top: 0;
   margin:0;
   padding:0;
+  width: 100% !important;
+  height:auto !important;
 }
 
 .collection-list__item:only-child {
