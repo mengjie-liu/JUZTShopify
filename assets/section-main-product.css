@@ -54,9 +54,13 @@
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding-left: 4rem;
+    /* padding-left: 4rem;
     max-width: 35%;
-    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
+    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2); */
+    width: var(--unit);
+    position: fixed;
+    left: 0;
+    top: 0;
   }
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
