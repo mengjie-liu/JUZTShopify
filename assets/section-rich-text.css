@@ -39,7 +39,7 @@
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
     /* max-width: 78rem; */
-    position: absolute;
+    /* position: absolute; */
     top: var(--unit);
     left: calc(var(--unit) * 3 + 4rem);
     width: var(--unit);
