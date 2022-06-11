@@ -176,6 +176,13 @@ cart-items {
   margin: 0 auto;
 }
 
+.cart__blocks{
+  position: fixed;
+  left: calc(4rem + var(--unit) * 4);
+  top: var(--unit);
+  width: var(--unit);
+}
+
 .cart__blocks > * + * {
   margin-top: 1rem;
 }
