@@ -271,7 +271,11 @@ html.no-js .no-js-hidden {
 
 @media screen and (min-width: 990px) {
   .page-width--narrow {
-    max-width: 72.6rem;
+    /* max-width: 72.6rem; */
+    position:absolute;
+    left: 4rem;
+    top: var(--unit);
+    width: calc(var(--unit) * 3 - 4rem);
     padding: 0;
   }
 
