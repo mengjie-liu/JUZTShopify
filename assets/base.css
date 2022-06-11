@@ -12,6 +12,12 @@ ul, li, a{
   letter-spacing: 0.5px;  
 }
 
+.back{
+  position:absolute;
+  left:4rem;
+  top: calc(var(--unit)-10rem);
+}
+
 /* Color custom properties */
 :root{
   --unit:19.52vw;
