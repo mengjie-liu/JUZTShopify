@@ -19,10 +19,14 @@ img, video{
   height:100%;
 }
 
-.contactInfo{
-  position:fixed;
+.about{
+  position:absolute;
   text-transform: inherit !important;
   font-weight: 400 !important;
+}
+
+.contactInfo{
+  position:fixed;
 }
 
 .back{
