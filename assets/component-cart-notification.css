@@ -16,7 +16,7 @@
   position: absolute;
   right: 0;
   transform: translateY(-100%);
-  visibility: hidden;
+  /* visibility: hidden; */
   width: calc();
   z-index: -1;
   /* filter: drop-shadow(
@@ -34,8 +34,8 @@
 
   .cart-notification {
     /* border-width: 0 var(--popup-border-width) var(--popup-border-width); */
-    max-width: calc(var(--unit) + 0.8pt);
-    right: calc(3.2rem + var(--unit) * 4 - 0.5pt);
+    width: calc(var(--unit) + 0.8pt);
+    left: calc(3.2rem + var(--unit) * 4 - 0.5pt);
   }
 }
 
