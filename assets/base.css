@@ -2157,8 +2157,7 @@ input[type='checkbox'] {
   padding: 0rem;
   height: 4.4rem;
   width: 4.4rem; */
-  position:absolute;
-
+  /* position:absolute; */
   background-color: transparent;
 }
 
