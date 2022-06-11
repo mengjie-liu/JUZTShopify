@@ -19,6 +19,11 @@ img, video{
   height:100%;
 }
 
+.about{
+  text-transform: inherit;
+  font-weight: 400;
+}
+
 .back{
   position:fixed;
   left:4rem;
