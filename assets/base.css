@@ -27,7 +27,7 @@ img, video{
 }
 
 .contactInfo{
-  position:fixed !important;
+  position:fixed;
 }
 
 .back{
