@@ -19,7 +19,8 @@ img, video{
   height:100%;
 }
 
-.about{
+.contactInfo{
+  position:fixed;
   text-transform: inherit !important;
   font-weight: 400 !important;
 }
