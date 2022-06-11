@@ -34,7 +34,9 @@
 
   .cart-notification {
     /* border-width: 0 var(--popup-border-width) var(--popup-border-width); */
+    top: calc(var(--unit) + 0.8rem);
     width: calc(var(--unit) + 0.8pt);
+    height:calc(var(--unit) + 100vh - 2 * var(--unit));
     left: calc(3.2rem + var(--unit) * 4 - 0.5pt);
   }
 }
