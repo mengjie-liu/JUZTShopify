@@ -104,6 +104,12 @@
   margin-top: 0.5rem;
 }
 
+.cart-notification-product__image img {
+  width:100%;
+  height:100%;
+  padding-top:4rem;
+}
+
 .cart-notification-product__image:after {
   content: none;
 }
