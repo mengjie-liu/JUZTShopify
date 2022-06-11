@@ -280,7 +280,7 @@ html.no-js .no-js-hidden {
     position:absolute;
     left: 4rem;
     top: var(--unit);
-    width: calc(var(--unit) * 3 - 16rem);
+    width: calc(var(--unit) * 2.5);
     padding: 0;
   }
 
