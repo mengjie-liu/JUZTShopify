@@ -862,22 +862,22 @@ a.product__text {
 }
 
 .product-popup-modal__content {
-  border-radius: var(--popup-corner-radius);
-  background-color: rgb(var(--color-background));
+  /* border-radius: var(--popup-corner-radius);
+  background-color: rgb(var(--color-background)); */
   overflow: auto;
   height: 80%;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 5rem;
+  margin-top: 0;
   width: 92%;
   position: absolute;
-  top: 0;
-  padding: 0 1.5rem 0 3rem;
-  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  top: var(--unit);
+  padding: 0;
+  border-color: black;
   border-style: solid;
-  border-width: var(--popup-border-width);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  border-width: 1pt;
+  /* box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity)); */
 }
 
 .product-popup-modal__content.focused {
