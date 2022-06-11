@@ -617,8 +617,8 @@ h6:empty {
 .link,
 .customer a {
   cursor: pointer;
-  /* display: inline-block;
   border: none;
+  /* display: inline-block;
   box-shadow: none;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
