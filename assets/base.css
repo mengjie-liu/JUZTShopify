@@ -15,7 +15,7 @@ ul, li, a{
 .back{
   position:absolute;
   left:4rem;
-  top: calc(var(--unit)-10rem);
+  top: calc(var(--unit) - 8rem);
 }
 
 /* Color custom properties */
