@@ -28,11 +28,12 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__contents{
   position:absolute;
   top:var(--unit);
-  left:4rem;
+  left:calc(4rem + var(--unit));
+  width:calc(var(--unit) * 3)
 }
 
 .cart__contents > * + * {
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
 }
 
 .cart__login-title {
