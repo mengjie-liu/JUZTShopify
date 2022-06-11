@@ -38,9 +38,9 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
     <div
       class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin"
     >
-      <h2 class="collection-list-title {{ section.settings.heading_size }}">
+      <div class="collection-list-title {{ section.settings.heading_size }}">
         {{ section.settings.title | escape }}
-      </h2>
+      </div>
 
       {%- if section.settings.show_view_all and show_mobile_slider -%}
       <a
