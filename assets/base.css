@@ -20,8 +20,8 @@ img, video{
 }
 
 .about{
-  text-transform: inherit;
-  font-weight: 400;
+  text-transform: inherit !important;
+  font-weight: 400 !important;
 }
 
 .back{
