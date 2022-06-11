@@ -79,6 +79,8 @@
 
 .cart-notification__links {
   text-align: center;
+    position: absolute;
+    margin-top: calc(-8rem + 4.3rem - 0.9rem);
 }
 
 .cart-notification__links > * {
