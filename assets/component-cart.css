@@ -25,6 +25,12 @@ cart-items.is-empty .title-wrapper-with-link,
   margin: 4.5rem 0 2rem;
 }
 
+.cart__contents{
+  position:absolute;
+  top:var(--unit);
+  left:4rem;
+}
+
 .cart__contents > * + * {
   margin-top: 2.5rem;
 }
