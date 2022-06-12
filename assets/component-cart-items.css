@@ -24,12 +24,15 @@
 }
 
 .cart-item__image-container {
-  display: inline-flex;
-  align-items: flex-start;
+  /* display: inline-flex;
+  align-items: flex-start; */
+  width:var(--unit);
+  padding-left:0;
+  padding-right:0;
 }
 
 .cart-item__image-container:after {
-  content: none;
+  /* content: none; */
 }
 
 .cart-item__image {
