@@ -2,12 +2,15 @@
   position: relative;
   left:var(--unit);
   width:calc(var(--unit) - 1.6rem);
+  text-decoration: 1pt underline solid black;
+  white-space:pre-wrap;
+  max-width: 100%;
+  border: none;
 }
 
 #CustomerEmail[contenteditable]:empty::before {
   content: "your email";
   color: lightgray;
-  text-decoration: 1pt underline solid black;
 }
 
 .customer:not(.account):not(.order) {
