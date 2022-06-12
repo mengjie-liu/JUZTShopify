@@ -99,7 +99,9 @@
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        Price: {{ item.original_price | money }}
+                        Price:
+                        <br>
+                        {{ item.original_price | money }}
                       </div>
                     {%- endif -%}
 
@@ -151,10 +153,10 @@
                       </label>
                       <quantity-input class="quantity">
                         <button class="quantity__button no-js-hidden" name="minus" type="button">
-                          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                          <span>{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                           {% render 'icon-minus' %}
                         </button>
-                        <input class="bigTitle quantity__input"
+                        <input class="quantity__input"
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
