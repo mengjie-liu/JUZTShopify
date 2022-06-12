@@ -62,6 +62,8 @@
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="gridItem cart-item__media">
+                    <a href="{{ item.url }}" class="bigTitle cart-item__name h4 break">{{ item.product.title | escape }}</a>
+
                     {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
@@ -80,7 +82,7 @@
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href="{{ item.url }}" class="bigTitle cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                    <!-- <a href="{{ item.url }}" class="bigTitle cart-item__name h4 break">{{ item.product.title | escape }}</a> -->
 
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
