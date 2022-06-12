@@ -46,7 +46,7 @@
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
-            <thead>
+            <thead class="hidden">
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
                 <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
@@ -54,6 +54,9 @@
                 <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
             </thead>
+
+            
+
 
             <tbody>
               {%- for item in cart.items -%}
