@@ -61,7 +61,7 @@
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                  <td class="gridItem cart-item__media">
+                  <td class="cartGridItem cart-item__media">
                     <a href="{{ item.url }}" class="bigTitle cart-item__name h4 break">{{ item.product.title | escape }}</a>
 
                     {% if item.image %}
@@ -77,7 +77,7 @@
                     {% endif %}
                   </td>
 
-                  <td class="gridItem cart-item__details">
+                  <td class="cartGridItem cart-item__details">
                     {%- if section.settings.show_vendor -%}
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}
@@ -148,7 +148,7 @@
                     </ul>
                   </td>
 
-                  <td class="gridItem cart-item__totals right medium-hide large-up-hide">
+                  <td class="cartGridItem cart-item__totals right medium-hide large-up-hide">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +195,7 @@
                     </div>
                   </td>
 
-                  <td class="gridItem cart-item__quantity">
+                  <td class="cartGridItem cart-item__quantity">
                     <div class="cart-item__quantity-wrapper">
                       <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
@@ -237,7 +237,7 @@
                     </div>
                   </td>
 
-                  <td class="gridItem cart-item__totals right small-hide">
+                  <td class="cartGridItem cart-item__totals right small-hide">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
