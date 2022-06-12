@@ -77,7 +77,7 @@ cart-items {
 }
 
 .cart__footer-wrapper:last-child .cart__footer {
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 
 .cart__footer > div:only-child {
@@ -180,7 +180,7 @@ cart-items {
   position: fixed;
   left: calc(4rem + var(--unit) * 4);
   top: var(--unit);
-  width: var(--unit);
+  width: calc(var(--unit) - 0.8rem);
 }
 
 .cart__blocks > * + * {
