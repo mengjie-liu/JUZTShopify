@@ -118,6 +118,9 @@
 .cart-item cart-remove-button {
   /* display: flex;
   margin-left: 1rem; */
+  position: absolute;
+    left: calc(var(--unit) * 2 + 2.15rem);
+    top: 4.3rem;
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
