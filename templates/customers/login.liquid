@@ -107,17 +107,21 @@
       {%- if form.password_needed -%}
         <div class="bigTitle field">          
           <!-- <div class="loginLable">password</div> -->
-        <input
+        <span
             type="password"
             value=""
             name="customer[password]"
             id="CustomerPassword"
+            class="inputSpan"
             autocomplete="current-password"
             {% if form.errors contains 'form' %}
               aria-invalid="true"
             {% endif %}
             placeholder="Your password"
-          >
+            autofocus
+            role="textbox"
+            contenteditable  
+          ></span>
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
