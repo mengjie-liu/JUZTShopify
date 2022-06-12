@@ -7,6 +7,7 @@
 #CustomerEmail[contenteditable]:empty::before {
   content: "your email";
   color: lightgray;
+  text-decoration: 1pt underline solid black;
 }
 
 .customer:not(.account):not(.order) {
