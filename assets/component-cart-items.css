@@ -285,7 +285,7 @@ cart-remove-button .icon-remove {
 
   .cart-items td {
     vertical-align: top;
-    width:calc(var(--unit) - 1.35rem);
+    width:calc(var(--unit) - 2.95rem);
     /* padding-top: 4rem; */
   }
 
