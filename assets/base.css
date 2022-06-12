@@ -1717,16 +1717,16 @@ details[open] > .share-button__fallback {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
+  /* background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground)); */
+  /* font-size: 1.6rem; */
   width: 100%;
   box-sizing: border-box;
-  transition: box-shadow var(--duration-short) ease;
+  /* transition: box-shadow var(--duration-short) ease;
   border-radius: var(--inputs-radius);
   height: 4.5rem;
   min-height: calc(var(--inputs-border-width) * 2);
-  min-width: calc(7rem + (var(--inputs-border-width) * 2));
+  min-width: calc(7rem + (var(--inputs-border-width) * 2)); */
   position: relative;
   border: 0;
 }
@@ -1737,7 +1737,7 @@ details[open] > .share-button__fallback {
 .customer select:before,
 .localization-form__select:before {
   pointer-events: none;
-  content: '';
+  content: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1781,9 +1781,9 @@ details[open] > .share-button__fallback {
 .customer .field:hover.field:after,
 .customer select:hover.select:after,
 .localization-form__select:hover.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground),var(--inputs-border-opacity));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground),var(--inputs-border-opacity));
   outline: 0;
-  border-radius: var(--inputs-radius);
+  border-radius: var(--inputs-radius); */
 }
 
 .field__input:focus-visible,
@@ -1791,9 +1791,9 @@ details[open] > .share-button__fallback {
 .customer .field input:focus-visible,
 .customer select:focus-visible,
 .localization-form__select:focus-visible.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
   outline: 0;
-  border-radius: var(--inputs-radius);
+  border-radius: var(--inputs-radius); */
 }
 
 .field__input:focus,
@@ -1801,9 +1801,9 @@ details[open] > .share-button__fallback {
 .customer .field input:focus,
 .customer select:focus,
 .localization-form__select:focus.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
   outline: 0;
-  border-radius: var(--inputs-radius);
+  border-radius: var(--inputs-radius); */
 }
 
 .localization-form__select:focus {
@@ -1859,24 +1859,24 @@ details[open] > .share-button__fallback {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 1.5rem;
-  margin: var(--inputs-border-width);
-  transition: box-shadow var(--duration-short) ease;
+  /* padding: 1.5rem; */
+  /* margin: var(--inputs-border-width); */
+  /* transition: box-shadow var(--duration-short) ease; */
 }
 
 .field__label,
 .customer .field label {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem;
   left: calc(var(--inputs-border-width) + 2rem);
   top: calc(1rem + var(--inputs-border-width));
-  margin-bottom: 0;
+  margin-bottom: 0; */
   pointer-events: none;
   position: absolute;
-  transition: top var(--duration-short) ease,
+  /* transition: top var(--duration-short) ease,
     font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
-  line-height: 1.5;
+  line-height: 1.5; */
 }
 
 .field__input:focus ~ .field__label,
@@ -1885,10 +1885,10 @@ details[open] > .share-button__fallback {
 .customer .field input:focus ~ label,
 .customer .field input:not(:placeholder-shown) ~ label,
 .customer .field input:-webkit-autofill ~ label {
-  font-size: 1rem;
+  /* font-size: 1rem;
   top: calc(var(--inputs-border-width) + 0.5rem);
   left: calc(var(--inputs-border-width) + 2rem);
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.04rem; */
 }
 
 .field__input:focus,
@@ -1897,8 +1897,8 @@ details[open] > .share-button__fallback {
 .customer .field input:focus,
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
-  padding: 2.2rem 1.5rem 0.8rem 2rem;
-  margin: var(--inputs-border-width);
+  /* padding: 2.2rem 1.5rem 0.8rem 2rem;
+  margin: var(--inputs-border-width); */
 }
 
 .field__input::-webkit-search-cancel-button,
@@ -1912,20 +1912,20 @@ details[open] > .share-button__fallback {
 }
 
 .field__button {
-  align-items: center;
+  /* align-items: center; */
   background-color: transparent;
   border: 0;
-  color: currentColor;
+  /* color: currentColor; */
   cursor: pointer;
   display: flex;
-  height: 4.4rem;
+  /* height: 4.4rem; */
   justify-content: center;
   overflow: hidden;
   padding: 0;
   position: absolute;
   right: 0;
   top: 0;
-  width: 4.4rem;
+  /* width: 4.4rem; */
 }
 
 .field__button > svg {
@@ -1975,7 +1975,7 @@ input[type='checkbox'] {
 }
 
 .customer .field .form__message {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   text-align: left;
 }
 
