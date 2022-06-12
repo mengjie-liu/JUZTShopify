@@ -13,6 +13,11 @@
   color: lightgray;
 }
 
+#CustomerPassword[contenteditable]:empty::before {
+  content: "your password";
+  color: lightgray;
+}
+
 .customer:not(.account):not(.order) {
   /* margin: 6rem auto 9rem; */
   /* max-width: 33.4rem; */
