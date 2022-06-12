@@ -28,7 +28,7 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__contents{
   position:absolute;
   top:var(--unit);
-  left:calc(4rem + var(--unit) - 0.8rem);
+  left:calc(3.2rem + var(--unit));
   width:calc(var(--unit) * 3)
 }
 
