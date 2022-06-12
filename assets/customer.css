@@ -1,5 +1,5 @@
 .inputSpan{
-  position: absolute;
+  position: relative;
   left:var(--unit);
   width:calc(var(--unit) - 1.6rem);
 }
