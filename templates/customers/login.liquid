@@ -82,7 +82,7 @@
       {%- endif -%}
 
       <div class="bigTitle field">        
-        <div class="bigTitle">Email</div>
+        <div class="loginLabel">Email</div>
         <input
           type="email"
           name="customer[email]"
@@ -101,9 +101,9 @@
       </div>
 
       {%- if form.password_needed -%}
-      <div class="bigTitle">password</div>
         <div class="bigTitle field">          
-          <input
+          <div class="loginLable">password</div>
+        <input
             type="password"
             value=""
             name="customer[password]"
