@@ -83,7 +83,7 @@
 
       <div class="bigTitle field">        
         <!-- <div class="loginLabel">Email</div> -->
-        <input
+        <span
           type="email"
           name="customer[email]"
           id="CustomerEmail"
@@ -94,7 +94,8 @@
             aria-invalid="true"
           {% endif %}
           placeholder="Your Email"
-        >
+          autofocus
+        ></span>>
         <label for="CustomerEmail">
           {{ 'customer.login_page.email' | t }}
         </label>
