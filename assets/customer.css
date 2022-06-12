@@ -1,3 +1,9 @@
+.inputSpan{
+  position: absolute;
+  left:var(--unit);
+  width:calc(var(--unit) - 1.6rem);
+}
+
 #CustomerEmail[contenteditable]:empty::before {
   content: "your email";
   color: lightgray;
