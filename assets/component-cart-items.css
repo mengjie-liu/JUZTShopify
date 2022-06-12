@@ -12,7 +12,7 @@
 }
 
 .cart-item__quantity-wrapper {
-  display: flex;
+  /* display: flex; */
 }
 
 .cart-item__totals {
@@ -251,7 +251,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__quantity-wrapper {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .cart-item__totals {
