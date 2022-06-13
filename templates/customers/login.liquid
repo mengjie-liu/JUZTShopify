@@ -136,7 +136,7 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
+      <a href="{{ routes.account_register_url }}" class="bigTitle createAccount">
         {{ 'customer.login_page.create_account' | t }}
       </a>
       
@@ -149,7 +149,7 @@
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
       {%- form 'guest_login' -%}
-        <button>
+        <button class="bigTitle loginButton">
           {{ 'customer.login_page.guest_continue' | t }}
         </button>
       {%- endform -%}

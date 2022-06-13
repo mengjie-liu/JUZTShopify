@@ -18,6 +18,20 @@
   color: lightgray;
 }
 
+.loginButton{
+  position: absolute;
+    top: var(--unit);
+    padding-top: 4.3rem;
+    padding-left: 1.35rem;
+}
+
+.createAccount{
+  left: var(--unit);
+    top: var(--unit);
+    padding-top: 4.3rem;
+    padding-left: 1.35rem;
+}
+
 .customer:not(.account):not(.order) {
   /* margin: 6rem auto 9rem; */
   /* max-width: 33.4rem; */
