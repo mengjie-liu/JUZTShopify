@@ -376,13 +376,13 @@
 }
 
 .login p {
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
 }
 
 .login h3 {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   text-align: left;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.6rem); */
 }
 
 #customer_login_guest button {

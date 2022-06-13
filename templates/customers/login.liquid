@@ -132,7 +132,7 @@
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="bigTitle loginButton">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
@@ -149,7 +149,7 @@
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
       {%- form 'guest_login' -%}
-        <button class="bigTitle loginButton">
+        <button>
           {{ 'customer.login_page.guest_continue' | t }}
         </button>
       {%- endform -%}
