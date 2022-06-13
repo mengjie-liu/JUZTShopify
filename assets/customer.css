@@ -20,12 +20,14 @@
 
 .loginButton{
   position: absolute;
+  left:0;
     top: var(--unit);
     padding-top: 4.3rem;
     padding-left: 1.35rem;
 }
 
 .createAccount{
+  position: absolute;
   left: var(--unit);
     top: var(--unit);
     padding-top: 4.3rem;
