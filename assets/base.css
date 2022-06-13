@@ -1375,7 +1375,7 @@ button.shopify-payment-button__button--unbranded {
   background: none;
 	color: black;
 	border: none;
-	padding: 0;
+	/* padding: 0; */
 	/* font: inherit; */
 	outline: none;
   /* display: inline-flex;
