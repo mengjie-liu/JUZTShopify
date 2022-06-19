@@ -1033,13 +1033,6 @@ letter-spacing: 0.5px;
   margin-top: 0;
 }
 
-.collection--empty{
-  position: absolute;
-  width: calc(var(--unit) * 3);
-  top: var(--unit);
-  left: calc(var(--unit) + 4rem);
-}
-
 .subtitle {
   font-size: 1.8rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
