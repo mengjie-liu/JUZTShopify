@@ -904,7 +904,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-  margin: 3rem 0 2rem;
+  /* margin: 3rem 0 2rem; */
 }
 
 .title-wrapper-with-link .title {
@@ -916,26 +916,26 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .title-wrapper-with-link {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  /* gap: 1rem;
+  margin-bottom: 3rem; */
   flex-wrap: wrap;
 }
 
 .title--primary {
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
 }
 
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
 }
 
 .hoverEffect:hover::after{
@@ -987,11 +987,11 @@ letter-spacing: 0.5px;
 @media screen and (min-width: 990px) {
   .title,
   .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+    /* margin: 5rem 0 3rem; */
   }
 
   .title--primary {
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
   }
 
   .title-wrapper-with-link {
@@ -1016,7 +1016,7 @@ letter-spacing: 0.5px;
 }
 
 .title-wrapper-with-link .link-with-icon svg {
-  width: 1.5rem;
+  /* width: 1.5rem; */
 }
 
 .title-wrapper-with-link a {
