@@ -45,6 +45,9 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__login-paragraph {
   /* margin-top: 0.8rem; */
+  position: absolute;
+  left: var(--unit);
+  padding-left: 1.35rem;
 }
 
 .cart__login-paragraph a {
