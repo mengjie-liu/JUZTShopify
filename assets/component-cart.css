@@ -17,7 +17,10 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__warnings {
   display: none;
-  text-align: center;
+  text-align: left;
+  position: relative;
+  top:calc(var(--unit));
+  left:calc(var(--unit) + 4rem);
   /* padding: 3rem 0 1rem; */
 }
 
