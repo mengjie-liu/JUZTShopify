@@ -1368,6 +1368,12 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-base-text), var(--shadow-opacity));
 }
 
+.continueShopping{
+  position: absolute;
+  left: var(--unit);
+  top: 0;
+}
+
 .button,
 .shopify-challenge__button,
 .customer button {
