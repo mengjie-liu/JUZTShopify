@@ -995,7 +995,7 @@ letter-spacing: 0.5px;
   }
 
   .title-wrapper-with-link {
-    align-items: center;
+    align-items: left;
   }
 
   .title-wrapper-with-link .title {
