@@ -1371,7 +1371,7 @@ button.shopify-payment-button__button--unbranded {
 .button,
 .shopify-challenge__button,
 .customer button {
-  cursor: pointer;
+  cursor: pointer !important;
   background: none;
 	color: black;
 	border: none;

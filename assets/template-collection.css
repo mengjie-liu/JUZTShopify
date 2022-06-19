@@ -45,6 +45,12 @@
   left: calc(var(--unit) * 2 + 4rem);
 }
 
+.continueShopping{
+  position: absolute;
+  left: var(--unit);
+  top: 0;
+}
+
 @media screen and (max-width: 989px) {
   .collection .slider--tablet.product-grid {
     scroll-padding-left: 1.5rem;
