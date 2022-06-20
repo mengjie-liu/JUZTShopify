@@ -2707,13 +2707,13 @@ details[open] > .header__submenu {
   position: relative;
 }
 
-.header__menu-item:hover {
+/* .header__menu-item:hover {
   color: rgb(var(--color-foreground));
-}
+} */
 
-.header__menu-item span {
+/* .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
-}
+} */
 
 .header__menu-item:hover::after{
   position: absolute;
