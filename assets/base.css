@@ -1469,7 +1469,19 @@ button.shopify-payment-button__button--unbranded {
   /* --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background)); */
-}
+    position: absolute;
+    /* padding-left: 0.8em;
+    padding-right: 0.8em; */
+    width: calc(100% + 2.4rem);
+    height:35%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+  }
 
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
