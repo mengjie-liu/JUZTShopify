@@ -27,7 +27,7 @@
 }
 
 .createAccount{
-  position: relative;
+  position: absolute;
   left: var(--unit);
     top: var(--unit);
     margin-top: 4.3rem;
