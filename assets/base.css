@@ -715,6 +715,20 @@ hr {
     text-align: center;
 }
 
+.full-unstyled-link:hover::after{
+  position: absolute;
+  width: calc(100% + 2.4rem);
+    height:30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+}
+
+
 .placeholder {
   background-color: rgba(var(--color-foreground), 0.04);
   color: rgba(var(--color-foreground), 0.55);
