@@ -34,6 +34,21 @@ img, video{
   position:fixed;
   left:4rem;
   top: calc(var(--unit) - 8rem);
+  margin-top: 4.3rem;
+  margin-left: 1.35rem;
+}
+
+.back:hover::after{
+  position: absolute;
+  width: calc(100% + 2.4rem);
+    height:30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
 }
 
 /* Color custom properties */
