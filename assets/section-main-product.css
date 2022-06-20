@@ -616,8 +616,8 @@ a.product__text {
     left:var(--unit);
     padding-left:3.2rem;
     padding-top:0.8rem;
-    width: calc(var(--unit) * 3);
-    height: calc(var(--unit) + 100vh - var(--unit) * 2);  
+    width: calc(var(--unit) * 3 + 3.2rem);
+    height: calc(var(--unit) + 100vh - var(--unit) * 2 - 0.8rem);  
     overflow: hidden;
   }
 
