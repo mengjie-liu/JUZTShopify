@@ -462,8 +462,8 @@ top:0;
                     </details>
                   </header-menu>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="bigTitle header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                  <a href="{{ link.url }}" class="header__active-menu-item bigTitle header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <span {%- if link.current %}{% endif %}>{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
               </li>
@@ -507,8 +507,8 @@ top:0;
                     </details>
                   </header-menu>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="bigTitle header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                  <a href="{{ link.url }}" class="header__active-menu-item bigTitle header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <span {%- if link.current %}{% endif %}>{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
               </li>
