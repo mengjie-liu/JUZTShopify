@@ -32,7 +32,7 @@ screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top:
     }}-padding"
   >
     <div class="gridItem rich-text__blocks contactInfo">
-      <ul class="list list-social list-unstyled" role="list">
+      <!-- <ul class="list list-social list-unstyled" role="list">
         <p>hello!</p>
         {%- if settings.social_twitter_link != blank -%}
         <li class="list-social__item">
@@ -143,8 +143,8 @@ screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top:
           </a>
         </li>
         {%- endif -%}
-      </ul>
-      <!-- {%- for block in section.blocks -%}
+      </ul> -->
+      {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
@@ -155,7 +155,7 @@ screen and (min-width: 750px) { .section-{{ section.id }}-padding { padding-top:
               {{ block.settings.button_label | escape }}
             </a>
         {%- endcase -%}
-      {%- endfor -%} -->
+      {%- endfor -%}
     </div>
   </div>
 </div>
