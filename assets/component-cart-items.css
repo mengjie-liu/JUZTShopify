@@ -85,7 +85,7 @@
   z-index: 1500;
 }
 
-.cart-item_name:hover::after{
+.cart-item__name:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
     height:30%;
