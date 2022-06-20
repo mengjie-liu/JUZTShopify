@@ -120,6 +120,19 @@
     z-index: 1002;
 }
 
+#create_customer button{
+  font-family: din-2014,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3em !important;
+    text-transform: uppercase;
+    line-height: 1.35;
+    letter-spacing: .25px;
+    z-index: 1002;
+    position: absolute;
+    top: var(--unit);
+}
+
 @media screen and (min-width: 750px) {
   .customer table {
     border: none;
