@@ -2751,6 +2751,7 @@ details[open] > .header__menu-item .icon-caret {
   /* color: rgb(var(--color-foreground)); */
   /* text-decoration: underline;
   text-underline-offset: 0.3rem; */
+  width:fit-content;
 }
 
 .header__active-menu-item::after{
