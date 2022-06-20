@@ -2743,7 +2743,11 @@ details[open] > .header__submenu {
     text-align: center;
 }
 
-a:hover::after{
+button{
+  position: relative;
+}
+
+button:hover::after{
   position: absolute;
   width: calc(100% + 3rem);
     height:30%;
