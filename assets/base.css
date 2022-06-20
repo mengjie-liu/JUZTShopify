@@ -2743,6 +2743,19 @@ details[open] > .header__submenu {
     text-align: center;
 }
 
+a:hover::after{
+  position: absolute;
+  width: calc(100% + 3rem);
+    height:30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+}
+
 
 details[open] > .header__menu-item {
   text-decoration: underline;
