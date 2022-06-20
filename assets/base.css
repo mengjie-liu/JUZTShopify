@@ -2752,6 +2752,7 @@ details[open] > .header__menu-item .icon-caret {
   /* text-decoration: underline;
   text-underline-offset: 0.3rem; */
   width:fit-content;
+  position: relative;
 }
 
 .header__active-menu-item::after{
