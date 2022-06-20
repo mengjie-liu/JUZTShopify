@@ -41,7 +41,7 @@ img, video{
 .back:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -720,7 +720,7 @@ hr {
 .full-unstyled-link:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -733,7 +733,7 @@ hr {
 .full-unstyled-link:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -2763,7 +2763,7 @@ details[open] > .header__submenu {
 .header__menu-item:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -2780,7 +2780,7 @@ button{
 button:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -2817,7 +2817,7 @@ details[open] > .header__menu-item .icon-caret {
     /* padding-left: 0.8em;
     padding-right: 0.8em; */
     width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;

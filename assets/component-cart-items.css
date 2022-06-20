@@ -89,7 +89,7 @@
 .cart-item__name:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
@@ -138,7 +138,7 @@
 .cart-item cart-remove-button:hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
-    height:30%;
+    height:35%;
     border-radius: 100%;
     content:'';
     left: 50%;
