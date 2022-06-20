@@ -52,6 +52,22 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__login-paragraph a {
   font-size: inherit;
+  position: relative;
+}
+
+.cart__login-paragraph a:hover::after{
+  position: absolute;
+    /* padding-left: 0.8em;
+    padding-right: 0.8em; */
+    width: calc(100% + 2.4rem);
+    height:35%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
 }
 
 @media screen and (min-width: 990px) {
