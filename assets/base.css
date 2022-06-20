@@ -1573,13 +1573,13 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .share-button__button {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem;
   display: flex;
   min-height: 2.4rem;
   align-items: center;
   color: rgb(var(--color-link));
   margin-left: 0;
-  padding-left: 0;
+  padding-left: 0; */
 }
 
 details[open] > .share-button__fallback {
@@ -1605,7 +1605,7 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback {
-  display: flex;
+  /* display: flex;
   align-items: center;
   position: absolute;
   top: 3rem;
@@ -1614,7 +1614,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   min-width: max-content;
   border-radius: var(--inputs-radius);
-  border: 0;
+  border: 0; */
 }
 
 .share-button__fallback:after {
@@ -1633,7 +1633,7 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback:before {
-  background: rgb(var(--color-background));
+  /* background: rgb(var(--color-background));
   pointer-events: none;
   content: '';
   position: absolute;
@@ -1643,7 +1643,7 @@ details[open] > .share-button__fallback {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
-  z-index: -1;
+  z-index: -1; */
 }
 
 .share-button__fallback button {

@@ -79,14 +79,22 @@
 }
 
 .cart-item__name {
+  position:relative;
   text-decoration: none;
   display: block;
 }
 
-.cart-item__name:hover {
-  /* text-decoration: underline;
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.2rem; */
+.cart-item_name:hover::after{
+  position: absolute;
+  width: calc(100% + 2.4rem);
+    height:30%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
 }
 
 .cart-item__price-wrapper > * {
