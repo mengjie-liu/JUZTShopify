@@ -959,7 +959,7 @@ summary::-webkit-details-marker {
 }
 
 .title--primary {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
   /* margin: 4rem 0; */
 }
 
