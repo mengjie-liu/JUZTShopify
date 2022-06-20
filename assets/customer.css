@@ -30,8 +30,8 @@
   position: relative;
   left: var(--unit);
     top: var(--unit);
-    padding-top: 4.3rem;
-    padding-left: 1.35rem;
+    margin-top: 4.3rem;
+    margin-left: 1.35rem;
 }
 
 .createAccount:hover::after{
