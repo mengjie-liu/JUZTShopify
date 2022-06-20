@@ -2704,6 +2704,7 @@ details[open] > .header__submenu {
   /* padding: 0.5rem; */
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
 .header__menu-item:hover {
