@@ -33,7 +33,7 @@ pickup-availability[available] {
 }
 
 .pickup-availability-button:hover {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .pickup-availability-info * {
@@ -110,7 +110,7 @@ pickup-availability-drawer[open] {
 }
 
 .pickup-availability-drawer-button:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
 }
 
 .pickup-availability-variant {

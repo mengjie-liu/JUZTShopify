@@ -776,7 +776,7 @@ h3 .icon-arrow,
 }
 
 .animate-arrow:hover .icon-arrow path {
-  transform: translateX(-0.05rem);
+  /* transform: translateX(-0.05rem); */
 }
 
 /* base-details-summary */
@@ -1630,7 +1630,7 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback button:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
 }
 
 .share-button__fallback button:hover svg {
@@ -2749,7 +2749,7 @@ details[open] > .header__menu-item {
 }
 
 details[open]:hover > .header__menu-item {
-  text-decoration-thickness: 0.2rem;
+  /* text-decoration-thickness: 0.2rem; */
 }
 
 details[open] > .header__menu-item .icon-caret {
@@ -2781,7 +2781,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
+  /* text-decoration-thickness: 0.2rem; */
 }
 
 .header__submenu {

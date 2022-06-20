@@ -424,13 +424,13 @@ noscript .localization-selector.link {
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
-    color: rgb(var(--color-foreground));
+    /* color: rgb(var(--color-foreground));
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.3rem; */
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
-    text-decoration-thickness: 0.2rem;
+    /* text-decoration-thickness: 0.2rem; */
   }
 }
 

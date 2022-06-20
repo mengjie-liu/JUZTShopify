@@ -286,7 +286,7 @@ slider-component.slider-component-full-width {
 .slider-counter__link--active.slider-counter__link--numbers,
 .slider-counter__link--dots:not(.slider-counter__link--active):hover .dot,
 .slider-counter__link--numbers:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .slider-counter__link--numbers {
@@ -295,7 +295,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-counter__link--numbers:hover {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .slider-counter__link--active.slider-counter__link--numbers {
@@ -340,7 +340,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button:not([disabled]):hover {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
 .slider-button .icon {
@@ -361,9 +361,9 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button--next:not([disabled]):hover .icon {
-  transform: rotate(-90deg) scale(1.1);
+  /* transform: rotate(-90deg) scale(1.1); */
 }
 
 .slider-button--prev:not([disabled]):hover .icon {
-  transform: rotate(90deg) scale(1.1);
+  /* transform: rotate(90deg) scale(1.1); */
 }

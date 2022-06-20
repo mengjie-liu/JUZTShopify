@@ -552,7 +552,7 @@
 }
 
 .account table td:first-of-type a:hover {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-link), 0.2);
+  /* box-shadow: 0 0 0 0.2rem rgba(var(--color-link), 0.2); */
 }
 
 .order td:first-of-type {

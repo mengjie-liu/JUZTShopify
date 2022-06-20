@@ -114,7 +114,7 @@
 }
 
 .quick-add-modal__toggle:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
 }
 
 .quick-add-modal__toggle .icon {
@@ -180,10 +180,10 @@ quick-add-modal .product__title > a {
 }
 
 quick-add-modal .product__title > a:hover {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground));
   text-decoration: underline;
   text-underline-offset: 0.2rem;
-  text-decoration-thickness: 0.3rem;
+  text-decoration-thickness: 0.3rem; */
 }
 
 quick-add-modal .product__view-details {
