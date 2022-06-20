@@ -1401,6 +1401,9 @@ button.shopify-payment-button__button--unbranded {
   position: absolute;
   left: var(--unit);
   top: 0;
+  margin-top: 4.3rem;
+  margin-left: 1.35rem;
+  margin-right: 0.8rem;
 }
 
 .button,
