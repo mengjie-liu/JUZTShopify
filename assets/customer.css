@@ -5,6 +5,7 @@
   text-decoration: 1pt underline solid black;
   white-space:pre-wrap;
   max-width: 100%;
+  text-transform: initial;
   border: none;
 }
 
