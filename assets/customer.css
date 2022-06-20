@@ -130,8 +130,8 @@
     letter-spacing: .25px;
     z-index: 1002;
     position: absolute;
-    top: var(--unit);
-    padding-top: 4.3rem;
+    top: calc(var(--unit) + 4.3rem);
+    /* padding-top: 4.3rem; */
   }
 
 @media screen and (min-width: 750px) {
