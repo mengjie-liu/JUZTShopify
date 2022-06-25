@@ -1466,6 +1466,16 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button), var(--alpha-button-background)); */
 }
 
+.shopify-challenge__container .shopify-challenge__button{
+  position: absolute;
+  font-weight: 600;
+  font-style: normal;
+font-size: 1.3em;
+text-transform:uppercase;
+line-height: 1.35;
+letter-spacing: 0.25px;
+}
+
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
