@@ -422,5 +422,10 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "challenge": {
+      "message": "To continue, please click the box below to let us know you're not a robot."
+    }
   }
 }
