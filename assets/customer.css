@@ -34,12 +34,18 @@
   color: lightgray;
 }
 
+.customer_accountdetails{
+  position: absolute;
+  left: calc(var(--unit) * 3);
+  width: var(--unit);
+  top: 0;
+}
 
 .account_logout{
   position: absolute;
-  left: calc(var(--unit) * 3);
-  top: 0;
-  width: fit-content;
+    left: calc(var(--unit) * 3);
+    top: var(--unit);
+    width: fit-content;
 }
 
 .loginButton{
