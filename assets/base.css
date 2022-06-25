@@ -1474,6 +1474,8 @@ font-size: 1.3em;
 text-transform:uppercase;
 line-height: 1.35;
 letter-spacing: 0.25px;
+padding-top: 4.3rem;
+    top: var(--unit);
 }
 
 .button:before,
