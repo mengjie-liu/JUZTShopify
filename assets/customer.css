@@ -13,14 +13,16 @@
   content: "your email";
   color: lightgray;
 }
-
 #CustomerPassword[contenteditable]:empty::before {
   content: "your password";
   color: lightgray;
 }
-
 #RegisterForm-FirstName[contenteditable]:empty::before {
   content: "your first name";
+  color: lightgray;
+}
+#RegisterForm-LastName[contenteditable]:empty::before {
+  content: "your last name";
   color: lightgray;
 }
 

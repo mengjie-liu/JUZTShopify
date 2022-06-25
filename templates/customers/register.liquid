@@ -55,14 +55,20 @@
       </label>
     </div>
     <div class="field">
-      <input
-        type="text"
-        name="customer[last_name]"
-        id="RegisterForm-LastName"
-        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
-        autocomplete="family-name"
-        placeholder="{{ 'customer.register.last_name' | t }}"
-      >
+      <span
+          type="text"
+          name="customer[last_name]"
+          id="RegisterForm-LastName"
+          {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
+          class="inputSpan"
+          autocomplete="family-name"
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="{{ 'customer.register.last_name' | t }}"
+          autofocus
+          role="textbox"
+          contenteditable
+        ></span>
       <label for="RegisterForm-LastName">
         {{ 'customer.register.last_name' | t }}
       </label>
