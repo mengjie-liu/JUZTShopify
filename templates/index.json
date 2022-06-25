@@ -216,7 +216,7 @@
     "165611619227502670": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<video loop muted autoplay preload id=\"bgv\">\n<source src=\"url_of_the_file.mp4\" type=\"video\/mp4\">\n  <\/video>",
+        "custom_liquid": "<video loop muted autoplay preload id=\"bgv\">\n<source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/22790cfcc00d4e099a6a3be9b9e918ab.mp4\" type=\"video\/mp4\">\n  <\/video>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
