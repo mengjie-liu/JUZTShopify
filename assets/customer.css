@@ -37,8 +37,9 @@
 
 .account_logout{
   position: absolute;
-  left: calc(var(--unit) * 4 + 4rem + 1.35rem);
-  top: calc(var(--unit) + 4.3rem);
+  left: calc(var(--unit) * 3);
+  top: 0;
+  width: fit-content;
 }
 
 .loginButton{
