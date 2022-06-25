@@ -54,6 +54,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "h1"
@@ -221,6 +222,15 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1656117322cc1c4a86": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -230,6 +240,7 @@
     "collage",
     "video",
     "multicolumn",
-    "165611619227502670"
+    "165611619227502670",
+    "1656117322cc1c4a86"
   ]
 }
