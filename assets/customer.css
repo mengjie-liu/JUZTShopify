@@ -19,6 +19,12 @@
   color: lightgray;
 }
 
+#RegisterForm-FirstName[contenteditable]:empty::before {
+  content: "your first name";
+  color: lightgray;
+}
+
+
 .loginButton{
   position: absolute;
   left:0;
