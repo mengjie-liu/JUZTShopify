@@ -15,7 +15,7 @@
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
       <h2 class="form__message" tabindex="-1" autofocus>
-        <svg aria-hidden="true" focusable="false" role="presentation">
+        <svg aria-hidden="true" class="hidden" focusable="false" role="presentation">
           <use href="#icon-error" />
         </svg>
         {{ 'templates.contact.form.error_heading' | t }}
@@ -36,14 +36,20 @@
       </ul>
     {%- endif -%}
     <div class="field">      
-      <input
-        type="text"
-        name="customer[first_name]"
-        id="RegisterForm-FirstName"
-        {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
-        autocomplete="given-name"
-        placeholder="{{ 'customer.register.first_name' | t }}"
-      >
+      <span
+          type="text"
+          name="customer[first_name]"
+          id="RegisterForm-FirstName"
+          {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
+          class="inputSpan"
+          autocomplete="given-name"
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="{{ 'customer.register.first_name' | t }}"
+          autofocus
+          role="textbox"
+          contenteditable
+        ></span>
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
       </label>
