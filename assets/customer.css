@@ -453,6 +453,8 @@
   left:calc(var(--unit) * 3);
 }
 
+
+
 /* Login */
 .login a {
   display: block;
@@ -818,9 +820,11 @@ label[for='AddressProvinceNew'] {
 }
 
 .addresses ul {
+  position: absolute;
+  top: 0;
   list-style: none;
   padding-left: 0;
-  text-align: center;
+  text-align: left;
 }
 
 li[data-address] {
