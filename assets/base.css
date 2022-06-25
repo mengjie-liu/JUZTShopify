@@ -365,11 +365,11 @@ body,
   padding-left:1.35rem;
   padding-right:0.8rem;
   width: calc(var(--unit) - 2.15rem);
-  padding-bottom: 1.6rem;
 }
 
 .shopify-challenge__message{
   text-align: left !important;
+  padding-bottom: 1.6rem;
 }
 
 .rte-width {
