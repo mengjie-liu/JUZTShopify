@@ -357,7 +357,10 @@ body,
 
 .page-margin,
 .shopify-challenge__container {
-  margin: 7rem auto;
+  position: absolute;
+  left: var(--unit);
+  top:var(--unit);
+  margin: 0;
 }
 
 .rte-width {
