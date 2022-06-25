@@ -90,12 +90,11 @@
 
 @media screen and (min-width: 750px) {
 
-  .customer:not(.account):not(.order) {
-    /* max-width: 47.8rem; */
+  /* .customer:not(.account):not(.order) {
     position: absolute;
     top: var(--unit);
     left: calc(var(--unit) + 4rem);
-  }
+  } */
 
   .customer:is(.addresses){
     position: absolute;
