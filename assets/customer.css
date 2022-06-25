@@ -89,17 +89,18 @@
 }
 
 @media screen and (min-width: 750px) {
-  .customer:is(.addresses){
-    position: absolute;
-    top: calc(var(--unit) + 4.3rem);
-    left: calc(var(--unit) + 5.35rem);
-  }
 
   .customer:not(.account):not(.order) {
     /* max-width: 47.8rem; */
     position: absolute;
     top: var(--unit);
     left: calc(var(--unit) + 4rem);
+  }
+
+  .customer:is(.addresses){
+    position: absolute;
+    top: calc(var(--unit) + 4.3rem);
+    left: calc(var(--unit) + 5.35rem);
   }
 }
 
