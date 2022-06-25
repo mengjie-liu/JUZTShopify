@@ -51,6 +51,9 @@ img, video{
     text-align: center;
 }
 
+a:is(.bigTitle){
+  display: block;
+}
 a:is(.bigTitle):hover::after{
   position: absolute;
   width: calc(100% + 2.4rem);
