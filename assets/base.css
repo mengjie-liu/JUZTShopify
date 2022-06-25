@@ -53,7 +53,7 @@ img, video{
 
 a:is(.bigTitle){
   /* display: block; */
-  position: relative;
+  position: absolute;
 }
 a:is(.bigTitle):hover::after{
   position: absolute;
