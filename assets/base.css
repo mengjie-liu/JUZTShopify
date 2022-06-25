@@ -678,6 +678,8 @@ h6:empty {
 .customer a {
   cursor: pointer;
   border: none;
+  position: relative;
+  width: fit-content;
   /* display: inline-block;
   box-shadow: none;
   text-decoration: underline;
