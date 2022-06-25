@@ -51,6 +51,19 @@ img, video{
     text-align: center;
 }
 
+a:is(.bigTitle):hover::after{
+  position: absolute;
+  width: calc(100% + 2.4rem);
+    height:35%;
+    border-radius: 100%;
+    content:'';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1pt solid black;
+    text-align: center;
+}
+
 /* Color custom properties */
 :root{
   --unit:19.52vw;
