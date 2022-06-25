@@ -2055,6 +2055,11 @@ input[type='checkbox'] {
 }
 
 /* Form global */
+.errors{
+  position: absolute;
+  top: -2.5rem;
+}
+
 
 .form__label {
   display: block;
@@ -2062,11 +2067,13 @@ input[type='checkbox'] {
 }
 
 .form__message {
-  align-items: center;
+  /* align-items: center;
   display: flex;
   font-size: 1.4rem;
   line-height: 1;
-  margin-top: 1rem;
+  margin-top: 1rem; */
+  position: absolute;
+  top: -5rem;
 }
 
 .form__message--large {
