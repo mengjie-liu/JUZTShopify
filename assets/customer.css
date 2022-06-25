@@ -450,6 +450,7 @@
   display: block;
   /* margin: 0 auto; */
   width: fit-content;
+  position:absolute;
 }
 
 .login a[href='#recover'] {
