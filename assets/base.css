@@ -368,7 +368,7 @@ body,
 }
 
 .shopify-challenge__message{
-  text-align: left;
+  text-align: left !important;
 }
 
 .rte-width {
