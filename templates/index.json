@@ -216,7 +216,7 @@
     "165611619227502670": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"bigVd\">\n<div class=\"videoContainer\">\n<video loop muted autoplay preload id=\"bgv\">\n<source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/22790cfcc00d4e099a6a3be9b9e918ab.mp4\" type=\"video\/mp4\">\n  <\/video>\n<\/div>\n<\/div>\n\n<style>\n.bigVd{\n    position: absolute;\n    left: 0;\n    top: 0;\n    padding-left: 2.02em;\n    padding-top:0.5em;\n    width: calc(var(--unit) * 5);\n    \/* height: calc(var(--unit) * 3); *\/\n    height:calc(100vh - 0.5em);\n    object-fit: cover;\n    overflow: hidden;\n}\n.videoContainer{\n    position:relative;\n    width: 100%;\n    height: 100%;\n}\n.videoContainer video{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    z-index: -2;\n}\n<\/style>",
+        "custom_liquid": "<div class=\"bigVd\">\n<div class=\"videoContainer\">\n<video loop muted autoplay preload id=\"bgv\">\n<source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/22790cfcc00d4e099a6a3be9b9e918ab.mp4\" type=\"video\/mp4\">\n  <\/video>\n<\/div>\n<\/div>\n\n<style>\n.bigVd{\n    position: absolute;\n    left: 0;\n    top: 0;\n    left:3.2rem;\n    top:0.8rem;\n    width: calc(var(--unit) * 5);\n    \/* height: calc(var(--unit) * 3); *\/\n    height:calc(100vh - 0.8rem);\n    object-fit: cover;\n    overflow: hidden;\n}\n.videoContainer{\n    position:relative;\n    width: 100%;\n    height: 100%;\n}\n.videoContainer video{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    z-index: -2;\n}\n<\/style>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
