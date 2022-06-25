@@ -99,8 +99,8 @@
 
   .customer:is(.addresses){
     position: absolute;
-    top: calc(var(--unit) + 4.3rem);
-    left: calc(var(--unit) + 5.35rem);
+    top: calc(var(--unit) + 4.3rem) !important;
+    left: calc(var(--unit) + 5.35rem) !important;
   }
 }
 
