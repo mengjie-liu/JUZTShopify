@@ -34,6 +34,10 @@
   color: lightgray;
 }
 
+.customer_title{
+  text-transform: capitalize !important;
+}
+
 .customer_accountdetails{
   position: absolute;
   left: calc(var(--unit) * 3);
