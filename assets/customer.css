@@ -25,6 +25,14 @@
   content: "your last name";
   color: lightgray;
 }
+#RegisterForm-email[contenteditable]:empty::before {
+  content: "your email";
+  color: lightgray;
+}
+#RegisterForm-password[contenteditable]:empty::before {
+  content: "your password";
+  color: lightgray;
+}
 
 
 .loginButton{
