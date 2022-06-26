@@ -1435,8 +1435,8 @@ button.shopify-payment-button__button--unbranded {
 
 .continueShopping{
   position: absolute;
-  left: var(--unit);
-  top: 0;
+  left: 0;
+  top: var(--unit);
   margin-top: 4.3rem;
   margin-left: 1.35rem;
   margin-right: 0.8rem;
