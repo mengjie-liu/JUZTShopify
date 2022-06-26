@@ -1940,11 +1940,11 @@ details[open] > .share-button__fallback {
 
 .select .icon-caret,
 .customer select + svg {
-  /* height: 0.6rem;
+  height: 0.6rem;
   pointer-events: none;
   position: absolute;
   top: calc(50% - 0.2rem);
-  right: calc(var(--inputs-border-width) + 1.5rem); */
+  right: calc(var(--inputs-border-width) + 1.5rem);
 }
 
 .select__select,
