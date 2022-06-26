@@ -827,6 +827,10 @@ label[for='AddressProvinceNew'] {
   text-align: left;
 }
 
+.default{
+  text-transform: capitalize !important;
+}
+
 li[data-address] {
   /* margin-top: 5rem; */
 }
@@ -856,7 +860,11 @@ li[data-address] > h2 {
 }
 
 .addresses ul p {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  position: absolute;
+    left: var(--unit);
+    top: 0;
+    width: fit-content;
 }
 
 .addresses input[type='checkbox'] {
