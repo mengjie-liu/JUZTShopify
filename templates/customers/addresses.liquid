@@ -110,6 +110,7 @@
           {{ address | format_address }}
           <button
             type="button"
+            class="bigTitle"
             id="EditFormButton_{{ address.id }}"
             aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
             aria-controls="EditAddress_{{ address.id }}"
@@ -120,6 +121,7 @@
           </button>
           <button
             type="button"
+            class="bigTitle"
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
             data-target="{{ address.url }}"
             data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
