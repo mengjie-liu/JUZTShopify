@@ -812,6 +812,10 @@ label[for='AddressProvinceNew'] {
 .addresses form {
   display: flex;
   flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  background: white;
+  width: var(--unit);
 }
 
 .addresses form > div {
