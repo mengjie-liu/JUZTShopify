@@ -1965,7 +1965,7 @@ input:-webkit-autofill:active{
   min-height: calc(var(--inputs-border-width) * 2); */
 }
 
-input[type=text],input[type=email],input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=tel] {
   border: none;
   border-bottom: 1px solid black !important;
   margin-bottom: -1px;
