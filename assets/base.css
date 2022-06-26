@@ -1442,6 +1442,10 @@ button.shopify-payment-button__button--unbranded {
   margin-right: 0.8rem;
 }
 
+form:not(a){
+  text-transform: capitalize !important;
+}
+
 .continueShopping:hover::after {
   /* --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
