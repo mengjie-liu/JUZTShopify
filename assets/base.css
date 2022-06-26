@@ -1932,6 +1932,8 @@ details[open] > .share-button__fallback {
   display: flex;
   position: relative;
   width: 100%;
+  left: var(--unit);
+  top: -2.75rem;
 }
 
 /* Select */

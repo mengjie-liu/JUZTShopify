@@ -817,6 +817,7 @@ label[for='AddressProvinceNew'] {
 .addresses form > div {
   width: 100%;
   text-align: left;
+  height: 2.75rem;
 }
 
 .addresses ul {
