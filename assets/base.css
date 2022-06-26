@@ -1956,6 +1956,11 @@ details[open] > .share-button__fallback {
   min-height: calc(var(--inputs-border-width) * 2); */
 }
 
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
 /* Field */
 
 .field {
