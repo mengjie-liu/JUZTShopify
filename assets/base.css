@@ -1859,8 +1859,8 @@ details[open] > .share-button__fallback {
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity));
+  /* border-radius: var(--inputs-radius-outset);
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-base-text), var(--inputs-shadow-opacity)); */
   z-index: -1;
 }
 
@@ -1872,14 +1872,14 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   content: none;
   position: absolute;
-  top: var(--inputs-border-width);
+  /* top: var(--inputs-border-width);
   right: var(--inputs-border-width);
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-short) ease; */
   z-index: 1;
 }
 
@@ -1940,20 +1940,20 @@ details[open] > .share-button__fallback {
 
 .select .icon-caret,
 .customer select + svg {
-  height: 0.6rem;
+  /* height: 0.6rem;
   pointer-events: none;
   position: absolute;
   top: calc(50% - 0.2rem);
-  right: calc(var(--inputs-border-width) + 1.5rem);
+  right: calc(var(--inputs-border-width) + 1.5rem); */
 }
 
 .select__select,
 .customer select {
   cursor: pointer;
-  line-height: calc(1 + 0.6 / var(--font-body-scale));
+  /* line-height: calc(1 + 0.6 / var(--font-body-scale));
   padding: 0 2rem;
   margin: var(--inputs-border-width);
-  min-height: calc(var(--inputs-border-width) * 2);
+  min-height: calc(var(--inputs-border-width) * 2); */
 }
 
 /* Field */
