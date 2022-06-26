@@ -48,7 +48,9 @@ cart-items.is-empty .title-wrapper-with-link,
   /* margin-top: 0.8rem; */
   position: absolute;
   left: var(--unit);
+  top: var(--unit);
   padding-left: 1.35rem;
+  padding-top: 4.3rem;
 }
 
 .cart__login-paragraph a {
