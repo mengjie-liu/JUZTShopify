@@ -818,6 +818,11 @@ label[for='AddressProvinceNew'] {
   width: var(--unit);
 }
 
+.format_address{
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+}
+
 .addresses form > div {
   width: 100%;
   text-align: left;

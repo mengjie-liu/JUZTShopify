@@ -107,7 +107,7 @@
           {%- if address == customer.default_address -%}
             <h2 class="bigTitle default">{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          <div>{{ address | format_address }}</div>
+          <div class="bigTitle format_address">{{ address | format_address }}</div>
           <button
             type="button"
             class="bigTitle edit"
