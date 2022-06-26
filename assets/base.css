@@ -1442,7 +1442,7 @@ button.shopify-payment-button__button--unbranded {
   margin-right: 0.8rem;
 }
 
-form:not(a){
+form label{
   text-transform: capitalize !important;
 }
 
