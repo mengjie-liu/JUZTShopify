@@ -1446,6 +1446,17 @@ form label{
   text-transform: capitalize !important;
 }
 
+.update{
+  position: absolute;
+    left: 0;
+    top: var(--unit);
+}
+.cancel{
+  position: absolute;
+    left: var(--unit);
+    top: var(--unit);
+}
+
 .continueShopping:hover::after {
   /* --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
