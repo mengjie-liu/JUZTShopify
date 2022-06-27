@@ -20,6 +20,11 @@ ul, li, a{
   /* src: url(../webfonts/fontello.eot?49910401#iefix) format("eot"),url(../webfonts/fontello.woff2?49910401) format("woff2"),url(../webfonts/fontello.woff?49910401) format("woff"),url(../webfonts/fontello.ttf?49910401) format("truetype") */
 }
 
+@font-face {
+  font-family: icons;
+  src: url(icons.ttf) format("svg")
+}
+
 input[type=password] {
   font-family: masked-text-webfont,Arial,sans-serif;
   letter-spacing: .2rem;
