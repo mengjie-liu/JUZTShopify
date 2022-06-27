@@ -120,6 +120,12 @@
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
+          <div class="pwdtoggle" data-component="pwdToggle">
+            <button class="pwdtoggle__btn" type="button" data-action="togglePasswordVisibility">
+              <span class="pwdtoggle__icon" aria-hidden="true">
+              </span>
+            </button>
+          </div>
         </div>
 
         <a href="#recover">

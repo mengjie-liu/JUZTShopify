@@ -1,3 +1,29 @@
+.pwdtoggle{
+  position: relative;
+  width: 100%;
+}
+.pwdtoggle__btn{
+  position: absolute;
+    -webkit-appearance: none;
+    right: 0;
+    width: 1.75rem;
+    height: 1.875rem;
+    padding: 0.125rem 0;
+    border: 0;
+    background: transparent;
+    /* -webkit-transform: translateY(-100%); */
+    transform: translateY(-100%);
+    /* -webkit-box-sizing: content-box; */
+    box-sizing: content-box;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pwdtoggle__icon{
+  width: 1.75rem;
+    height: 1.125rem;
+}
+
 .inputSpan{
   position: relative;
   left:var(--unit);
