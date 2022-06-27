@@ -16,7 +16,7 @@ ul, li, a{
 
 @font-face {
   font-family: masked-text-webfont;
-  src: url(fontello.ttf);
+  src: url(fontello.otf);
   /* src: url(../webfonts/fontello.eot?49910401#iefix) format("eot"),url(../webfonts/fontello.woff2?49910401) format("woff2"),url(../webfonts/fontello.woff?49910401) format("woff"),url(../webfonts/fontello.ttf?49910401) format("truetype") */
 }
 
