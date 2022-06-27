@@ -22,6 +22,7 @@ ul, li, a{
 
 input[type=password] {
   font-family: masked-text-webfont,Arial,sans-serif;
+  letter-spacing: .2rem;
 }
 
 
