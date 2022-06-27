@@ -24,8 +24,8 @@
     height: 1.125rem;
 }
 .pwdtoggle__icon:before {
-  content: "\F10D";
   font-family: icons;
+  content: "\F10D";
   font-size: 1.75rem;
   color: #000;
 }
