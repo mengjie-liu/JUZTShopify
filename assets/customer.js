@@ -1,9 +1,3 @@
-$(document).ready(function () {
-  $(".edit").click(function () {
-    console.log("clicked!!");
-  });
-});
-
 const selectors = {
   customerAddresses: "[data-customer-addresses]",
   addressCountrySelect: "[data-address-country-select]",
