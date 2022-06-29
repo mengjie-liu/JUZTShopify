@@ -16,11 +16,6 @@
   padding-top:1em;
 }
 
-.cartnt-item__quantity-wrapper {
-  /* display: flex; */
-  padding:0;
-}
-
 .cart-item__totals {
   position: relative;
 }

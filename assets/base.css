@@ -2215,6 +2215,17 @@ input[type='checkbox'] {
 }
 
 /* component-quantity */
+.cartnt_info{
+  position: absolute;
+  top: calc(var(--unit) + 4.3rem);
+  left: 2.15rem;
+}
+
+.cartnt-item__quantity-wrapper {
+  /* display: flex; */
+  padding:0;
+}
+
 .cart_quantity {
   /* margin-top: -0.1rem; */
   color: black;
