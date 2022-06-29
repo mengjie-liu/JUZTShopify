@@ -86,8 +86,15 @@ a:is(.bigTitle):hover::after{
 }
 
 /* Color custom properties */
-:root{
-  --unit:19.52vw;
+@media screen and (min-width: 750px){
+  :root{
+    --unit:19.52vw;
+  }
+}
+@media screen and (max-width: 749px){
+  :root{
+    --unit:49.52vw;
+  }
 }
 
 :root,
