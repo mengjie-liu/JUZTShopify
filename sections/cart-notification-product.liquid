@@ -13,87 +13,94 @@
     <h3 class="gridItem bigTitle cart-notification-product__name h4">
       {{ item.product.title | escape }}
     </h3>
-    {%- if item.original_price != item.final_price -%}
-    <div class="cart-item__discounted-prices">
-      <span class="visually-hidden">
-        {{ "products.product.price.regular_price" | t }}
-      </span>
-      <s class="cart-item__old-price product-option">
-        {{- item.original_price | money -}}
-      </s>
-      <span class="visually-hidden">
-        {{ "products.product.price.sale_price" | t }}
-      </span>
-      <strong class="cart-item__final-price product-option">
-        {{ item.final_price | money }}
-      </strong>
-    </div>
-    {%- else -%}
-    <div class="product-option">
-      Price:&nbsp;&nbsp;
-      {{ item.original_price | money }}
-    </div>
-    {%- endif -%}
-    <div class="cartnt-item__quantity-wrapper">
-      <span>Quantity:&nbsp;</span>
-      <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
-        {{ "products.product.quantity.label" | t }}
-      </label>
-      <quantity-input class="cart_quantity">
-        <button
-          class="hidden quantity__button no-js-hidden"
-          name="minus"
-          type="button"
+    <div>
+      {%- if item.original_price != item.final_price -%}
+      <div class="cart-item__discounted-prices">
+        <span class="visually-hidden">
+          {{ "products.product.price.regular_price" | t }}
+        </span>
+        <s class="cart-item__old-price product-option">
+          {{- item.original_price | money -}}
+        </s>
+        <span class="visually-hidden">
+          {{ "products.product.price.sale_price" | t }}
+        </span>
+        <strong class="cart-item__final-price product-option">
+          {{ item.final_price | money }}
+        </strong>
+      </div>
+      {%- else -%}
+      <div class="product-option">
+        Price:&nbsp;&nbsp;
+        {{ item.original_price | money }}
+      </div>
+      {%- endif -%}
+      <div class="cartnt-item__quantity-wrapper">
+        <span>Quantity:&nbsp;</span>
+        <label
+          class="visually-hidden"
+          for="Quantity-{{ item.index | plus: 1 }}"
         >
-          <span class="visually-hidden">{{
-            "products.product.quantity.decrease"
-              | t: product:item.product.title
-              | escape
-          }}</span>
-          {% render 'icon-minus' %}
-        </button>
-        <input
-          class="quantity__input"
-          type="number"
-          name="updates[]"
-          value="{{ item.quantity }}"
-          min="0"
-          aria-label="{{
-            'products.product.quantity.input_label'
-              | t: product:item.product.title
-              | escape
-          }}"
-          id="Quantity-{{ item.index | plus: 1 }}"
-          data-index="{{ item.index | plus: 1 }}"
-        />
-        <button
-          class="hidden quantity__button no-js-hidden"
-          name="plus"
-          type="button"
-        >
-          <span class="visually-hidden">{{
-            "products.product.quantity.increase"
-              | t: product:item.product.title
-              | escape
-          }}</span>
-          {% render 'icon-plus' %}
-        </button>
-      </quantity-input>
+          {{ "products.product.quantity.label" | t }}
+        </label>
+        <quantity-input class="cart_quantity">
+          <button
+            class="hidden quantity__button no-js-hidden"
+            name="minus"
+            type="button"
+          >
+            <span class="visually-hidden">{{
+              "products.product.quantity.decrease"
+                | t: product:item.product.title
+                | escape
+            }}</span>
+            {% render 'icon-minus' %}
+          </button>
+          <input
+            class="quantity__input"
+            type="number"
+            name="updates[]"
+            value="{{ item.quantity }}"
+            min="0"
+            aria-label="{{
+              'products.product.quantity.input_label'
+                | t: product:item.product.title
+                | escape
+            }}"
+            id="Quantity-{{ item.index | plus: 1 }}"
+            data-index="{{ item.index | plus: 1 }}"
+          />
+          <button
+            class="hidden quantity__button no-js-hidden"
+            name="plus"
+            type="button"
+          >
+            <span class="visually-hidden">{{
+              "products.product.quantity.increase"
+                | t: product:item.product.title
+                | escape
+            }}</span>
+            {% render 'icon-plus' %}
+          </button>
+        </quantity-input>
 
-      <cart-remove-button
-        class="hidden cart-remove-button"
-        id="Remove-{{ item.index | plus: 1 }}"
-        data-index="{{ item.index | plus: 1 }}"
-      >
-        <a
-          href="{{ item.url_to_remove }}"
-          class="bigTitle button button--tertiary"
-          aria-label="{{ 'sections.cart.remove_title' | t: title:item.title }}"
+        <cart-remove-button
+          class="hidden cart-remove-button"
+          id="Remove-{{ item.index | plus: 1 }}"
+          data-index="{{ item.index | plus: 1 }}"
         >
-          remove
-          <!-- {% render 'icon-remove' %} -->
-        </a>
-      </cart-remove-button>
+          <a
+            href="{{ item.url_to_remove }}"
+            class="bigTitle button button--tertiary"
+            aria-label="{{
+              'sections.cart.remove_title' | t: title:item.title
+            }}"
+          >
+            remove
+            <!-- {% render 'icon-remove' %} -->
+          </a>
+        </cart-remove-button>
+      </div>
     </div>
     <!-- <div class="smallText price__container">
       {%- comment -%} Explanation of description list: - div.price__regular:
