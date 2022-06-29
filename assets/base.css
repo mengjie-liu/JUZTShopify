@@ -608,11 +608,11 @@ blockquote {
 }
 
 .shopify-policy__container{
-  position: relative;
-    left: calc(var(--unit) + 5.35rem);
-    top: calc(var(--unit) + 4.3rem);
-    width: calc(var(--unit) * 3 - 3.2rem);
-    padding-bottom: 4.3rem;
+  position: relative !important;
+    left: calc(var(--unit) + 5.35rem) !important;
+    top: calc(var(--unit) + 4.3rem) !important;
+    width: calc(var(--unit) * 3 - 3.2rem) !important;
+    padding-bottom: 4.3rem !important;
 }
 .shopify-policy__title {
   font-family: din-2014,sans-serif;
