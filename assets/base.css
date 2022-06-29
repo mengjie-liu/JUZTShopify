@@ -607,6 +607,27 @@ blockquote {
   letter-spacing: 0.18rem; */
 }
 
+.shopify-policy__container{
+  position: relative;
+    left: calc(var(--unit) + 5.35rem);
+    top: calc(var(--unit) + 4.3rem);
+    width: calc(var(--unit) * 3 - 3.2rem);
+    padding-bottom: 4.3rem;
+}
+.shopify-policy__title {
+  font-family: din-2014,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  letter-spacing: .25px;
+  z-index: 1002;
+  text-align: left;
+  position: fixed;
+  margin-left: calc(var(--unit) * -1);
+}
+
 .caption-large,
 .customer .field input,
 .customer select,
