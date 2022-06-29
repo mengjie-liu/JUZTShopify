@@ -272,7 +272,7 @@
     $(".format_address").hide();
     $(".delete").hide();
   });
-  $(".list .cancel").click(function(){
+  $("ul .cancel").click(function(){
     // $(this).hide();
     $(".edit").show();
     $(".default").show();
@@ -280,7 +280,10 @@
     $(".delete").show();
   })
   $(".adddd").click(function(){
-    $("ul").hide();
+    $(".default").hide();
+    $(".format_address").hide();
+    $(".delete").hide();
+    $(".edit").hide();
   })
 });
 </script>
