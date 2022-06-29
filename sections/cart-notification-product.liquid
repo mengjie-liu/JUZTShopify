@@ -35,7 +35,7 @@
     </div>
     {%- endif -%}
     <div class="cart-item__quantity-wrapper">
-      <span>Quantity:&nbsp;&nbsp;</span>
+      <span>Quantity:&nbsp;</span>
       <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
         {{ "products.product.quantity.label" | t }}
       </label>
@@ -81,7 +81,7 @@
       </quantity-input>
 
       <cart-remove-button
-        class="cart-remove-button"
+        class="hidden cart-remove-button"
         id="Remove-{{ item.index | plus: 1 }}"
         data-index="{{ item.index | plus: 1 }}"
       >
