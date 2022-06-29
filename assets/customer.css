@@ -481,8 +481,9 @@
   left:calc(var(--unit) * 3);
 }
 .addaddress{
-  position:relative;
+  position:absolute;
   left:calc(var(--unit) * 3);
+  width: var(--unit);
 }
 
 
@@ -842,12 +843,10 @@ label[for='AddressProvinceNew'] {
 }
 
 .addresses form {
-  display: flex;
-  flex-flow: row wrap;
   position: absolute;
-  top: 0;
-  background: white;
-  width: var(--unit);
+    left: calc(var(--unit) * -3);
+    top: -2.7rem;
+    width: var(--unit);
 }
 
 .format_address{
