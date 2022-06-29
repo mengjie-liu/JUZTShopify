@@ -2215,6 +2215,16 @@ input[type='checkbox'] {
 }
 
 /* component-quantity */
+.cart_quantity {
+  /* margin-top: -0.1rem; */
+  color: black;
+  position: relative;
+  /* width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2); */
+  display: inline;
+  border-radius: var(--inputs-radius);
+  /* min-height: calc((var(--inputs-border-width) * 2) + 4.5rem); */
+}
+
 .quantity {
   margin-top: -0.1rem;
   color: black;
