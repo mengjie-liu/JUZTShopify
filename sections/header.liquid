@@ -43,7 +43,8 @@ body{
     background-color:white;
 }
 
-.gridWrap{
+@media screen and (min-width: 750px) {
+  .gridWrap{
     position: fixed;
     width: 100%;
     left: 4rem;
@@ -58,6 +59,24 @@ body{
     transition: opacity 0.8s;
 top:0;
 }
+  }
+  @media screen and (max-width: 749px){
+    .gridWrap{
+    position: fixed;
+    width: 100%;
+    left: 4rem;
+    /* padding-left: 1vw; */
+    display: grid;
+        grid-template-columns: repeat(3, var(--unit));
+        grid-template-rows: repeat(3, var(--unit)); 
+        column-gap: 0;
+        row-gap: 0;
+        z-index: 1030;
+    pointer-events:none;
+    transition: opacity 0.8s;
+top:0;
+}
+  }
 
 .cross::before,
 .cross::after {
