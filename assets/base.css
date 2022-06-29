@@ -613,7 +613,7 @@ blockquote {
     top: calc(var(--unit) + 4.3rem) !important;
     width: calc(var(--unit) * 3 - 3.2rem) !important;
     padding-bottom: 4.3rem !important;
-    max-width: auto;
+    max-width: calc(var(--unit) * 3 - 3.2rem) !important;
     margin: 0;
     padding:0;
 }
