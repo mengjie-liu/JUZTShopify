@@ -267,11 +267,17 @@
 
   $(document).ready(function () {
   $(".edit").click(function () {
-    console.log("clicked!!");
     $(this).hide();
     $(".default").hide();
     $(".format_address").hide();
     $(".delete").hide();
   });
+  $(".update").click(function(){
+    // $(this).hide();
+    $(".edit").show();
+    $(".default").show();
+    $(".format_address").show();
+    $(".delete").show();
+  })
 });
 </script>
