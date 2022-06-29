@@ -30,7 +30,7 @@
     </div>
     {%- else -%}
     <div class="product-option">
-      Price
+      Price:&nbsp;&nbsp;
       {{ item.original_price | money }}
     </div>
     {%- endif -%}
@@ -41,7 +41,7 @@
       </label>
       <quantity-input class="quantity">
         <button
-          class="quantity__button no-js-hidden"
+          class="hidden quantity__button no-js-hidden"
           name="minus"
           type="button"
         >
@@ -66,7 +66,11 @@
           id="Quantity-{{ item.index | plus: 1 }}"
           data-index="{{ item.index | plus: 1 }}"
         />
-        <button class="quantity__button no-js-hidden" name="plus" type="button">
+        <button
+          class="hidden quantity__button no-js-hidden"
+          name="plus"
+          type="button"
+        >
           <span class="visually-hidden">{{
             "products.product.quantity.increase"
               | t: product:item.product.title
