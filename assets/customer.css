@@ -842,7 +842,7 @@ label[for='AddressProvinceNew'] {
   margin-bottom: 0.6rem; */
 }
 
-.addresses form {
+#AddAddress form {
   position: absolute;
     left: calc(var(--unit) * -3);
     top: -2.7rem;
