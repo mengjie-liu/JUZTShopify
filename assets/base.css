@@ -621,9 +621,9 @@ blockquote {
   position: relative !important;
     left: calc(var(--unit) + 5.35rem) !important;
     top: calc(var(--unit) + 4.3rem) !important;
-    width: calc(var(--unit) * 3 - 3.2rem) !important;
+    width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
     padding-bottom: 4.3rem !important;
-    max-width: calc(var(--unit) * 3 - 3.2rem) !important;
+    max-width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
     margin: 0;
     padding:0;
 }

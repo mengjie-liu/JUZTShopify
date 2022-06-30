@@ -667,7 +667,7 @@ a.product__text {
     left:var(--unit);
     /* padding-left:3.2rem;
     padding-top:0.8rem; */
-    width: calc(var(--unit) * 3 + 3.2rem);
+    width: calc(var(--unit) * 3 + var(--left) - 0.8rem);
     height: calc(var(--unit) + 100vh - var(--unit) * 2 - 0.8rem);  
     overflow: hidden;
   }

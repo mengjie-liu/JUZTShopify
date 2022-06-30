@@ -32,7 +32,7 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__contents{
   position:absolute;
   top:var(--unit);
-  left:calc(3.2rem + var(--unit));
+  left:calc(var(--left) - 0.8rem + var(--unit));
   width:calc(var(--unit) * 3)
 }
 

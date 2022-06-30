@@ -37,7 +37,7 @@
     top: calc(var(--unit) + 0.8rem);
     width: calc(var(--unit) + 0.8pt);
     height:calc(var(--unit) + 100vh - 2 * var(--unit) - 0.8rem);
-    left: calc(3.2rem + var(--unit) * 4 - 0.5pt);
+    left: calc(var(--left) - 0.8rem + var(--unit) * 4 - 0.5pt);
   }
 }
 
