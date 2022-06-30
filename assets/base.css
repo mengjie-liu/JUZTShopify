@@ -2631,16 +2631,31 @@ input[type='checkbox'] {
   color: rgba(var(--color-foreground), 0.75); */
 }
 
-.header__heading-logo {
+/* .header__heading-logo {
   height: auto;
   width: 100%;
-  /* padding-top:0.25em; */
+} */
+
+@media screen and (min-width: 750px) {
+  .header__heading-logo {
+    height: auto;
+    width: 100%;
+    /* padding-top:0.25em; */
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .header__heading-logo {
+    height: auto;
+    width: calc(var(--unit) * 0.55);
+    /* padding-top:0.25em; */
+  }
 }
 
 @media screen and (max-width: 989px) {
   .header__heading,
   .header__heading-link {
-    text-align: center;
+    text-align: left;
   }
 }
 
