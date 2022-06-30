@@ -1190,9 +1190,13 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 749px) {
-  .grid__item.slider__slide--full-width {
+  .grid__item{
     left:calc(4rem);
     top: calc(var(--unit) * 2);
+  }
+  .grid__item.slider__slide--full-width {
+    width: 100%;
+    max-width: none;
   }
 }
 
