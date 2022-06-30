@@ -595,7 +595,7 @@ a.product__text {
     height: calc(var(--unit) * 2);
   }
   .product__media-list .product__media-item:last-child{
-    height: calc(100vh - var(--unit) * 3);
+    height: calc(100vh - var(--unit) * 2 - 0.8rem);
   }
   .product__media-item--variant:first-child {
     /* padding-right: 1.5rem; */
