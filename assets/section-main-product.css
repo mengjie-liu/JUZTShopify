@@ -186,7 +186,7 @@
     min-width: fit-content;
     border: none;
     position: absolute;
-    top: 0;
+    top: 4.3rem;
     left: calc(var(--unit));
     padding-left: 15rem;
   }
