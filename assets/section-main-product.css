@@ -162,7 +162,8 @@
 }
 
 /* Form Elements */
-.product-form__input {
+@media screen and (min-width: 750px){
+  .product-form__input {
   flex: 0 0 100%;
   padding: 0;
   margin: 0;
@@ -171,9 +172,30 @@
   border: none;
   position: absolute;
   top: 0;
-  left: calc(var(--unit)*4);
+  left: calc(var(--unit) * 4);
   padding-left: 15rem;
 }
+}
+
+@media screen and (max-width: 749px){
+  .product-form__input {
+    flex: 0 0 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 37rem;
+    min-width: fit-content;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: calc(var(--unit));
+    padding-left: 15rem;
+  }
+}
+
+
+
+
+
 
 variant-radios,
 variant-selects {
