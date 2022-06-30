@@ -42,7 +42,7 @@
   position: absolute;
   width: calc(var(--unit) * 3);
   top: var(--unit);
-  left: calc(var(--unit) * 2 + 4rem);
+  left: calc(var(--unit) * 2 + var(--left));
 }
 
 @media screen and (max-width: 989px) {

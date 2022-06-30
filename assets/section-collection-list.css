@@ -1,6 +1,6 @@
 .collection-list {
   position:fixed;
-  left: 4rem;
+  left: var(--left);
   top: var(--unit);
   padding-top: 4.3rem;
   padding-left: 1.35rem;

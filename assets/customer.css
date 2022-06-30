@@ -125,7 +125,7 @@
   .customer:not(.account):not(.order) {
     position: absolute;
     top: var(--unit);
-    left: calc(var(--unit) + 4rem);
+    left: calc(var(--unit) + var(--left));
   }
 
   .customer:is(.addresses){

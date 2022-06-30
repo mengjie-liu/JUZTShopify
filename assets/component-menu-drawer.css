@@ -35,7 +35,7 @@ menu-drawer > details[open] > summary::before {
   z-index: 3;
   left: 0;
   top: 100%;
-  width: calc(100vw - 4rem);
+  width: calc(100vw - var(--left));
   padding: 0;
   border-width: 0 var(--drawer-border-width) 0 0;
   background-color: rgb(var(--color-background));
@@ -225,7 +225,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-decoration: none;
   padding: 1.2rem;
   margin-left: -1.2rem;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   color: rgb(var(--color-foreground));
 }
 

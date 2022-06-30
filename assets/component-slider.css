@@ -14,7 +14,7 @@ slider-component.slider-component-full-width {
 @media screen and (max-width: 749px) {
   slider-component{
     top:calc(var(--unit) * 2 + 0.8rem);
-    width: calc(100vw - 4rem);
+    width: calc(100vw - var(--left));
     overflow: hidden;
   }
   slider-component.page-width {

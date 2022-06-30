@@ -41,7 +41,7 @@
     /* max-width: 78rem; */
     /* position: absolute; */
     top: var(--unit);
-    left: calc(var(--unit) * 3 + 4rem);
+    left: calc(var(--unit) * 3 + var(--left));
     width: var(--unit);
   }
 }

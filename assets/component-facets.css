@@ -48,21 +48,21 @@
 .facet-filters__label {
   display: block;
   color: var(--color-foreground-85);
-  font-size: 1.4rem;
-  margin: 0 2rem 0 0;
+  /* font-size: 1.4rem; */
+  /* margin: 0 2rem 0 0; */
 }
 
 .facet-filters__summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   cursor: pointer;
-  height: 4.5rem;
+  /* height: 4.5rem;
   padding: 0 1.5rem;
   min-width: 25rem;
   margin-top: 2.4rem;
-  border: 0.1rem solid rgba(var(--color-foreground), 0.55);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.55); */
 }
 
 .facet-filters__summary::after {
@@ -96,11 +96,11 @@
 }
 
 .facet-filters button {
-  margin-left: 2.5rem;
+  /* margin-left: 2.5rem; */
 }
 
 .facet-filters__sort {
-  background-color: transparent;
+  /* background-color: transparent;
   border: 0;
   border-radius: 0;
   font-size: 1.4rem;
@@ -108,7 +108,7 @@
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   margin: 0;
   padding-left: 0;
-  padding-right: 1.75rem;
+  padding-right: 1.75rem; */
 }
 
 .facet-filters__sort + .icon-caret {
@@ -425,12 +425,12 @@ span.active-facets__button-inner:after {
 
 @media screen and (min-width: 990px) {
   .active-facets__button {
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
   }
 
   .active-facets__button-wrapper *,
   span.active-facets__button-inner {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 }
 
