@@ -13,20 +13,19 @@ slider-component.slider-component-full-width {
 
 @media screen and (max-width: 749px) {
   slider-component.page-width {
-    padding: 0 1.5rem;
     top: calc(var(--unit) * 2 + 0.8rem);
   }
 }
 
 @media screen and (min-width: 749px) and (max-width: 990px) {
   slider-component.page-width {
-    padding: 0 5rem;
+    /* padding: 0 5rem; */
   }
 }
 
 @media screen and (max-width: 989px) {
   .no-js slider-component .slider {
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
   }
 }
 
