@@ -2916,6 +2916,14 @@ details[open] > .header__submenu {
   left:calc(var(--unit) * 4 + 4rem);
   top:0;
   }
+  @media screen and (max-width: 749px) {
+    .header__inline-menu {
+      display: block;
+      position:fixed;
+    /* margin-left: -1.2rem; */
+    left:calc(var(--unit) + 4rem);
+    top:0;
+    }
 
   .header--top-center .header__inline-menu {
     justify-self: center;
