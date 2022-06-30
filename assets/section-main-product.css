@@ -469,7 +469,7 @@ a.product__text {
   .product-form__buttons {
   width: fit-content;
   position: absolute;
-  left: calc(var(--unit)*2);
+  left: calc(var(--unit));
   top: 0;
 }
 }
