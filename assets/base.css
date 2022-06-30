@@ -14,11 +14,6 @@ ul, li, a{
   color:black !important;
 }
 
-html, body{
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 @font-face {
   font-family: masked-text-webfont;
   src: url(fontello.otf);
