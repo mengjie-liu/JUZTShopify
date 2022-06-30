@@ -186,8 +186,8 @@
     min-width: fit-content;
     border: none;
     position: absolute;
-    top: 5.3rem;
-    left: calc(var(--unit));
+    top: 5.65rem;
+    left: calc(var(--unit) + 1.35rem);
     /* padding-left: 15rem; */
   }
 }
