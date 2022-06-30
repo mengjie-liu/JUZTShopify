@@ -598,7 +598,7 @@ a.product__text {
     height: calc(100vh - var(--unit) * 3);
   }
   .product__media-item--variant:first-child {
-    padding-right: 1.5rem;
+    /* padding-right: 1.5rem; */
   }
 }
 
