@@ -12,6 +12,9 @@ slider-component.slider-component-full-width {
 }
 
 @media screen and (max-width: 749px) {
+  slider-component{
+    top:var(--unit);
+  }
   slider-component.page-width {
     top: calc(var(--unit) * 2 + 0.8rem);
   }
@@ -51,8 +54,6 @@ slider-component.slider-component-full-width {
   }
 
   .slider.slider--mobile .slider__slide {
-    position: relative;
-    top: var(--unit);
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
