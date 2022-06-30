@@ -664,7 +664,7 @@ a.product__text {
     position: relative;
     /* top: var(--unit); */
     top:0;
-    left:var(--unit);
+    left: calc(var(--unit) + var(--left) - 0.8rem);
     /* padding-left:3.2rem;
     padding-top:0.8rem; */
     width: calc(var(--unit) * 3 + var(--left) - 0.8rem);
