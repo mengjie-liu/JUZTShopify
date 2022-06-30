@@ -464,11 +464,22 @@ a.product__text {
   margin: 0 auto 1.2rem auto;
 }
 
-.product-form__buttons {
+
+@media screen and (max-width: 749px){
+  .product-form__buttons {
+  width: fit-content;
+  position: absolute;
+  left: calc(var(--unit)*2);
+  top: 0;
+}
+}
+@media screen and (min-width: 750px){
+  .product-form__buttons {
   width: fit-content;
   position: absolute;
   left: calc(var(--unit)*4);
   top: 0;
+}
 }
 
 .product--no-media .product__info-container > modal-opener {
