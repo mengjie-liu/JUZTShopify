@@ -1,6 +1,9 @@
 slider-component {
   --desktop-margin-left-first-item: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
   position: relative;
+  left: 3.2rem;
+    top: calc(var(--unit) + 1.6rem);
+    width: calc(var(--unit) * 2 + 3.2rem);
   display: block;
 }
 
