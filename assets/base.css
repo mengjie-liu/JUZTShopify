@@ -88,7 +88,8 @@ a:is(.bigTitle):hover::after{
 /* Color custom properties */
 @media screen and (min-width: 750px){
   :root{
-    --unit:19.52vw;
+    --unit: calc((100vw - 4rem) / 5);
+    /* --unit:19.52vw; */
   }
 }
 @media screen and (max-width: 749px){
