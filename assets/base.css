@@ -2583,7 +2583,7 @@ input[type='checkbox'] {
 
 .header__heading {
   position: fixed;
-  left: 4.75rem;
+  left: 4rem;
   top: 0;
   /* max-width: 12vw; */
   z-index: 1010;
@@ -2594,7 +2594,7 @@ input[type='checkbox'] {
 .header > .header__heading-link {
   /* line-height: 0; */
   position: fixed;
-  left: 4.75rem;
+  left: 4rem;
   top: 0;
   /* max-width: 12vw; */
   z-index: 1010;
@@ -2614,7 +2614,7 @@ input[type='checkbox'] {
   /* text-decoration: none;
   word-break: break-word; */
   position: fixed;
-  left: 4.75rem;
+  left: 4rem;
   top: 0;
   /* max-width: 12vw; */
   z-index: 1010;
