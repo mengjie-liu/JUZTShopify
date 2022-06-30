@@ -93,7 +93,7 @@ a:is(.bigTitle):hover::after{
 }
 @media screen and (max-width: 749px){
   :root{
-    --unit: calc((100vw - 7.2rem) / 2);
+    --unit: calc((100vw - 7.2rem) / 2 + 1.6rem);
   }
 }
 
