@@ -547,6 +547,10 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
+  .product__media-list .product__media-item {
+    width: calc(var(--unit) * 2);
+    height: calc(var(--unit) * 2);
+  }
   .product__media-item--variant:first-child {
     padding-right: 1.5rem;
   }
