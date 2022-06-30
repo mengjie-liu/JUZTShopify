@@ -24,7 +24,8 @@
 @media screen and (max-width: 749px){
   .product__info-wrapper{
     left:4rem;
-    top:calc(var(--unit) + 4.3rem);
+    top:calc(var(--unit));
+    width:calc(var(--unit) - 1.35rem)
   }
 }
 
