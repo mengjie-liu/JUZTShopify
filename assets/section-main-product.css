@@ -1243,7 +1243,7 @@ a.product__text {
 }
 
 .thumbnail-list__item::before {
-  content: "";
+  content: none;
   display: block;
   padding-bottom: 100%;
 }

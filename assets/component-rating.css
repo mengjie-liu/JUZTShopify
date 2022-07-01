@@ -30,7 +30,7 @@
 }
 
 .rating-star::before {
-  content: '★★★★★';
+  content: none;
   background: linear-gradient(
     90deg,
     var(--color-icon) var(--percent),

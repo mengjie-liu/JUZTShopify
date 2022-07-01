@@ -2737,7 +2737,7 @@ input[type='checkbox'] {
 }
 
 .header__icon--menu[aria-expanded="true"]::before {
-  content: "";
+  content: none;
   top: 100%;
   left: 0;
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
@@ -3176,7 +3176,7 @@ details-disclosure > details {
 }
 
 .ratio::before {
-  content: '';
+  content: none;
   width: 0;
   height: 0;
   padding-bottom: var(--ratio-percent);
