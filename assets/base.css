@@ -6,12 +6,12 @@ ul, li, a{
 
 @media screen and (min-width: 750px){
   *{
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 749px){
   *{
-    font-size: 1em;
+    font-size: 0.85em;
   }
 }
 *{
