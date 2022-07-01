@@ -2302,6 +2302,12 @@ input[type='checkbox'] {
     -webkit-appearance: none;
     appearance: none;
 }
+@media screen and (max-width: 749px){
+  .quantity__input{
+    font-size: 1rem !important;
+  }
+}
+
 
 .quantity__button {
   width: 2rem;
