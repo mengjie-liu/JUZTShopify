@@ -1702,6 +1702,7 @@ padding-top: var(--paddingtop);
 .button--full-width {
   /* display: flex; */
   width: fit-content;
+  top: calc(var(--paddingtop) - 0.2rem);
 }
 
 .button.loading {
