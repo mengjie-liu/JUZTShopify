@@ -11,7 +11,7 @@ ul, li, a{
 }
 @media screen and (max-width: 749px){
   *{
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 *{
@@ -1104,10 +1104,10 @@ letter-spacing: 0.5px;
 
 @media screen and (max-width: 749px){
   .bigTitle{
-    font-size: 1.1em;
+    font-size: 1.1em !important;
   }
   .smallText{
-    font-size: 0.85em;
+    font-size: 0.85em !important;
   }
 }
 
