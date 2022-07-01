@@ -55,7 +55,7 @@ img, video{
   left:var(--left);
   top: calc(var(--unit) - 8rem);
   margin-top: 4.3rem;
-  margin-left: 1.35rem;
+  margin-left: var(--paddingleft);
   }
 }
 @media screen and (max-width: 749px){
@@ -64,7 +64,7 @@ img, video{
   left:var(--left);
   top: calc(var(--unit) - 5.3rem);
   margin-top: 4.3rem;
-  margin-left: 1.35rem;
+  margin-left: var(--paddingleft);
   }
 }
 
@@ -104,6 +104,7 @@ a:is(.bigTitle):hover::after{
   :root{
     --unit: calc((100vw - var(--left)) / 5);
     --left: 4rem;
+    --paddingleft: 1.35rem;
     /* --unit:19.52vw; */
   }
 }
@@ -111,6 +112,7 @@ a:is(.bigTitle):hover::after{
   :root{
     --unit: calc((100vw - var(--left)) / 2);
     --left: 2.5rem;
+    --paddingleft: 1rem;
   }
 }
 
@@ -420,7 +422,7 @@ body,
   top:var(--unit);
   margin: 0;
   padding-top: 4.3rem;
-  padding-left:1.35rem;
+  padding-left:var(--paddingleft);
   padding-right:0.8rem;
   width: calc(var(--unit) - 2.15rem);
 }
@@ -1505,7 +1507,7 @@ button.shopify-payment-button__button--unbranded {
   left: 0;
   top: var(--unit);
   margin-top: 4.3rem;
-  margin-left: 1.35rem;
+  margin-left: var(--paddingleft);
   margin-right: 0.8rem;
 }
 
@@ -3336,7 +3338,7 @@ details-disclosure > details {
 @media screen and (min-width: 750px){
   .gridItem {
   padding-top: 4.3rem;
-  padding-left: 1.35rem;
+  padding-left: var(--paddingleft);
   padding-right: 0.8rem;
 }
 }

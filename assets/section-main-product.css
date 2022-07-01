@@ -26,7 +26,7 @@
     position: fixed;
     left:var(--left);
     top:calc(var(--unit));
-    width:calc(var(--unit) - 1.35rem)
+    width:calc(var(--unit) - var(--paddingleft))
   }
 }
 
@@ -187,7 +187,7 @@
     border: none;
     position: absolute;
     top: 7rem;
-    left: calc(var(--unit) + 1.35rem);
+    left: calc(var(--unit) + var(--paddingleft));
     /* padding-left: 15rem; */
   }
 }
@@ -491,7 +491,7 @@ a.product__text {
   .product-form__buttons {
   width: fit-content;
   position: absolute;
-  left: calc(var(--unit) + 1.35rem);
+  left: calc(var(--unit) + var(--paddingleft));
   top: 4.3rem;
 }
 }

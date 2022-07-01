@@ -3,7 +3,7 @@
   left: var(--left);
   top: var(--unit);
   padding-top: 4.3rem;
-  padding-left: 1.35rem;
+  padding-left: var(--paddingleft);
   padding-right: 0.8rem;
   margin-top: 0;
   margin-bottom: 0;

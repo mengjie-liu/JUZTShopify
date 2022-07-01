@@ -28,7 +28,7 @@
   /* display: inline-flex;
   align-items: flex-start; */
   width:var(--unit);
-  margin-left: -1.35rem;
+  margin-left: calc(var(--paddingleft) * -1);
   padding-right:0;
 }
 

@@ -89,7 +89,7 @@
   left:0;
     top: var(--unit);
     margin-top: 4.3rem;
-    margin-left: 1.35rem;
+    margin-left: var(--paddingleft);
 }
 
 .createAccount{
@@ -97,7 +97,7 @@
   left: var(--unit);
   top: var(--unit);
   margin-top: 4.3rem;
-  margin-left: 1.35rem;
+  margin-left: var(--paddingleft);
 }
 
 .createAccount:hover::after{
@@ -190,7 +190,7 @@
 
 #create_customer{
   padding-top: 4.3rem;
-  padding-left: 1.35rem;
+  padding-left: var(--paddingleft);
   padding-right: 0.8rem;
 }
 
