@@ -54,7 +54,7 @@ img, video{
   position:fixed;
   left:var(--left);
   top: calc(var(--unit) - 8rem);
-  margin-top: 4.3rem;
+  margin-top: var(--paddingtop);
   margin-left: var(--paddingleft);
   }
 }
@@ -63,7 +63,7 @@ img, video{
   position:fixed;
   left:var(--left);
   top: calc(var(--unit) - 5.3rem);
-  margin-top: 4.3rem;
+  margin-top: var(--paddingtop);
   margin-left: var(--paddingleft);
   }
 }
@@ -105,6 +105,7 @@ a:is(.bigTitle):hover::after{
     --unit: calc((100vw - var(--left)) / 5);
     --left: 4rem;
     --paddingleft: 1.35rem;
+    --paddingtop:4.3rem;
     /* --unit:19.52vw; */
   }
 }
@@ -113,6 +114,7 @@ a:is(.bigTitle):hover::after{
     --unit: calc((100vw - var(--left)) / 2);
     --left: 2.5rem;
     --paddingleft: 1rem;
+    --paddingtop:4rem;
   }
 }
 
@@ -421,7 +423,7 @@ body,
   left: calc(var(--unit) + var(--left));
   top:var(--unit);
   margin: 0;
-  padding-top: 4.3rem;
+  padding-top: var(--paddingtop);
   padding-left:var(--paddingleft);
   padding-right:0.8rem;
   width: calc(var(--unit) - 2.15rem);
@@ -635,8 +637,8 @@ blockquote {
 
 .shopify-policy__container{
   position: relative !important;
-    left: calc(var(--unit) + 5.35rem) !important;
-    top: calc(var(--unit) + 4.3rem) !important;
+    left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
+    top: calc(var(--unit) + var(--paddingtop)) !important;
     width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
     padding-bottom: 4.3rem !important;
     max-width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
@@ -1577,7 +1579,7 @@ font-size: 1.3em;
 text-transform:uppercase;
 line-height: 1.35;
 letter-spacing: 0.25px;
-padding-top: 4.3rem;
+padding-top: var(--paddingtop);
     top: var(--unit);
 }
 
@@ -2245,7 +2247,7 @@ input[type='checkbox'] {
 /* component-quantity */
 .cartnt_info{
   position: absolute;
-  top: calc(var(--unit) + 4.3rem);
+  top: calc(var(--unit) + var(--paddingtop));
   left: 2.15rem;
 }
 
@@ -3337,7 +3339,7 @@ details-disclosure > details {
 
 @media screen and (min-width: 750px){
   .gridItem {
-  padding-top: 4.3rem;
+  padding-top: var(--paddingtop);
   padding-left: var(--paddingleft);
   padding-right: 0.8rem;
 }
@@ -3353,7 +3355,7 @@ details-disclosure > details {
 
 .cartGridItem {
   position: absolute;
-  margin-top: 4.3rem;
+  margin-top: var(--paddingtop);
   margin-left: 2.15rem;
   /* padding-right: 0.8rem; */
 }

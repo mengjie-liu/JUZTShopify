@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 990px) {
   .modal-video__toggle {
-    right: 4.3rem;
+    right: var(--paddingtop);
     top: 3rem;
   }
 }

@@ -2,7 +2,7 @@
   position:fixed;
   left: var(--left);
   top: var(--unit);
-  padding-top: 4.3rem;
+  padding-top: var(--paddingtop);
   padding-left: var(--paddingleft);
   padding-right: 0.8rem;
   margin-top: 0;

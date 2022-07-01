@@ -50,7 +50,7 @@ cart-items.is-empty .title-wrapper-with-link,
   left: var(--unit);
   top: var(--unit);
   padding-left: var(--paddingleft);
-  padding-top: 4.3rem;
+  padding-top: var(--paddingtop);
 }
 
 .cart__login-paragraph a {
@@ -257,6 +257,6 @@ cart-items {
 
   .cart__ctas {
     position: absolute;
-    top: calc(var(--unit) + 4.3rem);
+    top: calc(var(--unit) + var(--paddingtop));
   }
 }

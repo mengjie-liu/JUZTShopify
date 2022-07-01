@@ -88,7 +88,7 @@
   position: absolute;
   left:0;
     top: var(--unit);
-    margin-top: 4.3rem;
+    margin-top: var(--paddingtop);
     margin-left: var(--paddingleft);
 }
 
@@ -96,7 +96,7 @@
   position: absolute;
   left: var(--unit);
   top: var(--unit);
-  margin-top: 4.3rem;
+  margin-top: var(--paddingtop);
   margin-left: var(--paddingleft);
 }
 
@@ -130,8 +130,8 @@
 
   .customer:is(.addresses){
     position: absolute;
-    top: calc(var(--unit) + 4.3rem) !important;
-    left: calc(var(--unit) + 5.35rem) !important;
+    top: calc(var(--unit) + var(--paddingtop)) !important;
+    left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
   }
 }
 
@@ -189,7 +189,7 @@
 }
 
 #create_customer{
-  padding-top: 4.3rem;
+  padding-top: var(--paddingtop);
   padding-left: var(--paddingleft);
   padding-right: 0.8rem;
 }
@@ -215,7 +215,7 @@
     letter-spacing: .25px;
     z-index: 1002;
     position: absolute;
-    top: calc(var(--unit) + 4.3rem);
+    top: calc(var(--unit) + var(--paddingtop));
     /* padding-top: 4.3rem; */
   }
 
@@ -571,8 +571,8 @@
   :is(.account, .order) {
     /* padding: 0 5rem; */
     position: absolute;
-    left: calc(var(--unit) + 5.35rem);
-    top: calc(var(--unit) + 4.3rem);
+    left: calc(var(--unit) + var(--left) + var(--paddingleft));
+    top: calc(var(--unit) + var(--paddingtop));
   }
 }
 

@@ -492,7 +492,7 @@ a.product__text {
   width: fit-content;
   position: absolute;
   left: calc(var(--unit) + var(--paddingleft));
-  top: 4.3rem;
+  top: var(--paddingtop);
 }
 }
 @media screen and (min-width: 750px){
