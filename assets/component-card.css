@@ -74,6 +74,10 @@
   background-color: transparent;
 }
 
+.media media--transparent media--hover-effect img{
+  object-fit: contain !important;
+}
+
 .card-information {
   text-align: var(--card-text-alignment);
 }
