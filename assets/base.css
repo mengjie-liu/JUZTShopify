@@ -659,7 +659,7 @@ blockquote {
   font-family: din-2014,sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   text-transform: uppercase;
   line-height: 1.35;
   letter-spacing: .25px;
@@ -667,6 +667,16 @@ blockquote {
   text-align: left;
   position: fixed;
   margin-left: calc(var(--unit) * -1);
+}
+@media screen and (max-width: 749px){
+  .shopify-policy__title{
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 750px){
+  .shopify-policy__title{
+    font-size: 1.3em;
+  }
 }
 
 .caption-large,
@@ -1599,12 +1609,22 @@ form label{
   position: absolute;
   font-weight: 600;
   font-style: normal;
-font-size: 1.3em;
+/* font-size: 1.3em; */
 text-transform:uppercase;
 line-height: 1.35;
 letter-spacing: 0.25px;
 padding-top: var(--paddingtop);
     top: var(--unit);
+}
+@media screen and (max-width: 749px){
+  .shopify-challenge__container .shopify-challenge__button{
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 750px){
+  .shopify-challenge__container .shopify-challenge__button{
+    font-size: 1.3em;
+  }
 }
 
 .button:before,

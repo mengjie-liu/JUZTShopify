@@ -198,18 +198,34 @@
   font-family: din-2014,sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.3em !important;
+    /* font-size: 1.3em !important; */
     text-transform: capitalize;
     line-height: 1.35;
     letter-spacing: .25px;
     z-index: 1002;
+}
+@media screen and (min-width: 750px){
+  #create_customer .field{
+    font-size: 1.3em !important;
+  }
+  #create_customer button{
+    font-size: 1.3em !important;
+  }
+}
+@media screen and (max-width: 749px){
+  #create_customer .field{
+    font-size: 1.2em !important;
+  }
+  #create_customer button{
+    font-size: 1.2em !important;
+  }
 }
 
 #create_customer button{
   font-family: din-2014,sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.3em !important;
+    /* font-size: 1.3em !important; */
     text-transform: uppercase;
     line-height: 1.35;
     letter-spacing: .25px;
@@ -218,6 +234,7 @@
     top: calc(var(--unit) + var(--paddingtop));
     /* padding-top: 4.3rem; */
   }
+
 
 @media screen and (min-width: 750px) {
   .customer table {
