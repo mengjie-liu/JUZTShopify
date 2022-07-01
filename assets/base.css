@@ -48,13 +48,26 @@ img, video{
   position:fixed;
 }
 
-.back{
+
+@media screen and (min-width: 750px){
+  .back{
   position:fixed;
   left:var(--left);
   top: calc(var(--unit) - 8rem);
   margin-top: 4.3rem;
   margin-left: 1.35rem;
+  }
 }
+@media screen and (max-width: 749px){
+  .back{
+  position:fixed;
+  left:var(--left);
+  top: calc(var(--unit) - 5.3rem);
+  margin-top: 4.3rem;
+  margin-left: 1.35rem;
+  }
+}
+
 
 .back:hover::after{
   position: absolute;
