@@ -140,4 +140,5 @@
 .closeB{
   position: relative;
   right: var(--paddingleft);
+  top: 2.7rem;
 }
