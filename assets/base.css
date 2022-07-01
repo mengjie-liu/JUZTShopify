@@ -426,7 +426,7 @@ body,
   padding-top: var(--paddingtop);
   padding-left:var(--paddingleft);
   padding-right:0.8rem;
-  width: calc(var(--unit) - 2.15rem);
+  width: calc(var(--unit) - (var(--paddingleft) + 0.8rem));
 }
 
 .shopify-challenge__message{
@@ -2250,7 +2250,7 @@ input[type='checkbox'] {
 .cartnt_info{
   position: absolute;
   top: calc(var(--unit) + var(--paddingtop));
-  left: 2.15rem;
+  left: var(--paddingleft) + 0.8rem;
 }
 
 .cartnt-item__quantity-wrapper {
@@ -3075,7 +3075,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .checkOutB{
   position: relative;
-  left: 2.15rem;
+  left: var(--paddingleft) + 0.8rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
@@ -3358,6 +3358,6 @@ details-disclosure > details {
 .cartGridItem {
   position: absolute;
   margin-top: var(--paddingtop);
-  margin-left: 2.15rem;
+  margin-left: var(--paddingleft) + 0.8rem;
   /* padding-right: 0.8rem; */
 }
