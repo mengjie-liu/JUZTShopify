@@ -3333,11 +3333,21 @@ details-disclosure > details {
   font-weight: var(--font-body-weight-bold);
 }
 
-.gridItem {
+@media screen and (min-width: 750px){
+  .gridItem {
   padding-top: 4.3rem;
   padding-left: 1.35rem;
   padding-right: 0.8rem;
 }
+}
+@media screen and (max-width: 749px){
+  .gridItem {
+    padding-top: 3.8rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+  }
+  }
+
 
 .cartGridItem {
   position: absolute;
