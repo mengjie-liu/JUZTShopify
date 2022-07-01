@@ -2250,7 +2250,7 @@ input[type='checkbox'] {
 .cartnt_info{
   position: absolute;
   top: calc(var(--unit) + var(--paddingtop));
-  left: var(--paddingleft) + 0.8rem;
+  left: calc(var(--paddingleft) + 0.8rem);
 }
 
 .cartnt-item__quantity-wrapper {
@@ -3075,7 +3075,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .checkOutB{
   position: relative;
-  left: var(--paddingleft) + 0.8rem;
+  left: calc(var(--paddingleft) + 0.8rem);
 }
 
 .header__menu-item:hover .header__active-menu-item {
@@ -3358,6 +3358,6 @@ details-disclosure > details {
 .cartGridItem {
   position: absolute;
   margin-top: var(--paddingtop);
-  margin-left: var(--paddingleft) + 0.8rem;
+  margin-left: calc(var(--paddingleft) + 0.8rem);
   /* padding-right: 0.8rem; */
 }
