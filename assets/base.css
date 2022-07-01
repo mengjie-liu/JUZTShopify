@@ -1743,10 +1743,18 @@ padding-top: var(--paddingtop);
   opacity: 0.5;
 }
 
+@media screen and (max-width: 749px){
+  .button--full-width {
+    /* display: flex; */
+    top: -0.2rem;
+    /* top: calc(var(--paddingtop) - 0.2rem); */
+  }
+  }
+
 .button--full-width {
   /* display: flex; */
   width: fit-content;
-  top: -0.2rem;
+  /* top: -0.2rem; */
   /* top: calc(var(--paddingtop) - 0.2rem); */
 }
 
