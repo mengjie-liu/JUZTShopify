@@ -908,7 +908,7 @@ summary::-webkit-details-marker {
   z-index: 2;
   display: block;
   cursor: default;
-  content: ' ';
+  content: none;
   background: transparent;
 }
 
@@ -2277,7 +2277,7 @@ input[type='checkbox'] {
 .quantity:before {
   background: rgb(var(--color-background));
   pointer-events: none;
-  content: '';
+  content: none;
   position: absolute;
   top: 0;
   right: 0;
