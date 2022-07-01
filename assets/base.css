@@ -1075,7 +1075,6 @@ summary::-webkit-details-marker {
   font-family: din-2014, sans-serif;
 font-weight: 600;
   font-style: normal;
-font-size: 1.3em;
 text-transform:uppercase;
 line-height: 1.35;
 letter-spacing: 0.25px;
@@ -1088,12 +1087,27 @@ z-index: 1002;
   font-family: din-2014, sans-serif;
 font-weight: 400;
   font-style: normal;
-font-size: 1em;
+/* font-size: 1em; */
 line-height: 1.35;
 letter-spacing: 0.5px;
 }
 
+@media screen and (max-width: 749px){
+  .bigTitle{
+    font-size: 1em;
+  }
+  .smallText{
+    font-size: 0.8em;
+  }
+}
+
 @media screen and (min-width: 750px) {
+  .bigTitle{
+    font-size: 1.3em;
+  }
+  .smallText{
+    font-size: 1em;
+  }
   .title-wrapper--self-padded-mobile {
     padding-left: 0;
     padding-right: 0;
