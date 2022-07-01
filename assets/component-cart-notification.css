@@ -27,6 +27,16 @@
   ); */
 }
 
+@media screen and (max-width: 749px) {
+  .cart-notification {
+    /* border-width: 0 var(--popup-border-width) var(--popup-border-width); */
+    top: calc(var(--unit) + 0.8rem);
+    width: calc(var(--unit) + 0.8pt);
+    height:calc(var(--unit) + 100vh - 3 * var(--unit) - 0.8rem);
+    left: calc(var(--left) - 0.8rem + var(--unit) - 0.5pt);
+  }
+}
+
 @media screen and (min-width: 750px) {
   .header-wrapper:not(.header-wrapper--border-bottom) + cart-notification .cart-notification {
     border-top-width: var(--popup-border-width);
