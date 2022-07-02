@@ -363,6 +363,7 @@ html.no-js .no-js-hidden {
     top: calc(var(--unit) * 2);
     width: calc(var(--unit) * 2 - var(--paddingleft));
     padding: 0;
+    padding-bottom:4.3rem;
   }
 }
 
