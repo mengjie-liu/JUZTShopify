@@ -598,6 +598,15 @@
   padding: 0 2rem; */
 }
 
+@media screen and (max-width: 749px){
+  :is(.account, .order) {
+    /* padding: 0 5rem; */
+    position: absolute;
+    left: calc(var(--left) + var(--paddingleft));
+    top: calc(var(--unit) + var(--paddingtop));
+  }
+}
+
 @media screen and (min-width: 750px) {
   :is(.account, .order) {
     /* padding: 0 5rem; */
@@ -616,7 +625,7 @@
 
 @media screen and (min-width: 990px) {
   :is(.account, .order) > div:nth-of-type(2) > div:first-of-type {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* padding-right: 3.2rem; */
   }
 }
