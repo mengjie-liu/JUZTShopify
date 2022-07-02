@@ -57,6 +57,13 @@ img, video{
 .contactInfo{
   position:fixed;
 }
+@media screen and (max-width: 749px){
+  .contactInfo{
+    position:fixed;
+    left: var(--left);
+    top: var(--unit);
+  }
+}
 
 
 @media screen and (min-width: 750px){
@@ -354,7 +361,7 @@ html.no-js .no-js-hidden {
     position:absolute;
     left: var(--left);
     top: calc(var(--unit) * 2);
-    width: calc(var(--unit) * 2);
+    width: calc(var(--unit) * 2 - var(--paddingleft));
     padding: 0;
   }
 }
