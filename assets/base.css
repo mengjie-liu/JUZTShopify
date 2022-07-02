@@ -52,6 +52,7 @@ img, video{
   text-transform: inherit !important;
   font-weight: 400 !important;
   z-index: 0 !important;
+  margin-bottom: 4.3rem;
 }
 
 .contactInfo{
@@ -363,7 +364,6 @@ html.no-js .no-js-hidden {
     top: calc(var(--unit) * 2);
     width: calc(var(--unit) * 2 - var(--paddingleft));
     padding: 0;
-    margin-bottom: 4.3rem;
   }
 }
 
