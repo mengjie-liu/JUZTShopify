@@ -31,7 +31,7 @@
 
 @media all and (max-width: 749px){
   .totals > * + * {
-    margin-left: 0.8rem;
+    margin-left: 0.2rem;
   }
 }
 
