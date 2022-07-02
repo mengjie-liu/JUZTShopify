@@ -70,12 +70,24 @@
   text-transform: capitalize !important;
 }
 
+@media screen and (min-width: 750px){
+  .customer_accountdetails{
+    left: calc(var(--unit) * 3);
+    width: var(--unit);
+  }
+  }
+  @media screen and (max-width: 749px){
+    .customer_accountdetails{
+      left: calc(var(--unit));
+      width: var(--unit);
+    }
+    }
+
 .customer_accountdetails{
   position: absolute;
-  left: calc(var(--unit) * 3);
-  width: var(--unit);
   top: 0;
 }
+
 
 .account_logout{
   position: absolute;
