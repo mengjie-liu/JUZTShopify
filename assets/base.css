@@ -1432,8 +1432,9 @@ letter-spacing: 0.5px;
 .media model-viewer {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -3309,6 +3310,7 @@ details-disclosure > details {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 0 !important;
   /* border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
   border-radius: var(--media-radius);
   overflow: visible !important;
