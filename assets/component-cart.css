@@ -149,7 +149,6 @@ cart-items {
 @media screen and (max-width: 749px){
   .cart__warnings {
     left:calc(var(--left));
-    /* padding: 3rem 0 1rem; */
   }  
 
   .cart__blocks{
@@ -171,7 +170,6 @@ cart-items {
 @media screen and (min-width: 750px) {
   .cart__warnings {
     left:calc(var(--unit) + var(--left));
-    /* padding: 3rem 0 1rem; */
   }
   
   .cart__blocks{
