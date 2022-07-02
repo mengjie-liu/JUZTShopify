@@ -671,13 +671,9 @@ blockquote {
 
 .shopify-policy__container{
   position: relative !important;
-    left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
-    top: calc(var(--unit) + var(--paddingtop)) !important;
-    width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
-    padding-bottom: 4.3rem !important;
-    max-width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
-    margin: 0;
-    padding:0;
+  padding:0;
+  padding-bottom: 4.3rem !important;
+  margin: 0;
 }
 .shopify-policy__title {
   font-family: din-2014,sans-serif;
@@ -693,11 +689,25 @@ blockquote {
   margin-left: calc(var(--unit) * -1);
 }
 @media screen and (max-width: 749px){
+  .shopify-policy__container{
+    left: calc(var(--left) + var(--paddingleft)) !important;
+    top: calc(var(--unit) * 2 + var(--paddingtop)) !important;
+    width: calc(var(--unit) * 2 - (var(--left) - 0.8rem)) !important;
+    max-width: calc(var(--unit) * 2 - (var(--left) - 0.8rem)) !important;
+  }
+
   .shopify-policy__title{
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 750px){
+  .shopify-policy__container{
+    left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
+    top: calc(var(--unit) + var(--paddingtop)) !important;
+    width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
+    max-width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
+  }
+
   .shopify-policy__title{
     font-size: 1.3em;
   }
