@@ -500,6 +500,7 @@
       </div>
     </div>
 
+    {%- assign product_form_id = 'product-form-' | append: section.id -%}
     {%- for block in section.blocks -%}
     {%- when 'description' -%}
     {%- if product.description != blank -%}
@@ -507,7 +508,6 @@
         {{ product.description }}
       </div>
     {%- endif -%}
-    
   </div>
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
