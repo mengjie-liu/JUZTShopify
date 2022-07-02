@@ -691,8 +691,8 @@ blockquote {
   .shopify-policy__container{
     left: calc(var(--left) + var(--paddingleft)) !important;
     top: calc(var(--unit) * 2 + var(--paddingtop)) !important;
-    width: calc(var(--unit) * 2 - (var(--left) - 1.6rem)) !important;
-    max-width: calc(var(--unit) * 2 - (var(--left) - 1.6rem)) !important;
+    width: calc(var(--unit) * 2 - var(--left)) !important;
+    max-width: calc(var(--unit) * 2 - var(--left)) !important;
   }
 
   .shopify-policy__title{
@@ -704,8 +704,8 @@ blockquote {
   .shopify-policy__container{
     left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
     top: calc(var(--unit) + var(--paddingtop)) !important;
-    width: calc(var(--unit) * 3 - (var(--left) - 1.6rem)) !important;
-    max-width: calc(var(--unit) * 3 - (var(--left) - 1.6rem)) !important;
+    width: calc(var(--unit) * 3 - var(--left)) !important;
+    max-width: calc(var(--unit) * 3 - var(--left)) !important;
   }
 
   .shopify-policy__title{
