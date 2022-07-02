@@ -686,30 +686,31 @@ blockquote {
   z-index: 1002;
   text-align: left;
   position: fixed;
-  margin-left: calc(var(--unit) * -1);
 }
 @media screen and (max-width: 749px){
   .shopify-policy__container{
     left: calc(var(--left) + var(--paddingleft)) !important;
     top: calc(var(--unit) * 2 + var(--paddingtop)) !important;
-    width: calc(var(--unit) * 2 - (var(--left) - 0.8rem)) !important;
-    max-width: calc(var(--unit) * 2 - (var(--left) - 0.8rem)) !important;
+    width: calc(var(--unit) * 2 - (var(--left) - 1.6rem)) !important;
+    max-width: calc(var(--unit) * 2 - (var(--left) - 1.6rem)) !important;
   }
 
   .shopify-policy__title{
     font-size: 1.2em;
+    margin-top: calc(var(--unit) * -1);
   }
 }
 @media screen and (min-width: 750px){
   .shopify-policy__container{
     left: calc(var(--unit) + var(--left) + var(--paddingleft)) !important;
     top: calc(var(--unit) + var(--paddingtop)) !important;
-    width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
-    max-width: calc(var(--unit) * 3 - (var(--left) - 0.8rem)) !important;
+    width: calc(var(--unit) * 3 - (var(--left) - 1.6rem)) !important;
+    max-width: calc(var(--unit) * 3 - (var(--left) - 1.6rem)) !important;
   }
 
   .shopify-policy__title{
     font-size: 1.3em;
+    margin-left: calc(var(--unit) * -1);
   }
 }
 
