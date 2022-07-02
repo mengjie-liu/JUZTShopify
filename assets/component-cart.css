@@ -213,7 +213,7 @@ cart-items {
 
 .cart__blocks{
   position: fixed;
-  left: calc(4rem + var(--unit) * 4);
+  left: calc(var(--left) + var(--unit) * 4);
   top: var(--unit);
   width: calc(var(--unit) - 0.8rem);
 }
