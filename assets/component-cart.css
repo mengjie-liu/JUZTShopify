@@ -150,7 +150,7 @@ cart-items {
 @media screen and (max-width: 749px){
   .cart__blocks{
     left: calc(var(--left) + var(--unit));
-    top: calc(var(--unit) * 3);
+    top: calc(var(--unit) * 2);
   }
 
   .cart__contents{
