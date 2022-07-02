@@ -147,7 +147,7 @@
 @media screen and (max-width: 749px){
   .cart-item cart-remove-button {
     left: 0;
-    top:calc(var(--unit) - 6rem);
+    top:calc(var(--unit) - 4.3rem);
   }
 }
 @media screen and (min-width: 750px){
