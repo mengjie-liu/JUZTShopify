@@ -122,8 +122,8 @@ a:is(.bigTitle):hover::after{
 @media screen and (max-width: 749px){
   :root{
     --unit: calc((100vw - var(--left)) / 2);
-    --left: 2.3rem;
-    --paddingleft: 1rem;
+    --left: 2.25rem;
+    --paddingleft: 0.9rem;
     --paddingtop:4rem;
   }
 }
