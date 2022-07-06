@@ -40,10 +40,21 @@
 
 .collection--empty{
   position: absolute;
-  width: calc(var(--unit) * 3);
   top: var(--unit);
-  left: calc(var(--unit) * 2 + var(--left));
 }
+
+@media screen and (max-width: 749px){
+  .collection--empty{
+    width: calc(var(--unit));
+    left: calc(var(--unit) + var(--left));
+  }
+  }
+  @media screen and (min-width: 750px){
+    .collection--empty{
+      width: calc(var(--unit) * 3);
+      left: calc(var(--unit) * 2 + var(--left));
+    }
+      }
 
 @media screen and (max-width: 989px) {
   .collection .slider--tablet.product-grid {
