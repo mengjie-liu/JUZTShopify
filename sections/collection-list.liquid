@@ -52,7 +52,7 @@ section.blocks.size > columns_mobile_int assign show_mobile_slider = true endif
     </div>
     {%- endunless -%}
 
-    <slider-component class="slider-mobile-gutter">
+    <slider-component class="hidden slider-mobile-gutter">
       <ul
         class="gridItem collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{
           section.settings.columns_desktop
