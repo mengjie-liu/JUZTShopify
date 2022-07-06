@@ -4,7 +4,8 @@ slider-component {
   left: var(--left) - 0.8rem;
     top: var(--unit);
     width: calc(var(--unit) * 2 + var(--left) - 0.8rem);
-  display: block;
+  /* display: block; */
+  display: none;
 }
 
 slider-component.slider-component-full-width {
