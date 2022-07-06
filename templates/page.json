@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0
@@ -49,6 +48,7 @@
     },
     "1657129547bb61a03b": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"about\">\n        <div class=\"text abouttext\">\n          <div class=\"col\">\n            <div>YOUR PERSONAL WELLNESS MATTERS<\/div>\n            <p>\n              Established in 2021, JUZTLAB is a Shanghai-based health and\n              wellness brand focusing on functional products.\n            <\/p>\n          <\/div>\n          <div class=\"col two\">\n            <div>WE HOPE TO<\/div>\n            <p>\n              We hope to take steps beyond the conventional understanding of\n              Chinese traditional herbs, by making adaptogen-powered,\n              plant-based functional products for your everyday wellness. In\n              doing so, we firmly believe our consumers will see maximized\n              health benefits.\n            <\/p>\n          <\/div>\n          <div class=\"col three\">\n            <div>WITH JUZTLAB<\/div>\n            <p>\n              You can be the best you when you have fun. Your can enjoy your way\n              of life, whatever you way is.\n            <\/p>\n          <\/div>\n        <\/div>\n      <\/div>\n\n<style>\n.about{\n        position:absolute;\n        top: calc(var(--unit) + var(--paddingtop));\nleft:var(--left);\n    height:calc(100vh - var(--unit) - var(--paddingtop))\n}\n    .abouttext{\n       width: calc(var(--unit) * 3 - 0.6rem);\n        font-size: 1.3em;\n    }\n\n    .col{\n        \/* flex:1; *\/\n        \/* padding-right: 1.6rem; *\/\n        position: absolute;\n        padding-left: 1.35rem;\n        width: calc(var(--unit) - 2.15rem);\n    }   \n    \n    .two{\n        left: var(--unit);\n    }\n    .three{\n        left: calc(var(--unit) * 2);\n    }\n<\/style>",
         "color_scheme": "background-1",
