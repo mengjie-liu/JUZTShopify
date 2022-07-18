@@ -1168,7 +1168,7 @@ letter-spacing: 0.5px;
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1631px) {
   .bigTitle{
     font-size: 1.5em !important;
   }
