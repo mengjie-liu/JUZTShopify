@@ -1169,6 +1169,13 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 990px) {
+  .bigTitle{
+    font-size: 1.5em !important;
+  }
+  .smallText{
+    font-size: 1.2em !important;
+  }
+
   .title,
   .title-wrapper-with-link {
     /* margin: 5rem 0 3rem; */
