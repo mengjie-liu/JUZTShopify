@@ -21,7 +21,7 @@
     "16586912649026a265": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"welcome_text\">\n<div class=\"smallText\">\nLorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh\n<a href=\"\" class=\"smallText\">shop<\/a>\n<\/div>\n<\/div>\n\n<style>\n.welcome_text{\nposition: absolute;\nwidth: calc(var(--unit));\ntop: calc(var(--unit) + var(--paddingtop));\nleft: calc(var(--unit) * 2 + var(--left) + var(--paddingleft));\nz-index: 2001;\ncolor: white;\n}\n.welcome_text a{\nposition: absolute;\ndisplay: block;\nleft: 50%;\npadding-top: 4rem;\ntransform: translate(-50%);\n}\n<\/style>",
+        "custom_liquid": "<div class=\"welcome_text\">\n<div class=\"smallText\">\nLorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh\n<a href=\"\" class=\"smallText\">shop<\/a>\n<\/div>\n<\/div>\n\n<style>\n.welcome_text{\nposition: absolute;\nwidth: calc(var(--unit));\ntop: calc(var(--unit) + var(--paddingtop));\nleft: calc(var(--unit) * 2 + var(--left) + var(--paddingleft));\nz-index: 2001;\ncolor: white !important;\n}\n.welcome_text a{\nposition: absolute;\ndisplay: block;\nleft: 50%;\npadding-top: 4rem;\ntransform: translate(-50%);\n}\n<\/style>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
