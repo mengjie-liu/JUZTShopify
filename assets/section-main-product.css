@@ -1124,7 +1124,7 @@ a.product__text {
   }
 
   .product__media-wrapper .slider-mobile-gutter .slider-button {
-    /* display: none; */
+    display: none;
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
