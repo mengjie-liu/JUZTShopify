@@ -273,7 +273,7 @@
       "view_all": "View all"
     },
     "collection_template": {
-      "empty": "Coming soon <span class=\"cursor\"> | <\/span>",
+      "empty": "Coming soon",
       "title": "Collection",
       "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all<\/a>"
     },
