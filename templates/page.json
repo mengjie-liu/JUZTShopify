@@ -19,6 +19,7 @@
     },
     "16549827394efc16d3": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "16549827397df67a43-0": {
           "type": "heading",
@@ -67,9 +68,8 @@
     },
     "16607729314ca65652": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div class=\"contact\">\nInstagram: <a href=\"\">@juzt<\/a>\n<\/div>\n\n<style>\n.contact{\nposition: fixed;\nleft: calc(var(--unit) * 4 + var(--left) + var(--paddingleft));\ntop: calc(var(--unit) + var(--paddingtop));\nz-index: 3000;\n}\n<\/style>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
