@@ -1146,6 +1146,7 @@ text-transform:uppercase;
 line-height: 1.35;
 letter-spacing: 0.25px;
 z-index: 1002;
+white-space: nowrap;
 }
 
 .smallText{
