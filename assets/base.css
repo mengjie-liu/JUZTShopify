@@ -4,6 +4,10 @@ ul, li, a{
   color:black;
 }
 
+a{
+  z-index: 3000;
+}
+
 @media screen and (min-width: 750px){
   *{
     font-size: 1em;

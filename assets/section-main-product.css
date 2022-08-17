@@ -21,6 +21,10 @@
   padding-bottom: 0; */
 }
 
+.product__media-item:first-child {
+  display: none;
+}
+
 @media screen and (max-width: 749px){
   .product__info-wrapper{
     position: fixed;
@@ -670,6 +674,7 @@ a.product__text {
     width: calc(var(--unit) * 3 + var(--left) - 0.8rem);
     height: calc(var(--unit) + 100vh - var(--unit) * 2 - 0.8rem);  
     overflow: hidden;
+    margin-bottom: calc(var(--unit)/10);
   }
 
   .product__media-list .product__media-item:first-child,
