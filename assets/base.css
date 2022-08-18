@@ -1304,7 +1304,7 @@ letter-spacing: 0.5px;
 
 @media screen and (max-width: 749px) {
   .grid__item{
-    left:calc(var(--left));
+    padding-left:calc(var(--left));
     top: calc(var(--unit) * 2);
   }
   .grid__item.slider__slide--full-width {
