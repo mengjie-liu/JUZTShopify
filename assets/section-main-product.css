@@ -598,6 +598,7 @@ a.product__text {
     left: calc(var(--left) - 0.8rem);
     width: calc(100vw - var(--left)) !important;
     overflow-x: hidden !important;
+    top: var(--unit);
   }
   .product__media-list .product__media-item {
     width: calc(var(--unit) * 2);
