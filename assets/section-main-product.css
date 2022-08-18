@@ -595,8 +595,8 @@ a.product__text {
 
 @media screen and (max-width: 749px) {
   .product__media-list{
-    width: calc(100vw - var(--left));
-    overflow-x: hidden;
+    width: calc(100vw - var(--left)) !important;
+    overflow-x: hidden !important;
   }
   .product__media-list .product__media-item {
     width: calc(var(--unit) * 2);
