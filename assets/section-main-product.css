@@ -593,11 +593,11 @@ a.product__text {
   display: block;
 }
 
-.product__media-list{
-  padding-top: 0.8rem;
-}
-
 @media screen and (max-width: 749px) {
+  .product__media-list{
+    width: calc(100vw - calc(--left));
+    overflow-x: hidden;
+  }
   .product__media-list .product__media-item {
     width: calc(var(--unit) * 2);
     height: calc(var(--unit) * 2 + 100vh - var(--unit) * 4 - 0.8rem);
@@ -611,6 +611,9 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
+  .product__media-list{
+    padding-top: 0.8rem;
+  }
   .product__media-list .product__media-item:first-child {
     padding-left: 0;
   }
