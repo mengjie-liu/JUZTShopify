@@ -69,7 +69,7 @@
     "16607729314ca65652": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"contact\">\nInstagram: <a href=\"\">@juzt<\/a>\n<\/div>\n\n<style>\n.contact{\nposition: fixed;\nleft: calc(var(--unit) * 4 + var(--left) + var(--paddingleft));\ntop: calc(var(--unit) + var(--paddingtop) + 0.8rem);\nz-index: 3000;\n}\n<\/style>",
+        "custom_liquid": "<div class=\"contact\">\n<p>\nInstagram: <a href=\"\">@juzt<\/a>\n<\/p>\n<p>\nEmail:\n<\/p>\n<\/div>\n\n<style>\n.contact{\nposition: fixed;\nleft: calc(var(--unit) * 4 + var(--left) + var(--paddingleft));\ntop: calc(var(--unit) + var(--paddingtop) + 0.8rem);\nz-index: 3000;\n}\n<\/style>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
