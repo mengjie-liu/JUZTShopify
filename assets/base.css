@@ -4,10 +4,6 @@ ul, li, a{
   color:black;
 }
 
-body, html{
-  overflow-x: hidden;
-}
-
 a{
   z-index: 3000 !important;
 }
