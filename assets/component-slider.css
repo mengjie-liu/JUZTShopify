@@ -1,9 +1,9 @@
 slider-component {
   --desktop-margin-left-first-item: max(5rem, calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2));
   position: relative;
-  left: var(--left) - 0.8rem;
-    top: var(--unit);
-    width: calc(var(--unit) * 2 + var(--left) - 0.8rem);
+  /* left: calc(var(--left) - 0.8rem); */
+  top: var(--unit);
+  width: calc(var(--unit) * 2 + var(--left) - 0.8rem);
   /* display: block; */
   /* display: none; */
 }
@@ -16,8 +16,8 @@ slider-component.slider-component-full-width {
   slider-component{
     top:calc(var(--unit) * 2 + 0.8rem);
     left: calc(var(--left) - 0.8rem);
-    width: calc(100vw - var(--left));
-    overflow: hidden;
+    width: calc(100vw - var(--left)) !important;
+    overflow: hidden !important;
   }
   slider-component.page-width {
     /* top: calc(var(--unit) * 2 + 0.8rem); */
