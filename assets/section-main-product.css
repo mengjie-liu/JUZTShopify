@@ -603,7 +603,7 @@ a.product__text {
   .product__media-list .product__media-item {
     width: calc(var(--unit) * 2);
     height: calc(var(--unit) * 2.5);
-    margin-bottom:2rem;
+    margin-bottom:2rem !important;
   }
   .product__media-list .product__media-item:last-child{
     /* height: calc(100vh - var(--unit) * 2 - 0.8rem); */
