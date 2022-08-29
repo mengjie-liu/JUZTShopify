@@ -104,7 +104,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Website to be launched in Fall.",
+              "text": "Website will be launched in Fall.",
               "color_scheme": "background-1",
               "link": ""
             }
