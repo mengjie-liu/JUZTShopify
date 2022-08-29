@@ -700,7 +700,7 @@ a.product__text {
 
   .product__modal-opener{
     width: calc(var(--unit) * 2);
-    height: calc(var(--unit) * 2.4);
+    height: calc(var(--unit) * 2 / 3 * 4);
   }
 
   .product__modal-opener:hover .product__media-icon,
