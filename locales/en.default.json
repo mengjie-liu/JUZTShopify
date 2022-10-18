@@ -426,6 +426,12 @@
   "shopify": {
     "challenge": {
       "message": "To continue, please click the box below to let us know you're not a robot."
+    },
+    "checkout": {
+      "shop_policies": {
+        "shipping_policy": "Shipping & returns",
+        "contact_information": "Social media"
+      }
     }
   }
 }
