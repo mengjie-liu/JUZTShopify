@@ -453,8 +453,8 @@
       tabindex="-1"
     >
       <!-- {{ content_for_layout }} -->
-      {% if request.path contains '/policies/contact-information' %}
-      {{ content_for_layout }}
+      {% if request.path contains '/policies/contact-information' %} {% section
+      'contact-information' %}
       <div class="policyEtc">
         <div class="policy gridItem smallText">
           <!-- <a class="cs hoverEffect">CUSTOMER&nbsp;SERVICE</a> -->
