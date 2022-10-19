@@ -453,7 +453,7 @@
       tabindex="-1"
     >
       <!-- {{ content_for_layout }} -->
-      {% if request.path == '/policies/contact-information' %}
+      {% if request.path contains '/policies/contact-information' %}
       {{ content_for_layout }}
       <div class="policyEtc">
         <div class="policy gridItem smallText">
