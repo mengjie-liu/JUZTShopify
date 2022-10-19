@@ -453,14 +453,33 @@
       tabindex="-1"
     >
       <!-- {{ content_for_layout }} -->
-      {% if request.path == '/policies/contact-information' %} {% section
-      'contact-information' %} {% elsif request.path contains
-      '/policies/privacy-policy' %} {% section 'privacy-policy' %} {% elsif
-      request.path contains '/policies/terms-of-service' %} {% section
-      'terms-of-service' %} {% elsif request.path contains
-      '/policies/shipping-policy' %} {% section 'shipping-policy' %} {% elsif
-      request.path contains '/policies/subscription-policy' %} {% section
-      'subscription-policy' %} {% else %}
+      {% if request.path == '/policies/contact-information' %}
+      {{ content_for_layout }}
+      <div class="policyEtc">
+        <div class="policy gridItem smallText">
+          <!-- <a class="cs hoverEffect">CUSTOMER&nbsp;SERVICE</a> -->
+          <a href="/policies/shipping-policy" class="sr hoverEffect"
+            >SHIPPING&nbsp;&&nbsp;RETURNS</a
+          >
+          <a href="/policies/privacy-policy" class="pp hoverEffect"
+            >PRIVACY&nbsp;POLICY</a
+          >
+          <a href="/policies/terms-of-service" class="tc hoverEffect"
+            >TERMS&nbsp;OF&nbsp;SERVICE</a
+          >
+          <a href="/policies/contact-information" class="sm hoverEffect"
+            >SOCIAL&nbsp;MEDIA</a
+          >
+        </div>
+      </div>
+
+      {% elsif request.path contains '/policies/privacy-policy' %} {% section
+      'privacy-policy' %} {% elsif request.path contains
+      '/policies/terms-of-service' %} {% section 'terms-of-service' %} {% elsif
+      request.path contains '/policies/shipping-policy' %} {% section
+      'shipping-policy' %} {% elsif request.path contains
+      '/policies/subscription-policy' %} {% section 'subscription-policy' %} {%
+      else %}
       {{ content_for_layout }}
       {% endif %}
     </main>
@@ -473,6 +492,58 @@
         {{ "accessibility.refresh_page" | t }}
       </li>
     </ul>
+
+    <style>
+      .policyEtc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 1.6rem;
+        box-sizing: border-box;
+        top: calc(var(--unit) * 28);
+        left: calc((var(--left)) * -1);
+        height: calc(100vh);
+        width: 100vw;
+        background-color: black;
+      }
+      .cs {
+        color: white !important;
+        position: absolute;
+        left: calc(var(--left) + 1.6rem);
+        bottom: 4.3rem;
+        cursor: pointer;
+      }
+      .sr {
+        color: white !important;
+        cursor: pointer;
+        /* padding-left:1em; */
+      }
+      .pp {
+        color: white !important;
+        padding-left: calc(var(--unit) / 2);
+        cursor: pointer;
+        /* padding-left:1em; */
+      }
+      .tc {
+        color: white !important;
+        padding-left: calc(var(--unit) / 2);
+        cursor: pointer;
+        /* padding-left:1em; */
+      }
+      .sm {
+        color: white !important;
+        padding-left: calc(var(--unit) / 2);
+        cursor: pointer;
+        /* padding-left:1em; */
+      }
+      .policy {
+        position: absolute;
+        bottom: 4.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        text-align: center;
+      }
+    </style>
 
     <script>
       window.shopUrl = "{{ request.origin }}";
